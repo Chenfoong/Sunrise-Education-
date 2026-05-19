@@ -1,12 +1,11 @@
-
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sunrise Education (阳光学府) | International School & Homeschooling | Klang, Selangor</title>
-<meta name="description" content="Sunrise Education (阳光学府) – Cambridge IGCSE International School & Homeschooling in Klang, Selangor. Happy learning for ages 7–18. Warm, caring, future-ready education.">
-<meta name="keywords" content="Sunrise Education, international school Klang, IGCSE Malaysia, Cambridge homeschool, homeschooling Selangor, happy learning Malaysia">
+<title>Sunrise Education (阳光学府) | 国际学校与居家教育 | 巴生，雪兰莪</title>
+<meta name="description" content="Sunrise Education (阳光学府) – 剑桥IGCSE国际学校与居家教育，位于雪兰莪巴生。为7至18岁孩子提供快乐学习，温暖、关爱、面向未来的教育。">
+<meta name="keywords" content="Sunrise Education, 巴生国际学校, 马来西亚IGCSE, 剑桥居家教育, 雪兰莪居家教育, 马来西亚快乐学习">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;600;700;800&family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
 <style>
@@ -310,10 +309,10 @@ footer{background:var(--footer-bg);color:#C4A882;padding:60px 24px 30px}
 </head>
 <body data-theme="warm">
 
-<!-- SCROLL PROGRESS -->
+<!-- 滚动进度条 -->
 <div id="scroll-bar" style="width:0%"></div>
 
-<!-- NAVBAR -->
+<!-- 导航栏 -->
 <nav id="navbar">
   <div class="nav-inner">
     <a href="#" class="logo" onclick="showSection('home')">
@@ -338,52 +337,52 @@ footer{background:var(--footer-bg);color:#C4A882;padding:60px 24px 30px}
       </div>
     </a>
     <div class="nav-links" id="navLinks">
-      <a href="#" onclick="showSection('home')" class="active" id="nav-home">Home</a>
-      <a href="#" onclick="showSection('primary')" id="nav-primary">Primary</a>
-      <a href="#" onclick="showSection('secondary')" id="nav-secondary">Secondary</a>
-      <a href="#" onclick="showSection('academic')" id="nav-academic">Academic</a>
-      <a href="#" onclick="showSection('admissions')" id="nav-admissions">Admissions</a>
-      <a href="#" onclick="showSection('vision')" id="nav-vision">Vision</a>
-      <a href="#" onclick="showSection('about')" id="nav-about">About Us</a>
-      <a href="#" onclick="showSection('blog')" id="nav-blog">Blog</a>
-      <a href="#" onclick="showSection('contact')" id="nav-contact">Contact</a>
+      <a href="#" onclick="showSection('home')" class="active" id="nav-home" data-key="nav_home">🏠 首页</a>
+      <a href="#" onclick="showSection('primary')" id="nav-primary" data-key="nav_primary">📚 小学</a>
+      <a href="#" onclick="showSection('secondary')" id="nav-secondary" data-key="nav_secondary">🎓 中学</a>
+      <a href="#" onclick="showSection('academic')" id="nav-academic" data-key="nav_academic">📖 学术课程</a>
+      <a href="#" onclick="showSection('admissions')" id="nav-admissions" data-key="nav_admissions">✏️ 招生入学</a>
+      <a href="#" onclick="showSection('vision')" id="nav-vision" data-key="nav_vision">🌟 愿景理念</a>
+      <a href="#" onclick="showSection('about')" id="nav-about" data-key="nav_about">ℹ️ 关于我们</a>
+      <a href="#" onclick="showSection('blog')" id="nav-blog" data-key="nav_blog">📝 博客</a>
+      <a href="#" onclick="showSection('contact')" id="nav-contact" data-key="nav_contact">📞 联系我们</a>
     </div>
     <div class="nav-controls">
       <button class="ctrl-btn lang-btn active" id="langEN" onclick="setLang('en')" title="English">EN</button>
       <button class="ctrl-btn lang-btn" id="langZH" onclick="setLang('zh')" title="中文">中</button>
       <button class="ctrl-btn lang-btn" id="langBM" onclick="setLang('bm')" title="Bahasa Melayu">BM</button>
-      <button class="ctrl-btn active" id="themeWarm" onclick="setTheme('warm')" title="Warm Theme">☀️</button>
-      <button class="ctrl-btn" id="themeLight" onclick="setTheme('light')" title="Light Theme">🌅</button>
-      <button class="ctrl-btn" id="themeDark" onclick="setTheme('dark')" title="Dark Theme">🌙</button>
+      <button class="ctrl-btn active" id="themeWarm" onclick="setTheme('warm')" title="暖色主题">☀️</button>
+      <button class="ctrl-btn" id="themeLight" onclick="setTheme('light')" title="浅色主题">🌅</button>
+      <button class="ctrl-btn" id="themeDark" onclick="setTheme('dark')" title="深色主题">🌙</button>
     </div>
-    <button class="hamburger" onclick="toggleMobile()" aria-label="Menu">
+    <button class="hamburger" onclick="toggleMobile()" aria-label="菜单">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
 
-<!-- MOBILE MENU -->
+<!-- 移动端菜单 -->
 <div id="mobile-menu">
-  <a href="#" onclick="showSection('home');toggleMobile()" id="m-home">🏠 Home</a>
-  <a href="#" onclick="showSection('primary');toggleMobile()" id="m-primary">📚 Primary School</a>
-  <a href="#" onclick="showSection('secondary');toggleMobile()" id="m-secondary">🎓 Secondary School</a>
-  <a href="#" onclick="showSection('academic');toggleMobile()" id="m-academic">📖 Academic</a>
-  <a href="#" onclick="showSection('admissions');toggleMobile()" id="m-admissions">✏️ Admissions</a>
-  <a href="#" onclick="showSection('vision');toggleMobile()" id="m-vision">🌟 Vision</a>
-  <a href="#" onclick="showSection('about');toggleMobile()" id="m-about">ℹ️ About Us</a>
-  <a href="#" onclick="showSection('blog');toggleMobile()" id="m-blog">📝 Blog</a>
-  <a href="#" onclick="showSection('contact');toggleMobile()" id="m-contact">📞 Contact</a>
+  <a href="#" onclick="showSection('home');toggleMobile()" id="m-home" data-key="m_home">🏠 首页</a>
+  <a href="#" onclick="showSection('primary');toggleMobile()" id="m-primary" data-key="m_primary">📚 小学课程</a>
+  <a href="#" onclick="showSection('secondary');toggleMobile()" id="m-secondary" data-key="m_secondary">🎓 中学课程</a>
+  <a href="#" onclick="showSection('academic');toggleMobile()" id="m-academic" data-key="m_academic">📖 学术课程</a>
+  <a href="#" onclick="showSection('admissions');toggleMobile()" id="m-admissions" data-key="m_admissions">✏️ 招生入学</a>
+  <a href="#" onclick="showSection('vision');toggleMobile()" id="m-vision" data-key="m_vision">🌟 愿景理念</a>
+  <a href="#" onclick="showSection('about');toggleMobile()" id="m-about" data-key="m_about">ℹ️ 关于我们</a>
+  <a href="#" onclick="showSection('blog');toggleMobile()" id="m-blog" data-key="m_blog">📝 博客</a>
+  <a href="#" onclick="showSection('contact');toggleMobile()" id="m-contact" data-key="m_contact">📞 联系我们</a>
 </div>
 
-<!-- IGCSE STRIP -->
-<div class="igcse-strip" style="margin-top:68px">
-  🎓 Cambridge IGCSE Certified<span>•</span>Recognised in<span>140+</span>Countries<span>•</span>Est. 2014 Klang, Selangor
+<!-- IGCSE 认证条幅 -->
+<div class="igcse-strip" style="margin-top:68px" data-key="igcse_strip">
+  🎓 剑桥IGCSE认证<span>•</span>受<span>140+</span>个国家认可<span>•</span>2014年创立于巴生，雪兰莪
 </div>
 
-<!-- ══════════════════════ HOME ══════════════════════ -->
+<!-- ══════════════════════ 首页 ══════════════════════ -->
 <div id="sec-home" class="page-section active">
 
-  <!-- HERO -->
+  <!-- 主视觉区 -->
   <section id="hero">
     <div class="hero-shapes">
       <div class="shape s1"></div>
@@ -392,18 +391,18 @@ footer{background:var(--footer-bg);color:#C4A882;padding:60px 24px 30px}
     </div>
     <div class="hero-content">
       <div>
-        <div class="hero-badge"><div class="dot"></div><span id="h-badge">International School & Homeschooling · Klang</span></div>
-        <h1 class="hero-title" id="h-title">Inspiring Young <em>Hearts</em>, Empowering <em>Bright</em> Futures</h1>
-        <p class="hero-tagline" id="h-tag">Happiness · Learning · Growth</p>
+        <div class="hero-badge"><div class="dot"></div><span id="h-badge">国际学校与居家教育 · 巴生</span></div>
+        <h1 class="hero-title" id="h-title">激励年轻<em>心灵</em>，赋能<em>光明</em>未来</h1>
+        <p class="hero-tagline" id="h-tag">快乐 · 学习 · 成长</p>
         <div class="hero-keywords">
-          <span class="kw">🌍 Cambridge IGCSE</span>
-          <span class="kw">🏡 Homeschooling</span>
-          <span class="kw">👧 Ages 7–18</span>
-          <span class="kw">🌟 Small Classes</span>
+          <span class="kw" data-key="kw_igcse">🌍 剑桥IGCSE</span>
+          <span class="kw" data-key="kw_homeschool">🏡 居家教育</span>
+          <span class="kw" data-key="kw_ages">👧 7至18岁</span>
+          <span class="kw" data-key="kw_small">🌟 小班制</span>
         </div>
         <div class="hero-ctas">
-          <a class="btn-primary" href="#" onclick="showSection('admissions')">🎒 <span id="h-cta1">Book a School Tour</span></a>
-          <a class="btn-secondary" href="https://wa.me/60124251556" target="_blank" rel="noopener">💬 <span id="h-cta2">WhatsApp Us</span></a>
+          <a class="btn-primary" href="#" onclick="showSection('admissions')">🎒 <span id="h-cta1">预约校园参观</span></a>
+          <a class="btn-secondary" href="https://wa.me/60124251556" target="_blank" rel="noopener">💬 <span id="h-cta2">WhatsApp联系我们</span></a>
         </div>
       </div>
       <div class="hero-visual">
@@ -411,32 +410,32 @@ footer{background:var(--footer-bg);color:#C4A882;padding:60px 24px 30px}
           <div class="hero-school-name">☀️ Sunrise Education<br><small style="font-size:0.65rem;color:var(--sun-muted);font-family:var(--font-body)">阳光学府</small></div>
           <div class="hero-sub">
             <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
-            No. 25-2F, Jalan Mahogani 5/KS7, 41200 Klang
+            <span data-key="address_line">No. 25-2F, Jalan Mahogani 5/KS7, 41200 巴生</span>
           </div>
           <div class="hero-stats">
             <div class="stat-box">
               <div class="stat-num">10+</div>
-              <div class="stat-label">Years</div>
+              <div class="stat-label" data-key="stat_years">年历史</div>
             </div>
             <div class="stat-box">
               <div class="stat-num">140+</div>
-              <div class="stat-label">Countries</div>
+              <div class="stat-label" data-key="stat_countries">国家认可</div>
             </div>
             <div class="stat-box">
               <div class="stat-num">7–18</div>
-              <div class="stat-label">Ages</div>
+              <div class="stat-label" data-key="stat_ages">年龄段</div>
             </div>
             <div class="stat-box">
               <div class="stat-num">IGCSE</div>
-              <div class="stat-label">Cambridge</div>
+              <div class="stat-label" data-key="stat_cambridge">剑桥课程</div>
             </div>
             <div class="stat-box">
               <div class="stat-num">100%</div>
-              <div class="stat-label">Happy</div>
+              <div class="stat-label" data-key="stat_happy">快乐成长</div>
             </div>
             <div class="stat-box">
               <div class="stat-num">❤️</div>
-              <div class="stat-label">Care</div>
+              <div class="stat-label" data-key="stat_care">关爱守护</div>
             </div>
           </div>
         </div>
@@ -444,471 +443,471 @@ footer{background:var(--footer-bg);color:#C4A882;padding:60px 24px 30px}
     </div>
   </section>
 
-  <!-- WHY CHILDREN LOVE -->
+  <!-- 孩子为什么喜欢我们 -->
   <section style="background:var(--sun-warm)">
     <div class="section-wrap">
       <div class="section-header reveal">
-        <div class="section-eyebrow" id="s1-eye">Why Children Love Us</div>
-        <h2 class="section-title" id="s1-title">A Place Where <em>Every Child</em> Shines</h2>
-        <p class="section-desc" id="s1-desc">We believe every child has unique gifts. Our warm, nurturing environment helps them discover their potential while having fun every single day.</p>
+        <div class="section-eyebrow" id="s1-eye">孩子为什么喜欢阳光学府</div>
+        <h2 class="section-title" id="s1-title">一个让<em>每个孩子</em>都闪耀的地方</h2>
+        <p class="section-desc" id="s1-desc">我们相信每个孩子都有独特的天赋。我们温暖、关爱的环境帮助他们在快乐中发现潜能，每一天都充满欢笑。</p>
       </div>
       <div class="cards-grid cards-3 reveal">
-        <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">😊</div><div class="card-title" id="c1t">Happy Learning</div><div class="card-text" id="c1d">Learning through play, creativity, and joy. Our students look forward to coming to school every day.</div></div>
-        <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">👨‍🏫</div><div class="card-title">Caring Teachers</div><div class="card-text">Dedicated educators who know every student by name and celebrate every achievement, big or small.</div></div>
-        <div class="card"><div class="card-accent"></div><div class="card-icon icon-green">🌱</div><div class="card-title">Personal Growth</div><div class="card-text">Character building, emotional intelligence, and leadership skills woven into daily learning experiences.</div></div>
-        <div class="card"><div class="card-accent"></div><div class="card-icon icon-pink">🎨</div><div class="card-title">Creative Activities</div><div class="card-text">Art, music, STEM, drama, sports — a rich co-curriculum that nurtures talent beyond the textbook.</div></div>
-        <div class="card"><div class="card-accent"></div><div class="card-icon icon-purple">🏆</div><div class="card-title">Small Class Sizes</div><div class="card-text">Maximum attention, personalised instruction, and meaningful teacher-student relationships in every class.</div></div>
-        <div class="card"><div class="card-accent"></div><div class="card-icon icon-teal">🌍</div><div class="card-title">International Exposure</div><div class="card-text">Cambridge IGCSE curriculum preparing students for universities and careers anywhere in the world.</div></div>
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">😊</div><div class="card-title" id="c1t">快乐学习</div><div class="card-text" id="c1d">通过游戏、创意和快乐来学习。我们的学生每天都期待来学校。</div></div>
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">👨‍🏫</div><div class="card-title" data-key="card_teachers_title">关爱教师</div><div class="card-text" data-key="card_teachers_desc">敬业的教育工作者，熟知每一位学生的名字，庆祝每一次大大小小的成就。</div></div>
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-green">🌱</div><div class="card-title" data-key="card_growth_title">个人成长</div><div class="card-text" data-key="card_growth_desc">品格塑造、情商培养和领导力技能融入日常学习体验之中。</div></div>
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-pink">🎨</div><div class="card-title" data-key="card_creative_title">创意活动</div><div class="card-text" data-key="card_creative_desc">艺术、音乐、STEM、戏剧、体育——丰富的课外活动培养课本之外的才能。</div></div>
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-purple">🏆</div><div class="card-title" data-key="card_small_title">小班教学</div><div class="card-text" data-key="card_small_desc">最大程度的关注、个性化指导和有意义的师生关系贯穿每个课堂。</div></div>
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-teal">🌍</div><div class="card-title" data-key="card_global_title">国际视野</div><div class="card-text" data-key="card_global_desc">剑桥IGCSE课程为学生进入世界各地的大学和职业发展做好准备。</div></div>
       </div>
     </div>
   </section>
 
-  <!-- WHY PARENTS CHOOSE -->
+  <!-- 家长为什么选择阳光学府 -->
   <section class="alt-bg">
     <div class="section-wrap">
       <div class="section-header reveal">
-        <div class="section-eyebrow">Why Parents Choose Sunrise</div>
-        <h2 class="section-title">Building <em>Trust</em>, One Family at a Time</h2>
-        <p class="section-desc">From academic excellence to emotional wellbeing, we partner with parents to raise confident, happy, future-ready children.</p>
+        <div class="section-eyebrow" data-key="s2_eye">家长为什么选择阳光学府</div>
+        <h2 class="section-title" data-key="s2_title">建立<em>信任</em>，从每一个家庭开始</h2>
+        <p class="section-desc" data-key="s2_desc">从学业卓越到情感健康，我们与家长携手培养自信、快乐、面向未来的孩子。</p>
       </div>
       <div class="why-grid reveal">
         <div class="why-list">
-          <div class="why-item"><div class="why-icon">🎓</div><div class="why-content"><h4>Cambridge IGCSE Curriculum</h4><p>Globally recognised qualification opening doors to 140+ countries and top universities worldwide.</p></div></div>
-          <div class="why-item"><div class="why-icon">🔬</div><div class="why-content"><h4>Strong English Foundation</h4><p>Immersive English-medium instruction with dedicated communication and writing modules.</p></div></div>
-          <div class="why-item"><div class="why-icon">💡</div><div class="why-content"><h4>Student-Centred Teaching</h4><p>We meet each child where they are, adapting our approach to their unique learning style and pace.</p></div></div>
-          <div class="why-item"><div class="why-icon">🤝</div><div class="why-content"><h4>Parent Partnership</h4><p>Regular parent-teacher meetings, progress updates, and an open-door policy so you're always in the loop.</p></div></div>
-          <div class="why-item"><div class="why-icon">❤️</div><div class="why-content"><h4>Safe & Caring Environment</h4><p>A warm, welcoming school culture where every child feels safe, respected, and loved every day.</p></div></div>
+          <div class="why-item"><div class="why-icon">🎓</div><div class="why-content"><h4 data-key="why_igcse_title">剑桥IGCSE课程</h4><p data-key="why_igcse_desc">全球认可的资格证书，为进入140多个国家和世界顶尖大学打开大门。</p></div></div>
+          <div class="why-item"><div class="why-icon">🔬</div><div class="why-content"><h4 data-key="why_english_title">扎实的英语基础</h4><p data-key="why_english_desc">沉浸式英语教学，设有专门的沟通与写作模块。</p></div></div>
+          <div class="why-item"><div class="why-icon">💡</div><div class="why-content"><h4 data-key="why_student_title">以学生为中心的教学</h4><p data-key="why_student_desc">我们从每个孩子的实际情况出发，根据他们独特的学习风格和节奏调整教学方式。</p></div></div>
+          <div class="why-item"><div class="why-icon">🤝</div><div class="why-content"><h4 data-key="why_parent_title">家长伙伴关系</h4><p data-key="why_parent_desc">定期家长会、进度更新和开放政策，让您随时了解孩子的成长动态。</p></div></div>
+          <div class="why-item"><div class="why-icon">❤️</div><div class="why-content"><h4 data-key="why_safe_title">安全关爱的环境</h4><p data-key="why_safe_desc">温暖、温馨的校园文化，让每个孩子每天都感到安全、被尊重和被爱。</p></div></div>
         </div>
         <div class="why-visual">
-          <h3 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--sun-text);margin-bottom:20px">Our Commitment to Every Family</h3>
+          <h3 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--sun-text);margin-bottom:20px" data-key="why_commit_title">我们对每个家庭的承诺</h3>
           <div class="why-badge-cloud">
-            <span class="wbadge">✅ Cambridge Certified</span>
-            <span class="wbadge">🌟 Happy Learners</span>
-            <span class="wbadge">📊 Academic Excellence</span>
-            <span class="wbadge">🏡 Homeschooling Option</span>
-            <span class="wbadge">🎯 Personalised Learning</span>
-            <span class="wbadge">💬 Parent Updates</span>
-            <span class="wbadge">🌍 Global Pathways</span>
-            <span class="wbadge">👨‍👩‍👧 Family Friendly</span>
-            <span class="wbadge">🎨 Creative Arts</span>
-            <span class="wbadge">⚽ Sports & Activities</span>
-            <span class="wbadge">🧑‍🔬 STEM Education</span>
-            <span class="wbadge">📖 Reading Programme</span>
+            <span class="wbadge">✅ 剑桥认证</span>
+            <span class="wbadge">🌟 快乐学习者</span>
+            <span class="wbadge">📊 学业卓越</span>
+            <span class="wbadge">🏡 居家教育选项</span>
+            <span class="wbadge">🎯 个性化学习</span>
+            <span class="wbadge">💬 家长更新</span>
+            <span class="wbadge">🌍 全球升学路径</span>
+            <span class="wbadge">👨‍👩‍👧 家庭友好</span>
+            <span class="wbadge">🎨 创意艺术</span>
+            <span class="wbadge">⚽ 体育与活动</span>
+            <span class="wbadge">🧑‍🔬 STEM教育</span>
+            <span class="wbadge">📖 阅读计划</span>
           </div>
           <div style="margin-top:24px;padding:16px;background:var(--sun-card);border-radius:16px;border:1px solid var(--border)">
-            <p style="font-family:var(--font-display);font-size:1.1rem;font-style:italic;color:var(--sun-text);text-align:center;line-height:1.5">"Education is not just about exams. Happy growth matters equally."</p>
-            <p style="font-size:0.75rem;color:var(--sun-muted);text-align:center;margin-top:8px">— Sunrise Education Philosophy</p>
+            <p style="font-family:var(--font-display);font-size:1.1rem;font-style:italic;color:var(--sun-text);text-align:center;line-height:1.5" data-key="quote_text">"教育不仅仅关乎考试。快乐的成长同样重要。"</p>
+            <p style="font-size:0.75rem;color:var(--sun-muted);text-align:center;margin-top:8px" data-key="quote_attr">—— 阳光学府教育理念</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- HOMESCHOOLING -->
+  <!-- 居家教育 -->
   <section style="background:var(--sun-warm)">
     <div class="section-wrap">
       <div class="section-header reveal">
-        <div class="section-eyebrow">Homeschooling</div>
-        <h2 class="section-title">Sunrise <em>Homeschooling</em> Programme</h2>
-        <p class="section-desc">Flexible, personalised education that fits your family's lifestyle — with all the structure and support of a world-class curriculum.</p>
+        <div class="section-eyebrow" data-key="hs_eye">居家教育</div>
+        <h2 class="section-title" data-key="hs_title">阳光学府<em>居家教育</em>计划</h2>
+        <p class="section-desc" data-key="hs_desc">灵活、个性化的教育，适合您家庭的生活方式——兼具世界一流课程的结构与支持。</p>
       </div>
       <div class="cards-grid cards-4 reveal">
-        <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">📅</div><div class="card-title">Flexible Schedule</div><div class="card-text">Learn at your own pace with a timetable that works for your family life and individual needs.</div></div>
-        <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">🎯</div><div class="card-title">Personalised Curriculum</div><div class="card-text">Tailored learning paths built around each child's strengths, interests, and goals.</div></div>
-        <div class="card"><div class="card-accent"></div><div class="card-icon icon-green">📜</div><div class="card-title">Cambridge Certified</div><div class="card-text">Full Cambridge IGCSE qualification — the same global standard, delivered for home learners.</div></div>
-        <div class="card"><div class="card-accent"></div><div class="card-icon icon-pink">👩‍💻</div><div class="card-title">Dedicated Support</div><div class="card-text">Experienced teachers guide homeschoolers with resources, assessments, and regular check-ins.</div></div>
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">📅</div><div class="card-title" data-key="hs_flex_title">灵活的时间安排</div><div class="card-text" data-key="hs_flex_desc">按照自己的节奏学习，时间表适合您的家庭生活和个性化需求。</div></div>
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">🎯</div><div class="card-title" data-key="hs_personal_title">个性化课程</div><div class="card-text" data-key="hs_personal_desc">围绕每个孩子的优势、兴趣和目标量身定制的学习路径。</div></div>
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-green">📜</div><div class="card-title" data-key="hs_cert_title">剑桥认证</div><div class="card-text" data-key="hs_cert_desc">完整的剑桥IGCSE资格证书——同样的全球标准，为居家学习者提供。</div></div>
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-pink">👩‍💻</div><div class="card-title" data-key="hs_support_title">专属支持</div><div class="card-text" data-key="hs_support_desc">经验丰富的教师通过资源、评估和定期检查指导居家教育学生。</div></div>
       </div>
     </div>
   </section>
 
-  <!-- QUICK CTA -->
+  <!-- 快速行动号召 -->
   <section style="background:linear-gradient(135deg,var(--sun-gold),var(--sun-orange));padding:60px 24px;text-align:center">
     <div style="max-width:700px;margin:0 auto">
-      <h2 style="font-family:var(--font-display);font-size:2.2rem;font-weight:700;color:white;margin-bottom:12px">Ready to Give Your Child the Best Start?</h2>
-      <p style="color:rgba(255,255,255,0.88);font-size:1rem;margin-bottom:28px">Limited intake available. Book your free school tour today and discover why hundreds of families choose Sunrise Education.</p>
+      <h2 style="font-family:var(--font-display);font-size:2.2rem;font-weight:700;color:white;margin-bottom:12px" data-key="cta_title">准备好给孩子最好的起点了吗？</h2>
+      <p style="color:rgba(255,255,255,0.88);font-size:1rem;margin-bottom:28px" data-key="cta_desc">名额有限。立即预约免费校园参观，了解为什么数百个家庭选择阳光学府。</p>
       <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-        <a class="btn-white" href="#" onclick="showSection('admissions')">🎒 Book a Tour</a>
-        <a href="https://wa.me/60124251556" target="_blank" rel="noopener" class="btn-white" style="background:rgba(255,255,255,0.15);color:white;border:2px solid rgba(255,255,255,0.5)">💬 WhatsApp Now</a>
+        <a class="btn-white" href="#" onclick="showSection('admissions')" data-key="cta_btn1">🎒 预约参观</a>
+        <a href="https://wa.me/60124251556" target="_blank" rel="noopener" class="btn-white" style="background:rgba(255,255,255,0.15);color:white;border:2px solid rgba(255,255,255,0.5)" data-key="cta_btn2">💬 立即WhatsApp</a>
       </div>
     </div>
   </section>
 
 </div>
 
-<!-- ══════════════════════ PRIMARY ══════════════════════ -->
+<!-- ══════════════════════ 小学课程 ══════════════════════ -->
 <div id="sec-primary" class="page-section">
   <div class="section-wrap">
     <div class="section-header reveal">
-      <div class="section-eyebrow">Primary School</div>
-      <h2 class="section-title">Sunrise <em>Primary</em> Programme</h2>
-      <p class="section-desc">Ages 7–12 · Building a love for learning through joy, creativity, and a warm, caring environment</p>
+      <div class="section-eyebrow" data-key="pri_eye">小学课程</div>
+      <h2 class="section-title" data-key="pri_title">阳光学府<em>小学</em>课程</h2>
+      <p class="section-desc" data-key="pri_desc">7至12岁 · 通过快乐、创意和温暖关爱的环境培养对学习的热爱</p>
     </div>
     <div class="program-hero reveal">
       <div>
-        <div class="prog-title">🌟 Primary Years<br><small style="font-size:0.6em;font-family:var(--font-body);color:var(--sun-muted)">Ages 7–12</small></div>
-        <p class="prog-subtitle">Our primary programme nurtures every child's natural curiosity with a holistic Cambridge-aligned curriculum that makes learning a joyful adventure.</p>
+        <div class="prog-title">🌟 小学阶段<br><small style="font-size:0.6em;font-family:var(--font-body);color:var(--sun-muted)">7至12岁</small></div>
+        <p class="prog-subtitle" data-key="pri_sub">我们的小学课程以全面的剑桥对齐课程培养每个孩子天生的好奇心，让学习成为快乐的冒险。</p>
         <div class="prog-tags">
-          <span class="prog-tag">Small Classes</span>
-          <span class="prog-tag">Play-Based Learning</span>
-          <span class="prog-tag">English Immersion</span>
-          <span class="prog-tag">Creative Arts</span>
-          <span class="prog-tag">Character Building</span>
-          <span class="prog-tag">STEM Exploration</span>
+          <span class="prog-tag">小班教学</span>
+          <span class="prog-tag">游戏式学习</span>
+          <span class="prog-tag">英语沉浸</span>
+          <span class="prog-tag">创意艺术</span>
+          <span class="prog-tag">品格塑造</span>
+          <span class="prog-tag">STEM探索</span>
         </div>
         <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn-primary" href="#" onclick="showSection('admissions')">Apply Now</a>
-          <a class="btn-secondary" href="https://wa.me/60124251556" target="_blank" rel="noopener">Enquire</a>
+          <a class="btn-primary" href="#" onclick="showSection('admissions')" data-key="btn_apply">立即申请</a>
+          <a class="btn-secondary" href="https://wa.me/60124251556" target="_blank" rel="noopener" data-key="btn_enquire">咨询详情</a>
         </div>
       </div>
       <div>
-        <h4 style="font-weight:800;color:var(--sun-text);margin-bottom:14px;font-size:0.9rem">📚 Core Subjects</h4>
+        <h4 style="font-weight:800;color:var(--sun-text);margin-bottom:14px;font-size:0.9rem" data-key="core_subjects">📚 核心科目</h4>
         <div class="subjects-grid">
-          <div class="subject-pill"><div class="dot"></div>English Language</div>
-          <div class="subject-pill"><div class="dot"></div>Mathematics</div>
-          <div class="subject-pill"><div class="dot"></div>Science</div>
-          <div class="subject-pill"><div class="dot"></div>Bahasa Melayu</div>
-          <div class="subject-pill"><div class="dot"></div>Chinese Language</div>
-          <div class="subject-pill"><div class="dot"></div>Reading & Writing</div>
-          <div class="subject-pill"><div class="dot"></div>Creative Writing</div>
-          <div class="subject-pill"><div class="dot"></div>Public Speaking</div>
-          <div class="subject-pill"><div class="dot"></div>Social Studies</div>
+          <div class="subject-pill"><div class="dot"></div>英语</div>
+          <div class="subject-pill"><div class="dot"></div>数学</div>
+          <div class="subject-pill"><div class="dot"></div>科学</div>
+          <div class="subject-pill"><div class="dot"></div>马来语</div>
+          <div class="subject-pill"><div class="dot"></div>华语</div>
+          <div class="subject-pill"><div class="dot"></div>阅读与写作</div>
+          <div class="subject-pill"><div class="dot"></div>创意写作</div>
+          <div class="subject-pill"><div class="dot"></div>公开演讲</div>
+          <div class="subject-pill"><div class="dot"></div>社会研究</div>
         </div>
       </div>
     </div>
     <div class="section-header reveal" style="margin-bottom:32px">
-      <h2 class="section-title">Beyond the <em>Classroom</em></h2>
+      <h2 class="section-title" data-key="pri_beyond_title">课堂<em>之外</em></h2>
     </div>
     <div class="cards-grid cards-3 reveal">
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">🎭</div><div class="card-title">Character Building</div><div class="card-text">Emotional growth, teamwork, leadership, and communication skills developed alongside academics.</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">🎨</div><div class="card-title">Creative Arts & Music</div><div class="card-text">Art & craft, music, storytelling, and dramatic arts that spark imagination and self-expression.</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-green">🔭</div><div class="card-title">Fun Science & STEM</div><div class="card-text">Hands-on experiments, educational games, and discovery-based science exploration every week.</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-pink">📖</div><div class="card-title">Reading Programme</div><div class="card-text">Structured reading habits, phonics, comprehension, and a love for books from day one.</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-purple">⚽</div><div class="card-title">Sports & Movement</div><div class="card-text">Physical education, outdoor play, and sports that develop health, coordination, and team spirit.</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-teal">🧮</div><div class="card-title">Maths Logic</div><div class="card-text">Critical thinking, problem-solving, and mathematical reasoning built through engaging challenges.</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">🎭</div><div class="card-title" data-key="pri_card1_title">品格塑造</div><div class="card-text" data-key="pri_card1_desc">情感成长、团队合作、领导力和沟通技能与学业同步发展。</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">🎨</div><div class="card-title" data-key="pri_card2_title">创意艺术与音乐</div><div class="card-text" data-key="pri_card2_desc">艺术手工、音乐、讲故事和戏剧艺术激发想象力和自我表达。</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-green">🔭</div><div class="card-title" data-key="pri_card3_title">趣味科学与STEM</div><div class="card-text" data-key="pri_card3_desc">每周动手实验、教育游戏和基于发现的科学探索。</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-pink">📖</div><div class="card-title" data-key="pri_card4_title">阅读计划</div><div class="card-text" data-key="pri_card4_desc">从第一天起培养结构化的阅读习惯、拼读、理解和对书籍的热爱。</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-purple">⚽</div><div class="card-title" data-key="pri_card5_title">体育与运动</div><div class="card-text" data-key="pri_card5_desc">体育教育、户外游戏和运动，培养健康、协调性和团队精神。</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-teal">🧮</div><div class="card-title" data-key="pri_card6_title">数学逻辑</div><div class="card-text" data-key="pri_card6_desc">通过引人入胜的挑战培养批判性思维、解决问题和数学推理能力。</div></div>
     </div>
   </div>
 </div>
 
-<!-- ══════════════════════ SECONDARY ══════════════════════ -->
+<!-- ══════════════════════ 中学课程 ══════════════════════ -->
 <div id="sec-secondary" class="page-section">
   <div class="section-wrap">
     <div class="section-header reveal">
-      <div class="section-eyebrow">Secondary School</div>
-      <h2 class="section-title">Sunrise <em>Secondary</em> Programme</h2>
-      <p class="section-desc">Ages 13–18 · Cambridge IGCSE pathway to global universities and future success</p>
+      <div class="section-eyebrow" data-key="sec_eye">中学课程</div>
+      <h2 class="section-title" data-key="sec_title">阳光学府<em>中学</em>课程</h2>
+      <p class="section-desc" data-key="sec_desc">13至18岁 · 剑桥IGCSE升学路径，通往全球大学和未来成功</p>
     </div>
     <div class="program-hero reveal">
       <div>
-        <div class="prog-title">🎓 Secondary Years<br><small style="font-size:0.6em;font-family:var(--font-body);color:var(--sun-muted)">Ages 13–18</small></div>
-        <p class="prog-subtitle">Our Cambridge IGCSE secondary programme prepares students for A-Levels, Foundation programmes, Diplomas, and top universities across 140+ countries.</p>
+        <div class="prog-title">🎓 中学阶段<br><small style="font-size:0.6em;font-family:var(--font-body);color:var(--sun-muted)">13至18岁</small></div>
+        <p class="prog-subtitle" data-key="sec_sub">我们的剑桥IGCSE中学课程为学生准备A-Level、预科课程、文凭课程以及140多个国家的顶尖大学。</p>
         <div class="prog-tags">
-          <span class="prog-tag">Cambridge IGCSE</span>
-          <span class="prog-tag">University Prep</span>
-          <span class="prog-tag">Critical Thinking</span>
-          <span class="prog-tag">Leadership</span>
-          <span class="prog-tag">Career Guidance</span>
-          <span class="prog-tag">Global Pathways</span>
+          <span class="prog-tag">剑桥IGCSE</span>
+          <span class="prog-tag">大学预备</span>
+          <span class="prog-tag">批判性思维</span>
+          <span class="prog-tag">领导力</span>
+          <span class="prog-tag">职业指导</span>
+          <span class="prog-tag">全球升学路径</span>
         </div>
         <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">
-          <a class="btn-primary" href="#" onclick="showSection('admissions')">Apply Now</a>
-          <a class="btn-secondary" href="https://wa.me/60124251556" target="_blank" rel="noopener">Enquire</a>
+          <a class="btn-primary" href="#" onclick="showSection('admissions')" data-key="btn_apply">立即申请</a>
+          <a class="btn-secondary" href="https://wa.me/60124251556" target="_blank" rel="noopener" data-key="btn_enquire">咨询详情</a>
         </div>
       </div>
       <div>
-        <h4 style="font-weight:800;color:var(--sun-text);margin-bottom:14px;font-size:0.9rem">🎓 IGCSE Subjects</h4>
+        <h4 style="font-weight:800;color:var(--sun-text);margin-bottom:14px;font-size:0.9rem" data-key="igcse_subjects">🎓 IGCSE科目</h4>
         <div class="subjects-grid">
-          <div class="subject-pill"><div class="dot"></div>English Language</div>
-          <div class="subject-pill"><div class="dot"></div>English Literature</div>
-          <div class="subject-pill"><div class="dot"></div>Mathematics</div>
-          <div class="subject-pill"><div class="dot"></div>Add. Mathematics</div>
-          <div class="subject-pill"><div class="dot"></div>Biology</div>
-          <div class="subject-pill"><div class="dot"></div>Chemistry</div>
-          <div class="subject-pill"><div class="dot"></div>Physics</div>
-          <div class="subject-pill"><div class="dot"></div>ICT</div>
-          <div class="subject-pill"><div class="dot"></div>Business Studies</div>
-          <div class="subject-pill"><div class="dot"></div>Economics</div>
-          <div class="subject-pill"><div class="dot"></div>Accounting</div>
-          <div class="subject-pill"><div class="dot"></div>Global Perspectives</div>
+          <div class="subject-pill"><div class="dot"></div>英语语言</div>
+          <div class="subject-pill"><div class="dot"></div>英语文学</div>
+          <div class="subject-pill"><div class="dot"></div>数学</div>
+          <div class="subject-pill"><div class="dot"></div>附加数学</div>
+          <div class="subject-pill"><div class="dot"></div>生物</div>
+          <div class="subject-pill"><div class="dot"></div>化学</div>
+          <div class="subject-pill"><div class="dot"></div>物理</div>
+          <div class="subject-pill"><div class="dot"></div>信息通信技术</div>
+          <div class="subject-pill"><div class="dot"></div>商业研究</div>
+          <div class="subject-pill"><div class="dot"></div>经济学</div>
+          <div class="subject-pill"><div class="dot"></div>会计学</div>
+          <div class="subject-pill"><div class="dot"></div>全球视野</div>
         </div>
       </div>
     </div>
     <div class="section-header reveal" style="margin-bottom:32px">
-      <h2 class="section-title">Future-Ready <em>Skills</em></h2>
+      <h2 class="section-title" data-key="sec_skills_title">面向未来的<em>技能</em></h2>
     </div>
     <div class="cards-grid cards-3 reveal">
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">💡</div><div class="card-title">Critical Thinking</div><div class="card-text">Analysis, evaluation, and problem-solving skills that prepare students for complex real-world challenges.</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">🗣️</div><div class="card-title">Public Speaking</div><div class="card-text">Debate, presentations, and communication training to build confident, articulate young adults.</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-green">🎓</div><div class="card-title">University Preparation</div><div class="card-text">Personal statement guidance, course selection, and application support for top universities worldwide.</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-pink">❤️</div><div class="card-title">Emotional Wellness</div><div class="card-text">Mental health support, resilience building, and emotional intelligence throughout the teenage years.</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-purple">🔬</div><div class="card-title">Science Projects</div><div class="card-text">Hands-on lab work, independent investigations, and STEM competitions that ignite curiosity.</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-teal">🌍</div><div class="card-title">Global Citizenship</div><div class="card-text">Community service, cultural awareness, and global perspectives woven into everyday learning.</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">💡</div><div class="card-title" data-key="sec_card1_title">批判性思维</div><div class="card-text" data-key="sec_card1_desc">分析、评估和解决问题的技能，为学生应对复杂的现实挑战做好准备。</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">🗣️</div><div class="card-title" data-key="sec_card2_title">公开演讲</div><div class="card-text" data-key="sec_card2_desc">辩论、演讲和沟通培训，培养自信、善于表达的年轻人。</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-green">🎓</div><div class="card-title" data-key="sec_card3_title">大学预备</div><div class="card-text" data-key="sec_card3_desc">个人陈述指导、课程选择和申请支持，面向全球顶尖大学。</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-pink">❤️</div><div class="card-title" data-key="sec_card4_title">情感健康</div><div class="card-text" data-key="sec_card4_desc">在整个青少年时期提供心理健康支持、韧性培养和情商发展。</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-purple">🔬</div><div class="card-title" data-key="sec_card5_title">科学项目</div><div class="card-text" data-key="sec_card5_desc">动手实验、独立研究和STEM竞赛，点燃好奇心。</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-teal">🌍</div><div class="card-title" data-key="sec_card6_title">全球公民</div><div class="card-text" data-key="sec_card6_desc">社区服务、文化意识和全球视野融入日常学习之中。</div></div>
     </div>
     <div style="background:linear-gradient(135deg,#003087,#0057B8);border-radius:24px;padding:40px;text-align:center;margin-top:40px">
-      <h3 style="font-family:var(--font-display);font-size:1.8rem;font-weight:700;color:white;margin-bottom:10px">Cambridge IGCSE Recognised in 140+ Countries</h3>
-      <p style="color:rgba(255,255,255,0.8);margin-bottom:24px">Your IGCSE qualification opens doors to A-Level, Foundation, Diploma and top international universities globally.</p>
+      <h3 style="font-family:var(--font-display);font-size:1.8rem;font-weight:700;color:white;margin-bottom:10px" data-key="igcse_global_title">剑桥IGCSE获140多个国家认可</h3>
+      <p style="color:rgba(255,255,255,0.8);margin-bottom:24px" data-key="igcse_global_desc">您的IGCSE资格证书为A-Level、预科、文凭课程和全球顶尖国际大学打开大门。</p>
       <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-        <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:30px;padding:8px 20px;color:white;font-size:0.82rem;font-weight:700">🇬🇧 UK Universities</span>
-        <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:30px;padding:8px 20px;color:white;font-size:0.82rem;font-weight:700">🇦🇺 Australian Unis</span>
-        <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:30px;padding:8px 20px;color:white;font-size:0.82rem;font-weight:700">🇸🇬 Singapore Pathways</span>
-        <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:30px;padding:8px 20px;color:white;font-size:0.82rem;font-weight:700">🌏 Malaysia Local Unis</span>
+        <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:30px;padding:8px 20px;color:white;font-size:0.82rem;font-weight:700">🇬🇧 英国大学</span>
+        <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:30px;padding:8px 20px;color:white;font-size:0.82rem;font-weight:700">🇦🇺 澳大利亚大学</span>
+        <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:30px;padding:8px 20px;color:white;font-size:0.82rem;font-weight:700">🇸🇬 新加坡升学路径</span>
+        <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:30px;padding:8px 20px;color:white;font-size:0.82rem;font-weight:700">🌏 马来西亚本地大学</span>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ══════════════════════ ACADEMIC ══════════════════════ -->
+<!-- ══════════════════════ 学术课程 ══════════════════════ -->
 <div id="sec-academic" class="page-section">
   <div class="section-wrap">
     <div class="section-header reveal">
-      <div class="section-eyebrow">Academic</div>
-      <h2 class="section-title">Cambridge <em>IGCSE</em> Curriculum</h2>
-      <p class="section-desc">A world-class British curriculum designed for internationally minded learners, recognised by universities and employers across 140+ nations.</p>
+      <div class="section-eyebrow" data-key="acad_eye">学术课程</div>
+      <h2 class="section-title" data-key="acad_title">剑桥<em>IGCSE</em>课程</h2>
+      <p class="section-desc" data-key="acad_desc">世界一流的英国课程，专为具有国际视野的学习者设计，受140多个国家的大学和雇主认可。</p>
     </div>
     <div style="background:linear-gradient(135deg,#003087,#0057B8);border-radius:24px;padding:40px;margin-bottom:40px" class="reveal">
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center">
         <div>
-          <h3 style="font-family:var(--font-display);font-size:1.8rem;font-weight:700;color:white;margin-bottom:12px">Why Cambridge IGCSE?</h3>
+          <h3 style="font-family:var(--font-display);font-size:1.8rem;font-weight:700;color:white;margin-bottom:12px" data-key="why_igcse_title">为什么选择剑桥IGCSE？</h3>
           <ul style="list-style:none;display:flex;flex-direction:column;gap:10px">
-            <li style="color:rgba(255,255,255,0.9);font-size:0.88rem;display:flex;gap:10px"><span>✅</span>Internationally recognised across 140+ countries</li>
-            <li style="color:rgba(255,255,255,0.9);font-size:0.88rem;display:flex;gap:10px"><span>✅</span>Pathway to A-Level, Foundation, and Diploma programmes</li>
-            <li style="color:rgba(255,255,255,0.9);font-size:0.88rem;display:flex;gap:10px"><span>✅</span>Accepted by top universities worldwide</li>
-            <li style="color:rgba(255,255,255,0.9);font-size:0.88rem;display:flex;gap:10px"><span>✅</span>Develops critical thinking and independent learning</li>
-            <li style="color:rgba(255,255,255,0.9);font-size:0.88rem;display:flex;gap:10px"><span>✅</span>Student-centred, flexible assessment methods</li>
-            <li style="color:rgba(255,255,255,0.9);font-size:0.88rem;display:flex;gap:10px"><span>✅</span>Builds global competitive advantage</li>
+            <li style="color:rgba(255,255,255,0.9);font-size:0.88rem;display:flex;gap:10px"><span>✅</span><span data-key="igcse_point1">获140多个国家国际认可</span></li>
+            <li style="color:rgba(255,255,255,0.9);font-size:0.88rem;display:flex;gap:10px"><span>✅</span><span data-key="igcse_point2">通往A-Level、预科和文凭课程的桥梁</span></li>
+            <li style="color:rgba(255,255,255,0.9);font-size:0.88rem;display:flex;gap:10px"><span>✅</span><span data-key="igcse_point3">受全球顶尖大学认可</span></li>
+            <li style="color:rgba(255,255,255,0.9);font-size:0.88rem;display:flex;gap:10px"><span>✅</span><span data-key="igcse_point4">培养批判性思维和独立学习能力</span></li>
+            <li style="color:rgba(255,255,255,0.9);font-size:0.88rem;display:flex;gap:10px"><span>✅</span><span data-key="igcse_point5">以学生为中心，灵活的评估方式</span></li>
+            <li style="color:rgba(255,255,255,0.9);font-size:0.88rem;display:flex;gap:10px"><span>✅</span><span data-key="igcse_point6">建立全球竞争优势</span></li>
           </ul>
         </div>
         <div style="text-align:center">
           <div style="font-size:5rem;margin-bottom:8px">🎓</div>
-          <div style="color:white;font-family:var(--font-display);font-size:1.4rem;font-weight:700">Cambridge Assessment<br>International Education</div>
-          <div style="color:rgba(255,255,255,0.7);font-size:0.8rem;margin-top:8px">Est. 1858 · University of Cambridge</div>
+          <div style="color:white;font-family:var(--font-display);font-size:1.4rem;font-weight:700">剑桥评估<br>国际教育</div>
+          <div style="color:rgba(255,255,255,0.7);font-size:0.8rem;margin-top:8px">创立于1858年 · 剑桥大学</div>
         </div>
       </div>
     </div>
     <div class="section-header reveal" style="margin-bottom:32px">
-      <h2 class="section-title">Subjects We <em>Offer</em></h2>
+      <h2 class="section-title" data-key="acad_subjects_title">我们提供的<em>科目</em></h2>
     </div>
     <div class="cards-grid cards-4 reveal">
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">📝</div><div class="card-title">English</div><div class="card-text">Language, Literature, Creative Writing, Communication Skills</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">📐</div><div class="card-title">Mathematics</div><div class="card-text">Core Maths, Additional Mathematics, Problem Solving</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-green">🔬</div><div class="card-title">Sciences</div><div class="card-text">Biology, Chemistry, Physics, Combined Science</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-teal">💻</div><div class="card-title">ICT</div><div class="card-text">Information & Communications Technology, Digital Skills</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-pink">📊</div><div class="card-title">Business</div><div class="card-text">Business Studies, Economics, Accounting, Entrepreneurship</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-purple">🌍</div><div class="card-title">Global Perspectives</div><div class="card-text">Critical Thinking, Research, Global Issues, Debate</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">🎨</div><div class="card-title">Creative Arts</div><div class="card-text">Visual Arts, Music, Drama, Design, Creative Expression</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">🗺️</div><div class="card-title">Humanities</div><div class="card-text">History, Geography, Sociology, Cultural Studies</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">📝</div><div class="card-title">英语</div><div class="card-text">语言、文学、创意写作、沟通技巧</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">📐</div><div class="card-title">数学</div><div class="card-text">核心数学、附加数学、问题解决</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-green">🔬</div><div class="card-title">科学</div><div class="card-text">生物、化学、物理、综合科学</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-teal">💻</div><div class="card-title">信息通信技术</div><div class="card-text">信息与通信技术、数字技能</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-pink">📊</div><div class="card-title">商业</div><div class="card-text">商业研究、经济学、会计学、创业学</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-purple">🌍</div><div class="card-title">全球视野</div><div class="card-text">批判性思维、研究、全球议题、辩论</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">🎨</div><div class="card-title">创意艺术</div><div class="card-text">视觉艺术、音乐、戏剧、设计、创意表达</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">🗺️</div><div class="card-title">人文学科</div><div class="card-text">历史、地理、社会学、文化研究</div></div>
     </div>
     <div style="background:var(--sun-card);border-radius:24px;padding:40px;margin-top:40px;border:1px solid var(--border)" class="reveal">
-      <h3 style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--sun-text);text-align:center;margin-bottom:28px">Our Teaching Approach</h3>
+      <h3 style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--sun-text);text-align:center;margin-bottom:28px" data-key="acad_approach_title">我们的教学方法</h3>
       <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
         <div style="text-align:center;padding:20px;background:var(--sun-warm);border-radius:16px;border:1px solid var(--border)">
           <div style="font-size:2rem;margin-bottom:10px">🧑‍🎓</div>
-          <div style="font-weight:800;color:var(--sun-text);margin-bottom:6px;font-size:0.9rem">Student-Centred</div>
-          <div style="font-size:0.8rem;color:var(--sun-muted)">Every lesson designed around the learner's needs and pace</div>
+          <div style="font-weight:800;color:var(--sun-text);margin-bottom:6px;font-size:0.9rem" data-key="approach1_title">以学生为中心</div>
+          <div style="font-size:0.8rem;color:var(--sun-muted)" data-key="approach1_desc">每节课都围绕学习者的需求和节奏设计</div>
         </div>
         <div style="text-align:center;padding:20px;background:var(--sun-warm);border-radius:16px;border:1px solid var(--border)">
           <div style="font-size:2rem;margin-bottom:10px">🤔</div>
-          <div style="font-weight:800;color:var(--sun-text);margin-bottom:6px;font-size:0.9rem">Critical Thinking</div>
-          <div style="font-size:0.8rem;color:var(--sun-muted)">Analysis and inquiry-based learning over rote memorisation</div>
+          <div style="font-weight:800;color:var(--sun-text);margin-bottom:6px;font-size:0.9rem" data-key="approach2_title">批判性思维</div>
+          <div style="font-size:0.8rem;color:var(--sun-muted)" data-key="approach2_desc">以分析和探究为基础的学习，而非死记硬背</div>
         </div>
         <div style="text-align:center;padding:20px;background:var(--sun-warm);border-radius:16px;border:1px solid var(--border)">
           <div style="font-size:2rem;margin-bottom:10px">🌟</div>
-          <div style="font-weight:800;color:var(--sun-text);margin-bottom:6px;font-size:0.9rem">Flexible Assessment</div>
-          <div style="font-size:0.8rem;color:var(--sun-muted)">Coursework, projects, and examinations balanced fairly</div>
+          <div style="font-weight:800;color:var(--sun-text);margin-bottom:6px;font-size:0.9rem" data-key="approach3_title">灵活评估</div>
+          <div style="font-size:0.8rem;color:var(--sun-muted)" data-key="approach3_desc">课程作业、项目和考试公平平衡</div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ══════════════════════ ADMISSIONS ══════════════════════ -->
+<!-- ══════════════════════ 招生入学 ══════════════════════ -->
 <div id="sec-admissions" class="page-section">
   <div class="section-wrap">
     <div class="section-header reveal">
-      <div class="section-eyebrow">Admissions 2025</div>
-      <h2 class="section-title">Happy Children <em>Start Here</em></h2>
-      <p class="section-desc">⚠️ Limited intake available. Begin your child's Sunrise journey today — book a free school tour and meet our caring team.</p>
+      <div class="section-eyebrow" data-key="adm_eye">2025年招生</div>
+      <h2 class="section-title" data-key="adm_title">快乐的孩子<em>从这里开始</em></h2>
+      <p class="section-desc" data-key="adm_desc">⚠️ 名额有限。立即开启您孩子的阳光学府之旅——预约免费校园参观，与我们的关爱团队见面。</p>
     </div>
     <div class="admission-steps reveal">
-      <div class="step"><div class="step-num">1</div><div class="step-title">Enquire</div><div class="step-text">Contact us via WhatsApp, phone, or online form</div></div>
-      <div class="step"><div class="step-num">2</div><div class="step-title">School Tour</div><div class="step-text">Visit our warm campus and meet our teachers</div></div>
-      <div class="step"><div class="step-num">3</div><div class="step-title">Assessment</div><div class="step-text">Brief student evaluation to find the right level</div></div>
-      <div class="step"><div class="step-num">4</div><div class="step-title">Parent Meeting</div><div class="step-text">Discuss curriculum, fees, and your child's needs</div></div>
-      <div class="step"><div class="step-num">5</div><div class="step-title">Enrol</div><div class="step-text">Complete registration and welcome your child!</div></div>
+      <div class="step"><div class="step-num">1</div><div class="step-title" data-key="step1_title">咨询</div><div class="step-text" data-key="step1_desc">通过WhatsApp、电话或在线表单联系我们</div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-title" data-key="step2_title">校园参观</div><div class="step-text" data-key="step2_desc">参观我们温暖的校园，与老师见面</div></div>
+      <div class="step"><div class="step-num">3</div><div class="step-title" data-key="step3_title">评估</div><div class="step-text" data-key="step3_desc">简短的学生测评，确定适合的年级水平</div></div>
+      <div class="step"><div class="step-num">4</div><div class="step-title" data-key="step4_title">家长会议</div><div class="step-text" data-key="step4_desc">讨论课程、费用和您孩子的需求</div></div>
+      <div class="step"><div class="step-num">5</div><div class="step-title" data-key="step5_title">注册入学</div><div class="step-text" data-key="step5_desc">完成注册，欢迎您的孩子入学！</div></div>
     </div>
     <div class="cards-grid cards-3 reveal" style="margin-top:40px">
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">📋</div><div class="card-title">Registration Documents</div><div class="card-text">Birth certificate, previous school report card, passport-size photo, parent/guardian IC copy.</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">💰</div><div class="card-title">Scholarship Opportunities</div><div class="card-text">Merit-based scholarships available for outstanding academic performance. Contact us to learn more.</div></div>
-      <div class="card"><div class="card-accent"></div><div class="card-icon icon-green">🗓️</div><div class="card-title">Intake Schedule</div><div class="card-text">We accept students year-round. New academic terms begin in January and July each year.</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">📋</div><div class="card-title" data-key="adm_doc_title">注册文件</div><div class="card-text" data-key="adm_doc_desc">出生证明、既往学校成绩单、护照照片、家长/监护人身份证复印件。</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">💰</div><div class="card-title" data-key="adm_scholar_title">奖学金机会</div><div class="card-text" data-key="adm_scholar_desc">为学业成绩优异的学生提供绩优奖学金。联系我们了解更多。</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-green">🗓️</div><div class="card-title" data-key="adm_intake_title">入学时间安排</div><div class="card-text" data-key="adm_intake_desc">我们全年接受学生。新学年从每年一月和七月开始。</div></div>
     </div>
     <div class="admission-cta reveal">
-      <h3>🎒 Ready to Book Your School Tour?</h3>
-      <p>Discover why hundreds of families trust Sunrise Education for their children's future. Book a free school visit today!</p>
+      <h3 data-key="adm_cta_title">🎒 准备好预约校园参观了吗？</h3>
+      <p data-key="adm_cta_desc">了解为什么数百个家庭信任阳光学府为孩子的未来保驾护航。立即预约免费校园参观！</p>
       <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
-        <a href="https://wa.me/60124251556?text=Hello%20Sunrise%20Education!%20I%20would%20like%20to%20book%20a%20school%20tour." target="_blank" rel="noopener" class="btn-white">💬 WhatsApp to Book</a>
-        <a href="mailto:LOVE@sun.edu.my" class="btn-white" style="background:rgba(255,255,255,0.15);color:white;border:2px solid rgba(255,255,255,0.5)">📧 Email Us</a>
+        <a href="https://wa.me/60124251556?text=Hello%20Sunrise%20Education!%20I%20would%20like%20to%20book%20a%20school%20tour." target="_blank" rel="noopener" class="btn-white" data-key="adm_cta_wa">💬 WhatsApp预约</a>
+        <a href="mailto:LOVE@sun.edu.my" class="btn-white" style="background:rgba(255,255,255,0.15);color:white;border:2px solid rgba(255,255,255,0.5)" data-key="adm_cta_email">📧 发送邮件</a>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ══════════════════════ VISION ══════════════════════ -->
+<!-- ══════════════════════ 愿景理念 ══════════════════════ -->
 <div id="sec-vision" class="page-section">
   <div class="section-wrap">
     <div class="section-header reveal">
-      <div class="section-eyebrow">Our Vision</div>
-      <h2 class="section-title">Education for <em>Tomorrow's</em> World</h2>
-      <p class="section-desc">We envision a world where every child grows up happy, confident, and equipped to contribute meaningfully to a changing global society.</p>
+      <div class="section-eyebrow" data-key="vis_eye">我们的愿景</div>
+      <h2 class="section-title" data-key="vis_title">为<em>明天</em>的世界而教育</h2>
+      <p class="section-desc" data-key="vis_desc">我们展望一个每个孩子都能快乐、自信地成长，并有能力为不断变化的全球社会做出有意义贡献的世界。</p>
     </div>
     <div style="background:linear-gradient(135deg,var(--sun-yellow),rgba(245,166,35,0.2));border-radius:24px;padding:48px;text-align:center;margin-bottom:40px;border:1px solid rgba(245,166,35,0.25)" class="reveal">
       <div style="font-size:3rem;margin-bottom:16px">☀️</div>
-      <h3 style="font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--sun-text);margin-bottom:14px">"Education is not just about exams.<br>Happy growth matters equally."</h3>
-      <p style="color:var(--sun-muted);font-size:1rem;max-width:600px;margin:0 auto">We believe the measure of great education is not just academic results, but the joy, confidence, and character each child carries into the world.</p>
+      <h3 style="font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--sun-text);margin-bottom:14px" data-key="vis_quote">"教育不仅仅关乎考试。<br>快乐的成长同样重要。"</h3>
+      <p style="color:var(--sun-muted);font-size:1rem;max-width:600px;margin:0 auto" data-key="vis_quote_desc">我们相信，衡量优质教育的标准不仅仅是学业成绩，更是每个孩子带给世界的快乐、自信和品格。</p>
     </div>
     <div class="vision-cards reveal">
-      <div class="v-card"><div class="icon">🌟</div><h4>Happy Learning Philosophy</h4><p>Every lesson is designed to ignite curiosity, celebrate effort, and make learning a genuinely enjoyable experience for all students.</p></div>
-      <div class="v-card"><div class="icon">🌍</div><h4>Global Citizenship</h4><p>We nurture students who are culturally aware, empathetic, and ready to contribute positively to a diverse, interconnected world.</p></div>
-      <div class="v-card"><div class="icon">🏆</div><h4>Leadership & Character</h4><p>Beyond academic skills, we cultivate integrity, resilience, compassion, and leadership in every student from day one.</p></div>
-      <div class="v-card"><div class="icon">🚀</div><h4>Future Innovation</h4><p>Preparing students for careers and technologies that don't exist yet through critical thinking, creativity, and adaptability.</p></div>
-      <div class="v-card"><div class="icon">❤️</div><h4>Emotional Wellbeing</h4><p>Mental and emotional health are as important as academic success. Every child deserves to feel safe, valued, and loved.</p></div>
-      <div class="v-card"><div class="icon">🤝</div><h4>Community & Family</h4><p>Parents, teachers, and students form a caring community where everyone supports each other's growth and success.</p></div>
+      <div class="v-card"><div class="icon">🌟</div><h4 data-key="vis_card1_title">快乐学习理念</h4><p data-key="vis_card1_desc">每节课都旨在激发好奇心，庆祝努力，让学习成为所有学生真正享受的体验。</p></div>
+      <div class="v-card"><div class="icon">🌍</div><h4 data-key="vis_card2_title">全球公民</h4><p data-key="vis_card2_desc">我们培养具有文化意识、富有同理心，并准备好为多元互联的世界做出积极贡献的学生。</p></div>
+      <div class="v-card"><div class="icon">🏆</div><h4 data-key="vis_card3_title">领导力与品格</h4><p data-key="vis_card3_desc">超越学术技能，我们从第一天起就培养每个学生的正直、韧性、同情心和领导力。</p></div>
+      <div class="v-card"><div class="icon">🚀</div><h4 data-key="vis_card4_title">未来创新</h4><p data-key="vis_card4_desc">通过批判性思维、创造力和适应能力，为学生应对尚未存在的职业和技术做好准备。</p></div>
+      <div class="v-card"><div class="icon">❤️</div><h4 data-key="vis_card5_title">情感健康</h4><p data-key="vis_card5_desc">心理和情感健康与学业成功同等重要。每个孩子都值得感到安全、被重视和被爱。</p></div>
+      <div class="v-card"><div class="icon">🤝</div><h4 data-key="vis_card6_title">社区与家庭</h4><p data-key="vis_card6_desc">家长、教师和学生组成一个关爱的社区，每个人都支持彼此的成长和成功。</p></div>
     </div>
     <div style="background:var(--sun-card);border-radius:24px;padding:40px;margin-top:40px;border:1px solid var(--border);text-align:center" class="reveal">
-      <h3 style="font-family:var(--font-display);font-size:1.6rem;color:var(--sun-text);margin-bottom:16px">Our Core Values</h3>
+      <h3 style="font-family:var(--font-display);font-size:1.6rem;color:var(--sun-text);margin-bottom:16px" data-key="vis_values_title">我们的核心价值观</h3>
       <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
-        <span style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:30px;padding:8px 20px;font-weight:700;color:var(--sun-orange);font-size:0.85rem">🌟 Warm</span>
-        <span style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:30px;padding:8px 20px;font-weight:700;color:var(--sun-orange);font-size:0.85rem">💡 Intelligent</span>
-        <span style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:30px;padding:8px 20px;font-weight:700;color:var(--sun-orange);font-size:0.85rem">🎯 Personalised</span>
-        <span style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:30px;padding:8px 20px;font-weight:700;color:var(--sun-orange);font-size:0.85rem">🚀 Future Ready</span>
-        <span style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:30px;padding:8px 20px;font-weight:700;color:var(--sun-orange);font-size:0.85rem">❤️ Caring</span>
-        <span style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:30px;padding:8px 20px;font-weight:700;color:var(--sun-orange);font-size:0.85rem">🌍 Global</span>
+        <span style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:30px;padding:8px 20px;font-weight:700;color:var(--sun-orange);font-size:0.85rem">🌟 温暖</span>
+        <span style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:30px;padding:8px 20px;font-weight:700;color:var(--sun-orange);font-size:0.85rem">💡 智慧</span>
+        <span style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:30px;padding:8px 20px;font-weight:700;color:var(--sun-orange);font-size:0.85rem">🎯 个性化</span>
+        <span style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:30px;padding:8px 20px;font-weight:700;color:var(--sun-orange);font-size:0.85rem">🚀 面向未来</span>
+        <span style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:30px;padding:8px 20px;font-weight:700;color:var(--sun-orange);font-size:0.85rem">❤️ 关爱</span>
+        <span style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:30px;padding:8px 20px;font-weight:700;color:var(--sun-orange);font-size:0.85rem">🌍 全球视野</span>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ══════════════════════ ABOUT ══════════════════════ -->
+<!-- ══════════════════════ 关于我们 ══════════════════════ -->
 <div id="sec-about" class="page-section">
   <div class="section-wrap">
     <div class="section-header reveal">
-      <div class="section-eyebrow">About Us</div>
-      <h2 class="section-title">Our <em>Story</em> & Journey</h2>
-      <p class="section-desc">Since 2014, Sunrise Education has been a beacon of warm, joyful, internationally-minded learning for families across Klang and Selangor.</p>
+      <div class="section-eyebrow" data-key="about_eye">关于我们</div>
+      <h2 class="section-title" data-key="about_title">我们的<em>故事</em>与历程</h2>
+      <p class="section-desc" data-key="about_desc">自2014年以来，阳光学府一直是巴生和雪兰莪地区家庭温暖、快乐、国际化学习的灯塔。</p>
     </div>
     <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:60px" class="reveal">
       <div>
         <div style="background:linear-gradient(135deg,var(--sun-yellow),rgba(245,166,35,0.2));border-radius:24px;padding:32px;border:1px solid rgba(245,166,35,0.2);margin-bottom:24px">
-          <h3 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--sun-text);margin-bottom:14px">Principal's Message</h3>
-          <p style="color:var(--sun-muted);font-size:0.88rem;line-height:1.8;font-style:italic">"At Sunrise Education, we believe every child is a unique gift to this world. Our mission is simple: to create an environment where children are so happy to learn that they forget they are studying. When children smile, learn, and grow together, the future becomes bright for all of us."</p>
+          <h3 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--sun-text);margin-bottom:14px" data-key="principal_title">校长寄语</h3>
+          <p style="color:var(--sun-muted);font-size:0.88rem;line-height:1.8;font-style:italic" data-key="principal_msg">"在阳光学府，我们相信每个孩子都是这个世界独一无二的礼物。我们的使命很简单：创造一个让孩子们如此快乐学习的环境，以至于他们忘记了自己在学习。当孩子们一起微笑、学习和成长时，我们所有人的未来都会变得光明。"</p>
           <div style="margin-top:16px;display:flex;align-items:center;gap:12px">
             <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--sun-gold),var(--sun-orange));display:flex;align-items:center;justify-content:center;color:white;font-weight:800">SE</div>
-            <div><div style="font-weight:800;color:var(--sun-text);font-size:0.88rem">School Leadership</div><div style="font-size:0.75rem;color:var(--sun-muted)">Sunrise Education (阳光学府)</div></div>
+            <div><div style="font-weight:800;color:var(--sun-text);font-size:0.88rem" data-key="school_leadership">学校领导团队</div><div style="font-size:0.75rem;color:var(--sun-muted)">Sunrise Education (阳光学府)</div></div>
           </div>
         </div>
         <div style="background:var(--sun-card);border-radius:20px;padding:24px;border:1px solid var(--border)">
-          <h4 style="font-weight:800;color:var(--sun-text);margin-bottom:14px">Quick Facts</h4>
+          <h4 style="font-weight:800;color:var(--sun-text);margin-bottom:14px" data-key="quick_facts">基本信息</h4>
           <div style="display:flex;flex-direction:column;gap:10px">
-            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--sun-muted);font-size:0.85rem">Founded</span><span style="font-weight:700;color:var(--sun-text);font-size:0.85rem">2014</span></div>
-            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--sun-muted);font-size:0.85rem">Location</span><span style="font-weight:700;color:var(--sun-text);font-size:0.85rem">Klang, Selangor</span></div>
-            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--sun-muted);font-size:0.85rem">Curriculum</span><span style="font-weight:700;color:var(--sun-text);font-size:0.85rem">Cambridge IGCSE</span></div>
-            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--sun-muted);font-size:0.85rem">Student Ages</span><span style="font-weight:700;color:var(--sun-text);font-size:0.85rem">7 – 18 years</span></div>
-            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--sun-muted);font-size:0.85rem">Programme</span><span style="font-weight:700;color:var(--sun-text);font-size:0.85rem">School + Homeschooling</span></div>
-            <div style="display:flex;justify-content:space-between;padding:8px 0"><span style="color:var(--sun-muted);font-size:0.85rem">Recognition</span><span style="font-weight:700;color:var(--sun-text);font-size:0.85rem">140+ Countries</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--sun-muted);font-size:0.85rem" data-key="fact_founded">成立年份</span><span style="font-weight:700;color:var(--sun-text);font-size:0.85rem">2014年</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--sun-muted);font-size:0.85rem" data-key="fact_location">所在地</span><span style="font-weight:700;color:var(--sun-text);font-size:0.85rem">巴生，雪兰莪</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--sun-muted);font-size:0.85rem" data-key="fact_curriculum">课程体系</span><span style="font-weight:700;color:var(--sun-text);font-size:0.85rem">剑桥IGCSE</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--sun-muted);font-size:0.85rem" data-key="fact_ages">学生年龄</span><span style="font-weight:700;color:var(--sun-text);font-size:0.85rem">7 – 18岁</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--sun-muted);font-size:0.85rem" data-key="fact_programme">课程类型</span><span style="font-weight:700;color:var(--sun-text);font-size:0.85rem">学校 + 居家教育</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0"><span style="color:var(--sun-muted);font-size:0.85rem" data-key="fact_recognition">认可范围</span><span style="font-weight:700;color:var(--sun-text);font-size:0.85rem">140+ 个国家</span></div>
           </div>
         </div>
       </div>
       <div>
-        <h3 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--sun-text);margin-bottom:24px">Our Journey</h3>
+        <h3 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--sun-text);margin-bottom:24px" data-key="journey_title">我们的历程</h3>
         <div class="timeline">
-          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2014</div><div class="tl-title">Sunrise Education Founded</div><div class="tl-text">Established with a mission to bring happy, international-standard education to Klang, Selangor.</div></div>
-          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2016</div><div class="tl-title">Cambridge IGCSE Programme Launch</div><div class="tl-text">Began offering the full Cambridge IGCSE curriculum, bringing world-class British education to Malaysia.</div></div>
-          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2018</div><div class="tl-title">Homeschooling Centre Established</div><div class="tl-text">Launched Malaysia's warm homeschooling programme, providing flexible learning for families across Selangor.</div></div>
-          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2020</div><div class="tl-title">Expanded Facilities & Online Learning</div><div class="tl-text">Grew our campus and introduced hybrid learning options, serving more families across the region.</div></div>
-          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2023</div><div class="tl-title">10-Year Anniversary & New Programmes</div><div class="tl-text">Celebrated a decade of happy learning with new enrichment programmes and upgraded facilities.</div></div>
-          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2025</div><div class="tl-title">Growing Strong — New Intake Open</div><div class="tl-text">Continuing to inspire young hearts and empower bright futures across Klang and Selangor.</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2014</div><div class="tl-title" data-key="tl1_title">阳光学府成立</div><div class="tl-text" data-key="tl1_desc">以使命为驱动，将快乐的国际标准教育带到雪兰莪巴生。</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2016</div><div class="tl-title" data-key="tl2_title">剑桥IGCSE课程启动</div><div class="tl-text" data-key="tl2_desc">开始提供完整的剑桥IGCSE课程，将世界一流的英式教育带到马来西亚。</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2018</div><div class="tl-title" data-key="tl3_title">居家教育中心成立</div><div class="tl-text" data-key="tl3_desc">启动马来西亚温暖的居家教育计划，为雪兰莪各地的家庭提供灵活的学习方式。</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2020</div><div class="tl-title" data-key="tl4_title">扩展设施与在线学习</div><div class="tl-text" data-key="tl4_desc">扩大校园规模并引入混合学习选项，为该地区更多家庭提供服务。</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2023</div><div class="tl-title" data-key="tl5_title">十周年庆典与新课程</div><div class="tl-text" data-key="tl5_desc">庆祝十年快乐学习，推出新的拓展课程和升级设施。</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2025</div><div class="tl-title" data-key="tl6_title">日益壮大——新学年招生开放</div><div class="tl-text" data-key="tl6_desc">继续激励年轻心灵，在巴生和雪兰莪赋能光明未来。</div></div>
         </div>
       </div>
     </div>
   </div>
 </div>
 
-<!-- ══════════════════════ BLOG ══════════════════════ -->
+<!-- ══════════════════════ 博客 ══════════════════════ -->
 <div id="sec-blog" class="page-section">
   <div class="section-wrap">
     <div class="section-header reveal">
-      <div class="section-eyebrow">Blog & Resources</div>
-      <h2 class="section-title">Learning Insights & <em>Parenting Tips</em></h2>
-      <p class="section-desc">Expert advice on education, parenting, IGCSE, homeschooling, and helping your child thrive in today's world.</p>
+      <div class="section-eyebrow" data-key="blog_eye">博客与资源</div>
+      <h2 class="section-title" data-key="blog_title">学习洞察与<em>育儿建议</em></h2>
+      <p class="section-desc" data-key="blog_desc">关于教育、育儿、IGCSE、居家教育以及帮助您的孩子在当今世界茁壮成长的专家建议。</p>
     </div>
     <div class="page-tabs reveal">
-      <button class="ptab active">All</button>
-      <button class="ptab">Education</button>
-      <button class="ptab">Parenting</button>
-      <button class="ptab">Homeschooling</button>
-      <button class="ptab">IGCSE</button>
-      <button class="ptab">Happy Learning</button>
+      <button class="ptab active" data-key="blog_tab_all">全部</button>
+      <button class="ptab" data-key="blog_tab_edu">教育</button>
+      <button class="ptab" data-key="blog_tab_parenting">育儿</button>
+      <button class="ptab" data-key="blog_tab_hs">居家教育</button>
+      <button class="ptab" data-key="blog_tab_igcse">IGCSE</button>
+      <button class="ptab" data-key="blog_tab_happy">快乐学习</button>
     </div>
     <div class="blog-grid reveal">
-      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#FFF0C8,#FFD880)">😊</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Happy Learning</span><span class="blog-time">⏱ 5 min</span></div><div class="blog-title">Why Happy Children Learn Better</div><div class="blog-excerpt">Research shows emotional wellbeing directly impacts cognitive development and academic performance. Here's how we put happiness first...</div></div></div>
-      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#D0EAFF,#90CAFF)">🎓</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">IGCSE</span><span class="blog-time">⏱ 7 min</span></div><div class="blog-title">What Is Cambridge IGCSE?</div><div class="blog-excerpt">A complete guide to the world's most popular international qualification — what it is, how it works, and why it matters for your child...</div></div></div>
-      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#D0F0E0,#80D4A8)">🏡</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Homeschooling</span><span class="blog-time">⏱ 6 min</span></div><div class="blog-title">Benefits of Homeschooling in Malaysia</div><div class="blog-excerpt">Is homeschooling right for your family? Discover the flexibility, personalisation, and academic advantages of home education...</div></div></div>
-      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#FFE0E8,#FFB8CC)">💪</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Education</span><span class="blog-time">⏱ 4 min</span></div><div class="blog-title">How Sunrise Builds Student Confidence</div><div class="blog-excerpt">From public speaking to leadership activities, discover how our holistic approach creates confident, resilient young people...</div></div></div>
-      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#E8D8FF,#C8A8FF)">🗣️</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Education</span><span class="blog-time">⏱ 5 min</span></div><div class="blog-title">Building Strong English Communication Skills</div><div class="blog-excerpt">English fluency is a global superpower. Here are proven strategies we use at Sunrise to nurture outstanding communicators...</div></div></div>
-      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#D0F4F0,#80DDD8)">👨‍👩‍👧</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Parenting</span><span class="blog-time">⏱ 6 min</span></div><div class="blog-title">How Parents Can Support Learning at Home</div><div class="blog-excerpt">The home environment profoundly shapes a child's learning. Practical, research-backed tips every parent can start today...</div></div></div>
-      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#FFF0C8,#FFD880)">🧠</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Parenting</span><span class="blog-time">⏱ 5 min</span></div><div class="blog-title">The Importance of Emotional Growth in Education</div><div class="blog-excerpt">IQ alone doesn't determine success. Emotional intelligence, empathy, and resilience are equally vital — here's why...</div></div></div>
-      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#D0EAFF,#90CAFF)">🎮</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Happy Learning</span><span class="blog-time">⏱ 4 min</span></div><div class="blog-title">Fun Learning Activities for Primary Students</div><div class="blog-excerpt">Engaging, age-appropriate activities that make learning irresistible for children aged 7–12 at home and in school...</div></div></div>
-      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#D0F0E0,#80D4A8)">🏛️</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">IGCSE</span><span class="blog-time">⏱ 7 min</span></div><div class="blog-title">Preparing Teenagers for Future Universities</div><div class="blog-excerpt">University preparation begins earlier than you think. A step-by-step guide to setting your teenager up for global success...</div></div></div>
-      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#FFE0E8,#FFB8CC)">👨‍🏫</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Education</span><span class="blog-time">⏱ 5 min</span></div><div class="blog-title">The Importance of Small Class Learning</div><div class="blog-excerpt">Small classes transform education. Here's the science behind why teacher-student ratio is one of the most critical factors...</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#FFF0C8,#FFD880)">😊</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat" data-key="blog_cat_happy">快乐学习</span><span class="blog-time">⏱ 5 分钟</span></div><div class="blog-title" data-key="blog1_title">为什么快乐的孩子学得更好</div><div class="blog-excerpt" data-key="blog1_excerpt">研究表明，情感健康直接影响认知发展和学业表现。以下是我们如何将快乐放在首位……</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#D0EAFF,#90CAFF)">🎓</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat" data-key="blog_cat_igcse">IGCSE</span><span class="blog-time">⏱ 7 分钟</span></div><div class="blog-title" data-key="blog2_title">什么是剑桥IGCSE？</div><div class="blog-excerpt" data-key="blog2_excerpt">全球最受欢迎的国际资格认证完整指南——它是什么，如何运作，以及为什么对您的孩子重要……</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#D0F0E0,#80D4A8)">🏡</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat" data-key="blog_cat_hs">居家教育</span><span class="blog-time">⏱ 6 分钟</span></div><div class="blog-title" data-key="blog3_title">马来西亚居家教育的好处</div><div class="blog-excerpt" data-key="blog3_excerpt">居家教育适合您的家庭吗？了解家庭教育的灵活性、个性化和学术优势……</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#FFE0E8,#FFB8CC)">💪</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat" data-key="blog_cat_edu">教育</span><span class="blog-time">⏱ 4 分钟</span></div><div class="blog-title" data-key="blog4_title">阳光学府如何培养学生的自信</div><div class="blog-excerpt" data-key="blog4_excerpt">从公开演讲到领导力活动，了解我们的全人教育如何培养自信、坚韧的年轻人……</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#E8D8FF,#C8A8FF)">🗣️</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat" data-key="blog_cat_edu">教育</span><span class="blog-time">⏱ 5 分钟</span></div><div class="blog-title" data-key="blog5_title">培养扎实的英语沟通能力</div><div class="blog-excerpt" data-key="blog5_excerpt">英语流利是一项全球超能力。以下是我们在阳光学府培养优秀沟通者的行之有效的策略……</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#D0F4F0,#80DDD8)">👨‍👩‍👧</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat" data-key="blog_cat_parenting">育儿</span><span class="blog-time">⏱ 6 分钟</span></div><div class="blog-title" data-key="blog6_title">家长如何在家中支持学习</div><div class="blog-excerpt" data-key="blog6_excerpt">家庭环境深刻塑造孩子的学习。每位家长今天就可以开始的有研究支持的实用建议……</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#FFF0C8,#FFD880)">🧠</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat" data-key="blog_cat_parenting">育儿</span><span class="blog-time">⏱ 5 分钟</span></div><div class="blog-title" data-key="blog7_title">情感成长在教育中的重要性</div><div class="blog-excerpt" data-key="blog7_excerpt">智商本身并不能决定成功。情商、同理心和韧性同样至关重要——原因如下……</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#D0EAFF,#90CAFF)">🎮</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat" data-key="blog_cat_happy">快乐学习</span><span class="blog-time">⏱ 4 分钟</span></div><div class="blog-title" data-key="blog8_title">小学生的趣味学习活动</div><div class="blog-excerpt" data-key="blog8_excerpt">适合7至12岁孩子的有趣、适龄活动，让在家和学校的学习变得无法抗拒……</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#D0F0E0,#80D4A8)">🏛️</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat" data-key="blog_cat_igcse">IGCSE</span><span class="blog-time">⏱ 7 分钟</span></div><div class="blog-title" data-key="blog9_title">为青少年准备未来大学</div><div class="blog-excerpt" data-key="blog9_excerpt">大学准备比您想象的更早开始。为您的青少年设定全球成功之路的分步指南……</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#FFE0E8,#FFB8CC)">👨‍🏫</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat" data-key="blog_cat_edu">教育</span><span class="blog-time">⏱ 5 分钟</span></div><div class="blog-title" data-key="blog10_title">小班教学的重要性</div><div class="blog-excerpt" data-key="blog10_excerpt">小班教学改变教育。以下是师生比为何是最关键因素之一的科学依据……</div></div></div>
     </div>
   </div>
 </div>
 
-<!-- ══════════════════════ CONTACT ══════════════════════ -->
+<!-- ══════════════════════ 联系我们 ══════════════════════ -->
 <div id="sec-contact" class="page-section">
   <div class="section-wrap">
     <div class="section-header reveal">
-      <div class="section-eyebrow">Contact Us</div>
-      <h2 class="section-title">We'd Love to <em>Hear</em> From You</h2>
-      <p class="section-desc">Have questions? Ready to book a tour? Our friendly team is here to help. Reach out any time — we respond within 24 hours.</p>
+      <div class="section-eyebrow" data-key="contact_eye">联系我们</div>
+      <h2 class="section-title" data-key="contact_title">我们期待<em>收到</em>您的来信</h2>
+      <p class="section-desc" data-key="contact_desc">有问题？准备好预约参观了吗？我们友好的团队随时为您服务。随时联系我们——我们会在24小时内回复。</p>
     </div>
     <div class="contact-grid reveal">
       <div>
         <div class="contact-info">
-          <div class="contact-item"><div class="contact-icon">📍</div><div><div class="contact-label">Address</div><div class="contact-value">No. 25-2nd Floor, Jalan Mahogani 5/KS7<br>41200 Klang, Selangor, Malaysia</div></div></div>
-          <div class="contact-item"><div class="contact-icon">📞</div><div><div class="contact-label">Phone / WhatsApp</div><div class="contact-value"><a href="tel:+60124251556">+6 012-425 1556</a></div></div></div>
-          <div class="contact-item"><div class="contact-icon">📧</div><div><div class="contact-label">Email</div><div class="contact-value"><a href="mailto:LOVE@sun.edu.my">LOVE@sun.edu.my</a></div></div></div>
-          <div class="contact-item"><div class="contact-icon">🌐</div><div><div class="contact-label">Website</div><div class="contact-value"><a href="https://www.sun.edu.my" target="_blank" rel="noopener">www.sun.edu.my</a></div></div></div>
-          <div class="contact-item"><div class="contact-icon">⏰</div><div><div class="contact-label">Office Hours</div><div class="contact-value">Mon–Fri: 8:00am – 5:00pm<br>Sat: 8:00am – 12:00pm</div></div></div>
-          <div class="contact-item"><div class="contact-icon">📱</div><div><div class="contact-label">Follow Us</div><div class="contact-value"><a href="https://www.facebook.com/SunriseResourceCentre" target="_blank" rel="noopener">Facebook: Sunrise Resource Centre</a><br><a href="https://www.instagram.com/sunrisecenters" target="_blank" rel="noopener">Instagram: @sunrisecenters</a></div></div></div>
+          <div class="contact-item"><div class="contact-icon">📍</div><div><div class="contact-label" data-key="contact_address_label">地址</div><div class="contact-value"><span data-key="contact_address">No. 25-2nd Floor, Jalan Mahogani 5/KS7, 41200 巴生，雪兰莪，马来西亚</span></div></div></div>
+          <div class="contact-item"><div class="contact-icon">📞</div><div><div class="contact-label" data-key="contact_phone_label">电话 / WhatsApp</div><div class="contact-value"><a href="tel:+60124251556">+6 012-425 1556</a></div></div></div>
+          <div class="contact-item"><div class="contact-icon">📧</div><div><div class="contact-label" data-key="contact_email_label">电子邮件</div><div class="contact-value"><a href="mailto:LOVE@sun.edu.my">LOVE@sun.edu.my</a></div></div></div>
+          <div class="contact-item"><div class="contact-icon">🌐</div><div><div class="contact-label" data-key="contact_web_label">网站</div><div class="contact-value"><a href="https://www.sun.edu.my" target="_blank" rel="noopener">www.sun.edu.my</a></div></div></div>
+          <div class="contact-item"><div class="contact-icon">⏰</div><div><div class="contact-label" data-key="contact_hours_label">办公时间</div><div class="contact-value" data-key="contact_hours">周一至周五：上午8:00 – 下午5:00<br>周六：上午8:00 – 中午12:00</div></div></div>
+          <div class="contact-item"><div class="contact-icon">📱</div><div><div class="contact-label" data-key="contact_follow_label">关注我们</div><div class="contact-value"><a href="https://www.facebook.com/SunriseResourceCentre" target="_blank" rel="noopener">Facebook: Sunrise Resource Centre</a><br><a href="https://www.instagram.com/sunrisecenters" target="_blank" rel="noopener">Instagram: @sunrisecenters</a></div></div></div>
         </div>
         <div class="map-frame">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0679!2d101.4454!3d3.0319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMDEnNTQuOCJOIDEwMcKwMjYnNDMuNCJF!5e0!3m2!1sen!2smy!4v1000000000000" width="100%" height="240" style="border:0;display:block" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sunrise Education Location"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0679!2d101.4454!3d3.0319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMDEnNTQuOCJOIDEwMcKwMjYnNDMuNCJF!5e0!3m2!1sen!2smy!4v1000000000000" width="100%" height="240" style="border:0;display:block" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="阳光学府位置"></iframe>
         </div>
         <div style="margin-top:16px">
-          <a href="https://goo.gl/maps/KlangSunriseEducation" target="_blank" rel="noopener" class="btn-secondary" style="display:inline-flex;margin-right:10px">🗺️ Get Directions</a>
-          <a href="https://wa.me/60124251556" target="_blank" rel="noopener" class="btn-primary">💬 WhatsApp Now</a>
+          <a href="https://goo.gl/maps/KlangSunriseEducation" target="_blank" rel="noopener" class="btn-secondary" style="display:inline-flex;margin-right:10px" data-key="contact_directions">🗺️ 获取路线</a>
+          <a href="https://wa.me/60124251556" target="_blank" rel="noopener" class="btn-primary" data-key="contact_wa">💬 立即WhatsApp</a>
         </div>
       </div>
       <div class="contact-form">
-        <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--sun-text);margin-bottom:24px">Send Us a Message</h3>
+        <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--sun-text);margin-bottom:24px" data-key="form_title">给我们发送消息</h3>
         <div class="form-2">
-          <div class="form-row"><label>Parent Name</label><input type="text" placeholder="Your full name"></div>
-          <div class="form-row"><label>Child's Name</label><input type="text" placeholder="Child's name"></div>
+          <div class="form-row"><label data-key="form_parent_name">家长姓名</label><input type="text" placeholder="您的全名"></div>
+          <div class="form-row"><label data-key="form_child_name">孩子姓名</label><input type="text" placeholder="孩子的姓名"></div>
         </div>
         <div class="form-2">
-          <div class="form-row"><label>Phone / WhatsApp</label><input type="tel" placeholder="+60 12-345 6789"></div>
-          <div class="form-row"><label>Email Address</label><input type="email" placeholder="your@email.com"></div>
+          <div class="form-row"><label data-key="form_phone">电话 / WhatsApp</label><input type="tel" placeholder="+60 12-345 6789"></div>
+          <div class="form-row"><label data-key="form_email">电子邮件地址</label><input type="email" placeholder="your@email.com"></div>
         </div>
-        <div class="form-row"><label>Child's Age</label><select><option>Select age</option><option>7–9 years (Primary)</option><option>10–12 years (Primary)</option><option>13–15 years (Secondary)</option><option>16–18 years (Secondary)</option></select></div>
-        <div class="form-row"><label>Programme Interest</label><select><option>Select programme</option><option>Primary School</option><option>Secondary School (IGCSE)</option><option>Homeschooling</option><option>Both School & Homeschooling</option></select></div>
-        <div class="form-row"><label>Message</label><textarea placeholder="Tell us about your child and how we can help..."></textarea></div>
-        <button onclick="submitForm()" class="btn-primary" style="width:100%;justify-content:center;margin-top:4px">📩 Send Message</button>
-        <p style="font-size:0.72rem;color:var(--sun-muted);text-align:center;margin-top:12px">We respond within 24 hours. Or WhatsApp us for an instant reply! 💬</p>
+        <div class="form-row"><label data-key="form_age">孩子年龄</label><select><option data-key="form_age_select">选择年龄</option><option>7–9 岁 (小学)</option><option>10–12 岁 (小学)</option><option>13–15 岁 (中学)</option><option>16–18 岁 (中学)</option></select></div>
+        <div class="form-row"><label data-key="form_programme">课程兴趣</label><select><option data-key="form_prog_select">选择课程</option><option>小学课程</option><option>中学课程 (IGCSE)</option><option>居家教育</option><option>学校与居家教育两者</option></select></div>
+        <div class="form-row"><label data-key="form_message">消息</label><textarea placeholder="告诉我们关于您的孩子以及我们如何提供帮助..."></textarea></div>
+        <button onclick="submitForm()" class="btn-primary" style="width:100%;justify-content:center;margin-top:4px" data-key="form_send">📩 发送消息</button>
+        <p style="font-size:0.72rem;color:var(--sun-muted);text-align:center;margin-top:12px" data-key="form_note">我们会在24小时内回复。或者通过WhatsApp联系我们获取即时回复！💬</p>
       </div>
     </div>
   </div>
 </div>
 
-<!-- FOOTER -->
+<!-- 页脚 -->
 <footer>
   <div class="footer-inner">
     <div class="footer-grid">
@@ -917,36 +916,36 @@ footer{background:var(--footer-bg);color:#C4A882;padding:60px 24px 30px}
           <svg width="36" height="36" viewBox="0 0 42 42" fill="none"><circle cx="21" cy="21" r="10" fill="#F5A623"/><g stroke="#F5A623" stroke-width="2" stroke-linecap="round"><line x1="21" y1="4" x2="21" y2="8"/><line x1="21" y1="34" x2="21" y2="38"/><line x1="4" y1="21" x2="8" y2="21"/><line x1="34" y1="21" x2="38" y2="21"/><line x1="8.7" y1="8.7" x2="11.5" y2="11.5"/><line x1="30.5" y1="30.5" x2="33.3" y2="33.3"/><line x1="33.3" y1="8.7" x2="30.5" y2="11.5"/><line x1="11.5" y1="30.5" x2="8.7" y2="33.3"/></g></svg>
           <div class="logo-text"><span class="en">Sunrise Education</span><span class="zh" style="color:#A08060">阳光学府</span></div>
         </div>
-        <p>International School & Homeschooling Centre in Klang, Selangor. Cambridge IGCSE curriculum. Happy learning for ages 7–18.</p>
+        <p data-key="footer_desc">位于雪兰莪巴生的国际学校与居家教育中心。剑桥IGCSE课程。为7至18岁孩子提供快乐学习。</p>
         <p style="margin-top:10px;font-size:0.78rem;color:#6A5040">📞 +6 012-425 1556<br>📧 LOVE@sun.edu.my<br>🌐 www.sun.edu.my</p>
       </div>
       <div class="footer-col">
-        <h5>Quick Links</h5>
-        <a href="#" onclick="showSection('home')">Home</a>
-        <a href="#" onclick="showSection('primary')">Primary School</a>
-        <a href="#" onclick="showSection('secondary')">Secondary School</a>
-        <a href="#" onclick="showSection('academic')">Academic</a>
-        <a href="#" onclick="showSection('admissions')">Admissions</a>
+        <h5 data-key="footer_quick">快速链接</h5>
+        <a href="#" onclick="showSection('home')" data-key="footer_home">首页</a>
+        <a href="#" onclick="showSection('primary')" data-key="footer_primary">小学课程</a>
+        <a href="#" onclick="showSection('secondary')" data-key="footer_secondary">中学课程</a>
+        <a href="#" onclick="showSection('academic')" data-key="footer_academic">学术课程</a>
+        <a href="#" onclick="showSection('admissions')" data-key="footer_admissions">招生入学</a>
       </div>
       <div class="footer-col">
-        <h5>About</h5>
-        <a href="#" onclick="showSection('vision')">Our Vision</a>
-        <a href="#" onclick="showSection('about')">About Us</a>
-        <a href="#" onclick="showSection('blog')">Blog</a>
-        <a href="#" onclick="showSection('contact')">Contact</a>
-        <a href="https://wa.me/60124251556" target="_blank" rel="noopener">WhatsApp Us</a>
+        <h5 data-key="footer_about">关于我们</h5>
+        <a href="#" onclick="showSection('vision')" data-key="footer_vision">我们的愿景</a>
+        <a href="#" onclick="showSection('about')" data-key="footer_about_us">关于我们</a>
+        <a href="#" onclick="showSection('blog')" data-key="footer_blog">博客</a>
+        <a href="#" onclick="showSection('contact')" data-key="footer_contact">联系我们</a>
+        <a href="https://wa.me/60124251556" target="_blank" rel="noopener" data-key="footer_wa">WhatsApp联系我们</a>
       </div>
       <div class="footer-col">
-        <h5>Programmes</h5>
-        <a href="#" onclick="showSection('primary')">Primary (7–12)</a>
-        <a href="#" onclick="showSection('secondary')">Secondary (13–18)</a>
-        <a href="#" onclick="showSection('admissions')">Homeschooling</a>
-        <a href="#" onclick="showSection('academic')">Cambridge IGCSE</a>
-        <a href="#" onclick="showSection('admissions')">Book a Tour</a>
+        <h5 data-key="footer_programmes">课程项目</h5>
+        <a href="#" onclick="showSection('primary')" data-key="footer_pri">小学 (7–12岁)</a>
+        <a href="#" onclick="showSection('secondary')" data-key="footer_sec">中学 (13–18岁)</a>
+        <a href="#" onclick="showSection('admissions')" data-key="footer_hs">居家教育</a>
+        <a href="#" onclick="showSection('academic')" data-key="footer_igcse">剑桥IGCSE</a>
+        <a href="#" onclick="showSection('admissions')" data-key="footer_tour">预约参观</a>
       </div>
     </div>
     <div class="footer-bottom">
-      <p>© 2025 Sunrise Education (阳光学府) · No. 25-2F, Jalan Mahogani 5/KS7, 41200 Klang, Selangor, Malaysia</p>
+      <p data-key="footer_copy">© 2025 Sunrise Education (阳光学府) · No. 25-2F, Jalan Mahogani 5/KS7, 41200 巴生，雪兰莪，马来西亚</p>
       <div class="social-links">
         <a class="social-link" href="https://www.facebook.com/SunriseResourceCentre" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook">f</a>
         <a class="social-link" href="https://www.instagram.com/sunrisecenters" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">ig</a>
@@ -956,61 +955,523 @@ footer{background:var(--footer-bg);color:#C4A882;padding:60px 24px 30px}
   </div>
 </footer>
 
-<!-- FLOATING WHATSAPP -->
+<!-- 浮动WhatsApp按钮 -->
 <div id="wa-float">
-  <div class="wa-tooltip">Chat with Sunrise Education!</div>
-  <a href="https://wa.me/60124251556?text=Hello%20Sunrise%20Education!%20I%27m%20interested%20in%20your%20programmes." target="_blank" rel="noopener" class="wa-bubble" aria-label="WhatsApp Sunrise Education">
+  <div class="wa-tooltip" data-key="wa_tooltip">与阳光学府聊天！</div>
+  <a href="https://wa.me/60124251556?text=Hello%20Sunrise%20Education!%20I%27m%20interested%20in%20your%20programmes." target="_blank" rel="noopener" class="wa-bubble" aria-label="WhatsApp 阳光学府">
     <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 </div>
 
 <script>
-// ── STATE ──
+// ── 状态管理 ──
 let currentSection = localStorage.getItem('sunrise_section') || 'home';
-let currentLang = localStorage.getItem('sunrise_lang') || 'en';
+let currentLang = localStorage.getItem('sunrise_lang') || 'zh';
 let currentTheme = localStorage.getItem('sunrise_theme') || 'warm';
 
-// ── TRANSLATIONS ──
+// ── 完整三语翻译库 (英文/中文/马来语) ──
 const t = {
   en: {
+    // 导航
+    nav_home: '🏠 Home', nav_primary: '📚 Primary', nav_secondary: '🎓 Secondary',
+    nav_academic: '📖 Academic', nav_admissions: '✏️ Admissions', nav_vision: '🌟 Vision',
+    nav_about: 'ℹ️ About Us', nav_blog: '📝 Blog', nav_contact: '📞 Contact',
+    m_home: '🏠 Home', m_primary: '📚 Primary School', m_secondary: '🎓 Secondary School',
+    m_academic: '📖 Academic', m_admissions: '✏️ Admissions', m_vision: '🌟 Vision',
+    m_about: 'ℹ️ About Us', m_blog: '📝 Blog', m_contact: '📞 Contact',
+    // IGCSE条幅
+    igcse_strip: '🎓 Cambridge IGCSE Certified<span>•</span>Recognised in<span>140+</span>Countries<span>•</span>Est. 2014 Klang, Selangor',
+    // 主视觉区
     'h-badge': 'International School & Homeschooling · Klang',
     'h-title': 'Inspiring Young Hearts, Empowering Bright Futures',
     'h-tag': 'Happiness · Learning · Growth',
-    'h-cta1': 'Book a School Tour',
-    'h-cta2': 'WhatsApp Us',
-    's1-eye': 'Why Children Love Us',
-    's1-title': 'A Place Where Every Child Shines',
+    kw_igcse: '🌍 Cambridge IGCSE', kw_homeschool: '🏡 Homeschooling',
+    kw_ages: '👧 Ages 7–18', kw_small: '🌟 Small Classes',
+    'h-cta1': 'Book a School Tour', 'h-cta2': 'WhatsApp Us',
+    address_line: 'No. 25-2F, Jalan Mahogani 5/KS7, 41200 Klang',
+    stat_years: 'Years', stat_countries: 'Countries', stat_ages: 'Ages',
+    stat_cambridge: 'Cambridge', stat_happy: 'Happy', stat_care: 'Care',
+    // 孩子为什么喜欢
+    's1-eye': 'Why Children Love Us', 's1-title': 'A Place Where Every Child Shines',
     's1-desc': 'We believe every child has unique gifts. Our warm, nurturing environment helps them discover their potential while having fun every single day.',
-    'c1t': 'Happy Learning',
-    'c1d': 'Learning through play, creativity, and joy. Our students look forward to coming to school every day.',
+    'c1t': 'Happy Learning', 'c1d': 'Learning through play, creativity, and joy. Our students look forward to coming to school every day.',
+    card_teachers_title: 'Caring Teachers', card_teachers_desc: 'Dedicated educators who know every student by name and celebrate every achievement, big or small.',
+    card_growth_title: 'Personal Growth', card_growth_desc: 'Character building, emotional intelligence, and leadership skills woven into daily learning experiences.',
+    card_creative_title: 'Creative Activities', card_creative_desc: 'Art, music, STEM, drama, sports — a rich co-curriculum that nurtures talent beyond the textbook.',
+    card_small_title: 'Small Class Sizes', card_small_desc: 'Maximum attention, personalised instruction, and meaningful teacher-student relationships in every class.',
+    card_global_title: 'International Exposure', card_global_desc: 'Cambridge IGCSE curriculum preparing students for universities and careers anywhere in the world.',
+    // 家长选择
+    s2_eye: 'Why Parents Choose Sunrise', s2_title: 'Building Trust, One Family at a Time',
+    s2_desc: 'From academic excellence to emotional wellbeing, we partner with parents to raise confident, happy, future-ready children.',
+    why_igcse_title: 'Cambridge IGCSE Curriculum', why_igcse_desc: 'Globally recognised qualification opening doors to 140+ countries and top universities worldwide.',
+    why_english_title: 'Strong English Foundation', why_english_desc: 'Immersive English-medium instruction with dedicated communication and writing modules.',
+    why_student_title: 'Student-Centred Teaching', why_student_desc: 'We meet each child where they are, adapting our approach to their unique learning style and pace.',
+    why_parent_title: 'Parent Partnership', why_parent_desc: 'Regular parent-teacher meetings, progress updates, and an open-door policy so you\'re always in the loop.',
+    why_safe_title: 'Safe & Caring Environment', why_safe_desc: 'A warm, welcoming school culture where every child feels safe, respected, and loved every day.',
+    why_commit_title: 'Our Commitment to Every Family',
+    quote_text: '"Education is not just about exams. Happy growth matters equally."',
+    quote_attr: '— Sunrise Education Philosophy',
+    // 居家教育
+    hs_eye: 'Homeschooling', hs_title: 'Sunrise Homeschooling Programme',
+    hs_desc: 'Flexible, personalised education that fits your family\'s lifestyle — with all the structure and support of a world-class curriculum.',
+    hs_flex_title: 'Flexible Schedule', hs_flex_desc: 'Learn at your own pace with a timetable that works for your family life and individual needs.',
+    hs_personal_title: 'Personalised Curriculum', hs_personal_desc: 'Tailored learning paths built around each child\'s strengths, interests, and goals.',
+    hs_cert_title: 'Cambridge Certified', hs_cert_desc: 'Full Cambridge IGCSE qualification — the same global standard, delivered for home learners.',
+    hs_support_title: 'Dedicated Support', hs_support_desc: 'Experienced teachers guide homeschoolers with resources, assessments, and regular check-ins.',
+    // CTA
+    cta_title: 'Ready to Give Your Child the Best Start?',
+    cta_desc: 'Limited intake available. Book your free school tour today and discover why hundreds of families choose Sunrise Education.',
+    cta_btn1: '🎒 Book a Tour', cta_btn2: '💬 WhatsApp Now',
+    // 小学
+    pri_eye: 'Primary School', pri_title: 'Sunrise Primary Programme',
+    pri_desc: 'Ages 7–12 · Building a love for learning through joy, creativity, and a warm, caring environment',
+    pri_sub: 'Our primary programme nurtures every child\'s natural curiosity with a holistic Cambridge-aligned curriculum that makes learning a joyful adventure.',
+    btn_apply: 'Apply Now', btn_enquire: 'Enquire',
+    core_subjects: '📚 Core Subjects',
+    pri_beyond_title: 'Beyond the Classroom',
+    pri_card1_title: 'Character Building', pri_card1_desc: 'Emotional growth, teamwork, leadership, and communication skills developed alongside academics.',
+    pri_card2_title: 'Creative Arts & Music', pri_card2_desc: 'Art & craft, music, storytelling, and dramatic arts that spark imagination and self-expression.',
+    pri_card3_title: 'Fun Science & STEM', pri_card3_desc: 'Hands-on experiments, educational games, and discovery-based science exploration every week.',
+    pri_card4_title: 'Reading Programme', pri_card4_desc: 'Structured reading habits, phonics, comprehension, and a love for books from day one.',
+    pri_card5_title: 'Sports & Movement', pri_card5_desc: 'Physical education, outdoor play, and sports that develop health, coordination, and team spirit.',
+    pri_card6_title: 'Maths Logic', pri_card6_desc: 'Critical thinking, problem-solving, and mathematical reasoning built through engaging challenges.',
+    // 中学
+    sec_eye: 'Secondary School', sec_title: 'Sunrise Secondary Programme',
+    sec_desc: 'Ages 13–18 · Cambridge IGCSE pathway to global universities and future success',
+    sec_sub: 'Our Cambridge IGCSE secondary programme prepares students for A-Levels, Foundation programmes, Diplomas, and top universities across 140+ countries.',
+    igcse_subjects: '🎓 IGCSE Subjects',
+    sec_skills_title: 'Future-Ready Skills',
+    sec_card1_title: 'Critical Thinking', sec_card1_desc: 'Analysis, evaluation, and problem-solving skills that prepare students for complex real-world challenges.',
+    sec_card2_title: 'Public Speaking', sec_card2_desc: 'Debate, presentations, and communication training to build confident, articulate young adults.',
+    sec_card3_title: 'University Preparation', sec_card3_desc: 'Personal statement guidance, course selection, and application support for top universities worldwide.',
+    sec_card4_title: 'Emotional Wellness', sec_card4_desc: 'Mental health support, resilience building, and emotional intelligence throughout the teenage years.',
+    sec_card5_title: 'Science Projects', sec_card5_desc: 'Hands-on lab work, independent investigations, and STEM competitions that ignite curiosity.',
+    sec_card6_title: 'Global Citizenship', sec_card6_desc: 'Community service, cultural awareness, and global perspectives woven into everyday learning.',
+    igcse_global_title: 'Cambridge IGCSE Recognised in 140+ Countries',
+    igcse_global_desc: 'Your IGCSE qualification opens doors to A-Level, Foundation, Diploma and top international universities globally.',
+    // 学术
+    acad_eye: 'Academic', acad_title: 'Cambridge IGCSE Curriculum',
+    acad_desc: 'A world-class British curriculum designed for internationally minded learners, recognised by universities and employers across 140+ nations.',
+    why_igcse_title: 'Why Cambridge IGCSE?',
+    igcse_point1: 'Internationally recognised across 140+ countries',
+    igcse_point2: 'Pathway to A-Level, Foundation, and Diploma programmes',
+    igcse_point3: 'Accepted by top universities worldwide',
+    igcse_point4: 'Develops critical thinking and independent learning',
+    igcse_point5: 'Student-centred, flexible assessment methods',
+    igcse_point6: 'Builds global competitive advantage',
+    acad_subjects_title: 'Subjects We Offer',
+    acad_approach_title: 'Our Teaching Approach',
+    approach1_title: 'Student-Centred', approach1_desc: 'Every lesson designed around the learner\'s needs and pace',
+    approach2_title: 'Critical Thinking', approach2_desc: 'Analysis and inquiry-based learning over rote memorisation',
+    approach3_title: 'Flexible Assessment', approach3_desc: 'Coursework, projects, and examinations balanced fairly',
+    // 招生
+    adm_eye: 'Admissions 2025', adm_title: 'Happy Children Start Here',
+    adm_desc: '⚠️ Limited intake available. Begin your child\'s Sunrise journey today — book a free school tour and meet our caring team.',
+    step1_title: 'Enquire', step1_desc: 'Contact us via WhatsApp, phone, or online form',
+    step2_title: 'School Tour', step2_desc: 'Visit our warm campus and meet our teachers',
+    step3_title: 'Assessment', step3_desc: 'Brief student evaluation to find the right level',
+    step4_title: 'Parent Meeting', step4_desc: 'Discuss curriculum, fees, and your child\'s needs',
+    step5_title: 'Enrol', step5_desc: 'Complete registration and welcome your child!',
+    adm_doc_title: 'Registration Documents', adm_doc_desc: 'Birth certificate, previous school report card, passport-size photo, parent/guardian IC copy.',
+    adm_scholar_title: 'Scholarship Opportunities', adm_scholar_desc: 'Merit-based scholarships available for outstanding academic performance. Contact us to learn more.',
+    adm_intake_title: 'Intake Schedule', adm_intake_desc: 'We accept students year-round. New academic terms begin in January and July each year.',
+    adm_cta_title: '🎒 Ready to Book Your School Tour?',
+    adm_cta_desc: 'Discover why hundreds of families trust Sunrise Education for their children\'s future. Book a free school visit today!',
+    adm_cta_wa: '💬 WhatsApp to Book', adm_cta_email: '📧 Email Us',
+    // 愿景
+    vis_eye: 'Our Vision', vis_title: 'Education for Tomorrow\'s World',
+    vis_desc: 'We envision a world where every child grows up happy, confident, and equipped to contribute meaningfully to a changing global society.',
+    vis_quote: '"Education is not just about exams. Happy growth matters equally."',
+    vis_quote_desc: 'We believe the measure of great education is not just academic results, but the joy, confidence, and character each child carries into the world.',
+    vis_card1_title: 'Happy Learning Philosophy', vis_card1_desc: 'Every lesson is designed to ignite curiosity, celebrate effort, and make learning a genuinely enjoyable experience for all students.',
+    vis_card2_title: 'Global Citizenship', vis_card2_desc: 'We nurture students who are culturally aware, empathetic, and ready to contribute positively to a diverse, interconnected world.',
+    vis_card3_title: 'Leadership & Character', vis_card3_desc: 'Beyond academic skills, we cultivate integrity, resilience, compassion, and leadership in every student from day one.',
+    vis_card4_title: 'Future Innovation', vis_card4_desc: 'Preparing students for careers and technologies that don\'t exist yet through critical thinking, creativity, and adaptability.',
+    vis_card5_title: 'Emotional Wellbeing', vis_card5_desc: 'Mental and emotional health are as important as academic success. Every child deserves to feel safe, valued, and loved.',
+    vis_card6_title: 'Community & Family', vis_card6_desc: 'Parents, teachers, and students form a caring community where everyone supports each other\'s growth and success.',
+    vis_values_title: 'Our Core Values',
+    // 关于
+    about_eye: 'About Us', about_title: 'Our Story & Journey',
+    about_desc: 'Since 2014, Sunrise Education has been a beacon of warm, joyful, internationally-minded learning for families across Klang and Selangor.',
+    principal_title: 'Principal\'s Message',
+    principal_msg: '"At Sunrise Education, we believe every child is a unique gift to this world. Our mission is simple: to create an environment where children are so happy to learn that they forget they are studying. When children smile, learn, and grow together, the future becomes bright for all of us."',
+    school_leadership: 'School Leadership',
+    quick_facts: 'Quick Facts', fact_founded: 'Founded', fact_location: 'Location',
+    fact_curriculum: 'Curriculum', fact_ages: 'Student Ages', fact_programme: 'Programme', fact_recognition: 'Recognition',
+    journey_title: 'Our Journey',
+    tl1_title: 'Sunrise Education Founded', tl1_desc: 'Established with a mission to bring happy, international-standard education to Klang, Selangor.',
+    tl2_title: 'Cambridge IGCSE Programme Launch', tl2_desc: 'Began offering the full Cambridge IGCSE curriculum, bringing world-class British education to Malaysia.',
+    tl3_title: 'Homeschooling Centre Established', tl3_desc: 'Launched Malaysia\'s warm homeschooling programme, providing flexible learning for families across Selangor.',
+    tl4_title: 'Expanded Facilities & Online Learning', tl4_desc: 'Grew our campus and introduced hybrid learning options, serving more families across the region.',
+    tl5_title: '10-Year Anniversary & New Programmes', tl5_desc: 'Celebrated a decade of happy learning with new enrichment programmes and upgraded facilities.',
+    tl6_title: 'Growing Strong — New Intake Open', tl6_desc: 'Continuing to inspire young hearts and empower bright futures across Klang and Selangor.',
+    // 博客
+    blog_eye: 'Blog & Resources', blog_title: 'Learning Insights & Parenting Tips',
+    blog_desc: 'Expert advice on education, parenting, IGCSE, homeschooling, and helping your child thrive in today\'s world.',
+    blog_tab_all: 'All', blog_tab_edu: 'Education', blog_tab_parenting: 'Parenting',
+    blog_tab_hs: 'Homeschooling', blog_tab_igcse: 'IGCSE', blog_tab_happy: 'Happy Learning',
+    blog_cat_happy: 'Happy Learning', blog_cat_igcse: 'IGCSE', blog_cat_hs: 'Homeschooling',
+    blog_cat_edu: 'Education', blog_cat_parenting: 'Parenting',
+    blog1_title: 'Why Happy Children Learn Better', blog1_excerpt: 'Research shows emotional wellbeing directly impacts cognitive development and academic performance. Here\'s how we put happiness first...',
+    blog2_title: 'What Is Cambridge IGCSE?', blog2_excerpt: 'A complete guide to the world\'s most popular international qualification — what it is, how it works, and why it matters for your child...',
+    blog3_title: 'Benefits of Homeschooling in Malaysia', blog3_excerpt: 'Is homeschooling right for your family? Discover the flexibility, personalisation, and academic advantages of home education...',
+    blog4_title: 'How Sunrise Builds Student Confidence', blog4_excerpt: 'From public speaking to leadership activities, discover how our holistic approach creates confident, resilient young people...',
+    blog5_title: 'Building Strong English Communication Skills', blog5_excerpt: 'English fluency is a global superpower. Here are proven strategies we use at Sunrise to nurture outstanding communicators...',
+    blog6_title: 'How Parents Can Support Learning at Home', blog6_excerpt: 'The home environment profoundly shapes a child\'s learning. Practical, research-backed tips every parent can start today...',
+    blog7_title: 'The Importance of Emotional Growth in Education', blog7_excerpt: 'IQ alone doesn\'t determine success. Emotional intelligence, empathy, and resilience are equally vital — here\'s why...',
+    blog8_title: 'Fun Learning Activities for Primary Students', blog8_excerpt: 'Engaging, age-appropriate activities that make learning irresistible for children aged 7–12 at home and in school...',
+    blog9_title: 'Preparing Teenagers for Future Universities', blog9_excerpt: 'University preparation begins earlier than you think. A step-by-step guide to setting your teenager up for global success...',
+    blog10_title: 'The Importance of Small Class Learning', blog10_excerpt: 'Small classes transform education. Here\'s the science behind why teacher-student ratio is one of the most critical factors...',
+    // 联系
+    contact_eye: 'Contact Us', contact_title: 'We\'d Love to Hear From You',
+    contact_desc: 'Have questions? Ready to book a tour? Our friendly team is here to help. Reach out any time — we respond within 24 hours.',
+    contact_address_label: 'Address', contact_address: 'No. 25-2nd Floor, Jalan Mahogani 5/KS7, 41200 Klang, Selangor, Malaysia',
+    contact_phone_label: 'Phone / WhatsApp', contact_email_label: 'Email',
+    contact_web_label: 'Website', contact_hours_label: 'Office Hours',
+    contact_hours: 'Mon–Fri: 8:00am – 5:00pm<br>Sat: 8:00am – 12:00pm',
+    contact_follow_label: 'Follow Us', contact_directions: '🗺️ Get Directions', contact_wa: '💬 WhatsApp Now',
+    form_title: 'Send Us a Message', form_parent_name: 'Parent Name', form_child_name: 'Child\'s Name',
+    form_phone: 'Phone / WhatsApp', form_email: 'Email Address',
+    form_age: 'Child\'s Age', form_age_select: 'Select age',
+    form_programme: 'Programme Interest', form_prog_select: 'Select programme',
+    form_message: 'Message', form_send: '📩 Send Message',
+    form_note: 'We respond within 24 hours. Or WhatsApp us for an instant reply! 💬',
+    // 页脚
+    footer_desc: 'International School & Homeschooling Centre in Klang, Selangor. Cambridge IGCSE curriculum. Happy learning for ages 7–18.',
+    footer_quick: 'Quick Links', footer_home: 'Home', footer_primary: 'Primary School',
+    footer_secondary: 'Secondary School', footer_academic: 'Academic', footer_admissions: 'Admissions',
+    footer_about: 'About', footer_vision: 'Our Vision', footer_about_us: 'About Us',
+    footer_blog: 'Blog', footer_contact: 'Contact', footer_wa: 'WhatsApp Us',
+    footer_programmes: 'Programmes', footer_pri: 'Primary (7–12)', footer_sec: 'Secondary (13–18)',
+    footer_hs: 'Homeschooling', footer_igcse: 'Cambridge IGCSE', footer_tour: 'Book a Tour',
+    footer_copy: '© 2025 Sunrise Education (阳光学府) · No. 25-2F, Jalan Mahogani 5/KS7, 41200 Klang, Selangor, Malaysia',
+    wa_tooltip: 'Chat with Sunrise Education!'
   },
   zh: {
+    nav_home: '🏠 首页', nav_primary: '📚 小学', nav_secondary: '🎓 中学',
+    nav_academic: '📖 学术课程', nav_admissions: '✏️ 招生入学', nav_vision: '🌟 愿景理念',
+    nav_about: 'ℹ️ 关于我们', nav_blog: '📝 博客', nav_contact: '📞 联系我们',
+    m_home: '🏠 首页', m_primary: '📚 小学课程', m_secondary: '🎓 中学课程',
+    m_academic: '📖 学术课程', m_admissions: '✏️ 招生入学', m_vision: '🌟 愿景理念',
+    m_about: 'ℹ️ 关于我们', m_blog: '📝 博客', m_contact: '📞 联系我们',
+    igcse_strip: '🎓 剑桥IGCSE认证<span>•</span>受<span>140+</span>个国家认可<span>•</span>2014年创立于巴生，雪兰莪',
     'h-badge': '国际学校与居家教育 · 巴生',
     'h-title': '激励年轻心灵，赋能光明未来',
     'h-tag': '快乐 · 学习 · 成长',
-    'h-cta1': '预约参观',
-    'h-cta2': '立即联系',
-    's1-eye': '孩子为什么喜欢阳光学府',
-    's1-title': '让每个孩子都闪耀的地方',
-    's1-desc': '我们相信每个孩子都有独特的天赋。我们温暖、关爱的环境帮助他们在快乐中发现潜能。',
-    'c1t': '快乐学习',
-    'c1d': '通过游戏、创意和快乐来学习。我们的学生每天都期待来学校。',
+    kw_igcse: '🌍 剑桥IGCSE', kw_homeschool: '🏡 居家教育',
+    kw_ages: '👧 7至18岁', kw_small: '🌟 小班制',
+    'h-cta1': '预约校园参观', 'h-cta2': 'WhatsApp联系我们',
+    address_line: 'No. 25-2F, Jalan Mahogani 5/KS7, 41200 巴生',
+    stat_years: '年历史', stat_countries: '国家认可', stat_ages: '年龄段',
+    stat_cambridge: '剑桥课程', stat_happy: '快乐成长', stat_care: '关爱守护',
+    's1-eye': '孩子为什么喜欢阳光学府', 's1-title': '一个让每个孩子都闪耀的地方',
+    's1-desc': '我们相信每个孩子都有独特的天赋。我们温暖、关爱的环境帮助他们在快乐中发现潜能，每一天都充满欢笑。',
+    'c1t': '快乐学习', 'c1d': '通过游戏、创意和快乐来学习。我们的学生每天都期待来学校。',
+    card_teachers_title: '关爱教师', card_teachers_desc: '敬业的教育工作者，熟知每一位学生的名字，庆祝每一次大大小小的成就。',
+    card_growth_title: '个人成长', card_growth_desc: '品格塑造、情商培养和领导力技能融入日常学习体验之中。',
+    card_creative_title: '创意活动', card_creative_desc: '艺术、音乐、STEM、戏剧、体育——丰富的课外活动培养课本之外的才能。',
+    card_small_title: '小班教学', card_small_desc: '最大程度的关注、个性化指导和有意义的师生关系贯穿每个课堂。',
+    card_global_title: '国际视野', card_global_desc: '剑桥IGCSE课程为学生进入世界各地的大学和职业发展做好准备。',
+    s2_eye: '家长为什么选择阳光学府', s2_title: '建立信任，从每一个家庭开始',
+    s2_desc: '从学业卓越到情感健康，我们与家长携手培养自信、快乐、面向未来的孩子。',
+    why_igcse_title: '剑桥IGCSE课程', why_igcse_desc: '全球认可的资格证书，为进入140多个国家和世界顶尖大学打开大门。',
+    why_english_title: '扎实的英语基础', why_english_desc: '沉浸式英语教学，设有专门的沟通与写作模块。',
+    why_student_title: '以学生为中心的教学', why_student_desc: '我们从每个孩子的实际情况出发，根据他们独特的学习风格和节奏调整教学方式。',
+    why_parent_title: '家长伙伴关系', why_parent_desc: '定期家长会、进度更新和开放政策，让您随时了解孩子的成长动态。',
+    why_safe_title: '安全关爱的环境', why_safe_desc: '温暖、温馨的校园文化，让每个孩子每天都感到安全、被尊重和被爱。',
+    why_commit_title: '我们对每个家庭的承诺',
+    quote_text: '"教育不仅仅关乎考试。快乐的成长同样重要。"',
+    quote_attr: '—— 阳光学府教育理念',
+    hs_eye: '居家教育', hs_title: '阳光学府居家教育计划',
+    hs_desc: '灵活、个性化的教育，适合您家庭的生活方式——兼具世界一流课程的结构与支持。',
+    hs_flex_title: '灵活的时间安排', hs_flex_desc: '按照自己的节奏学习，时间表适合您的家庭生活和个性化需求。',
+    hs_personal_title: '个性化课程', hs_personal_desc: '围绕每个孩子的优势、兴趣和目标量身定制的学习路径。',
+    hs_cert_title: '剑桥认证', hs_cert_desc: '完整的剑桥IGCSE资格证书——同样的全球标准，为居家学习者提供。',
+    hs_support_title: '专属支持', hs_support_desc: '经验丰富的教师通过资源、评估和定期检查指导居家教育学生。',
+    cta_title: '准备好给孩子最好的起点了吗？',
+    cta_desc: '名额有限。立即预约免费校园参观，了解为什么数百个家庭选择阳光学府。',
+    cta_btn1: '🎒 预约参观', cta_btn2: '💬 立即WhatsApp',
+    pri_eye: '小学课程', pri_title: '阳光学府小学课程',
+    pri_desc: '7至12岁 · 通过快乐、创意和温暖关爱的环境培养对学习的热爱',
+    pri_sub: '我们的小学课程以全面的剑桥对齐课程培养每个孩子天生的好奇心，让学习成为快乐的冒险。',
+    btn_apply: '立即申请', btn_enquire: '咨询详情',
+    core_subjects: '📚 核心科目',
+    pri_beyond_title: '课堂之外',
+    pri_card1_title: '品格塑造', pri_card1_desc: '情感成长、团队合作、领导力和沟通技能与学业同步发展。',
+    pri_card2_title: '创意艺术与音乐', pri_card2_desc: '艺术手工、音乐、讲故事和戏剧艺术激发想象力和自我表达。',
+    pri_card3_title: '趣味科学与STEM', pri_card3_desc: '每周动手实验、教育游戏和基于发现的科学探索。',
+    pri_card4_title: '阅读计划', pri_card4_desc: '从第一天起培养结构化的阅读习惯、拼读、理解和对书籍的热爱。',
+    pri_card5_title: '体育与运动', pri_card5_desc: '体育教育、户外游戏和运动，培养健康、协调性和团队精神。',
+    pri_card6_title: '数学逻辑', pri_card6_desc: '通过引人入胜的挑战培养批判性思维、解决问题和数学推理能力。',
+    sec_eye: '中学课程', sec_title: '阳光学府中学课程',
+    sec_desc: '13至18岁 · 剑桥IGCSE升学路径，通往全球大学和未来成功',
+    sec_sub: '我们的剑桥IGCSE中学课程为学生准备A-Level、预科课程、文凭课程以及140多个国家的顶尖大学。',
+    igcse_subjects: '🎓 IGCSE科目',
+    sec_skills_title: '面向未来的技能',
+    sec_card1_title: '批判性思维', sec_card1_desc: '分析、评估和解决问题的技能，为学生应对复杂的现实挑战做好准备。',
+    sec_card2_title: '公开演讲', sec_card2_desc: '辩论、演讲和沟通培训，培养自信、善于表达的年轻人。',
+    sec_card3_title: '大学预备', sec_card3_desc: '个人陈述指导、课程选择和申请支持，面向全球顶尖大学。',
+    sec_card4_title: '情感健康', sec_card4_desc: '在整个青少年时期提供心理健康支持、韧性培养和情商发展。',
+    sec_card5_title: '科学项目', sec_card5_desc: '动手实验、独立研究和STEM竞赛，点燃好奇心。',
+    sec_card6_title: '全球公民', sec_card6_desc: '社区服务、文化意识和全球视野融入日常学习之中。',
+    igcse_global_title: '剑桥IGCSE获140多个国家认可',
+    igcse_global_desc: '您的IGCSE资格证书为A-Level、预科、文凭课程和全球顶尖国际大学打开大门。',
+    acad_eye: '学术课程', acad_title: '剑桥IGCSE课程',
+    acad_desc: '世界一流的英国课程，专为具有国际视野的学习者设计，受140多个国家的大学和雇主认可。',
+    why_igcse_title: '为什么选择剑桥IGCSE？',
+    igcse_point1: '获140多个国家国际认可',
+    igcse_point2: '通往A-Level、预科和文凭课程的桥梁',
+    igcse_point3: '受全球顶尖大学认可',
+    igcse_point4: '培养批判性思维和独立学习能力',
+    igcse_point5: '以学生为中心，灵活的评估方式',
+    igcse_point6: '建立全球竞争优势',
+    acad_subjects_title: '我们提供的科目',
+    acad_approach_title: '我们的教学方法',
+    approach1_title: '以学生为中心', approach1_desc: '每节课都围绕学习者的需求和节奏设计',
+    approach2_title: '批判性思维', approach2_desc: '以分析和探究为基础的学习，而非死记硬背',
+    approach3_title: '灵活评估', approach3_desc: '课程作业、项目和考试公平平衡',
+    adm_eye: '2025年招生', adm_title: '快乐的孩子从这里开始',
+    adm_desc: '⚠️ 名额有限。立即开启您孩子的阳光学府之旅——预约免费校园参观，与我们的关爱团队见面。',
+    step1_title: '咨询', step1_desc: '通过WhatsApp、电话或在线表单联系我们',
+    step2_title: '校园参观', step2_desc: '参观我们温暖的校园，与老师见面',
+    step3_title: '评估', step3_desc: '简短的学生测评，确定适合的年级水平',
+    step4_title: '家长会议', step4_desc: '讨论课程、费用和您孩子的需求',
+    step5_title: '注册入学', step5_desc: '完成注册，欢迎您的孩子入学！',
+    adm_doc_title: '注册文件', adm_doc_desc: '出生证明、既往学校成绩单、护照照片、家长/监护人身份证复印件。',
+    adm_scholar_title: '奖学金机会', adm_scholar_desc: '为学业成绩优异的学生提供绩优奖学金。联系我们了解更多。',
+    adm_intake_title: '入学时间安排', adm_intake_desc: '我们全年接受学生。新学年从每年一月和七月开始。',
+    adm_cta_title: '🎒 准备好预约校园参观了吗？',
+    adm_cta_desc: '了解为什么数百个家庭信任阳光学府为孩子的未来保驾护航。立即预约免费校园参观！',
+    adm_cta_wa: '💬 WhatsApp预约', adm_cta_email: '📧 发送邮件',
+    vis_eye: '我们的愿景', vis_title: '为明天的世界而教育',
+    vis_desc: '我们展望一个每个孩子都能快乐、自信地成长，并有能力为不断变化的全球社会做出有意义贡献的世界。',
+    vis_quote: '"教育不仅仅关乎考试。快乐的成长同样重要。"',
+    vis_quote_desc: '我们相信，衡量优质教育的标准不仅仅是学业成绩，更是每个孩子带给世界的快乐、自信和品格。',
+    vis_card1_title: '快乐学习理念', vis_card1_desc: '每节课都旨在激发好奇心，庆祝努力，让学习成为所有学生真正享受的体验。',
+    vis_card2_title: '全球公民', vis_card2_desc: '我们培养具有文化意识、富有同理心，并准备好为多元互联的世界做出积极贡献的学生。',
+    vis_card3_title: '领导力与品格', vis_card3_desc: '超越学术技能，我们从第一天起就培养每个学生的正直、韧性、同情心和领导力。',
+    vis_card4_title: '未来创新', vis_card4_desc: '通过批判性思维、创造力和适应能力，为学生应对尚未存在的职业和技术做好准备。',
+    vis_card5_title: '情感健康', vis_card5_desc: '心理和情感健康与学业成功同等重要。每个孩子都值得感到安全、被重视和被爱。',
+    vis_card6_title: '社区与家庭', vis_card6_desc: '家长、教师和学生组成一个关爱的社区，每个人都支持彼此的成长和成功。',
+    vis_values_title: '我们的核心价值观',
+    about_eye: '关于我们', about_title: '我们的故事与历程',
+    about_desc: '自2014年以来，阳光学府一直是巴生和雪兰莪地区家庭温暖、快乐、国际化学习的灯塔。',
+    principal_title: '校长寄语',
+    principal_msg: '"在阳光学府，我们相信每个孩子都是这个世界独一无二的礼物。我们的使命很简单：创造一个让孩子们如此快乐学习的环境，以至于他们忘记了自己在学习。当孩子们一起微笑、学习和成长时，我们所有人的未来都会变得光明。"',
+    school_leadership: '学校领导团队',
+    quick_facts: '基本信息', fact_founded: '成立年份', fact_location: '所在地',
+    fact_curriculum: '课程体系', fact_ages: '学生年龄', fact_programme: '课程类型', fact_recognition: '认可范围',
+    journey_title: '我们的历程',
+    tl1_title: '阳光学府成立', tl1_desc: '以使命为驱动，将快乐的国际标准教育带到雪兰莪巴生。',
+    tl2_title: '剑桥IGCSE课程启动', tl2_desc: '开始提供完整的剑桥IGCSE课程，将世界一流的英式教育带到马来西亚。',
+    tl3_title: '居家教育中心成立', tl3_desc: '启动马来西亚温暖的居家教育计划，为雪兰莪各地的家庭提供灵活的学习方式。',
+    tl4_title: '扩展设施与在线学习', tl4_desc: '扩大校园规模并引入混合学习选项，为该地区更多家庭提供服务。',
+    tl5_title: '十周年庆典与新课程', tl5_desc: '庆祝十年快乐学习，推出新的拓展课程和升级设施。',
+    tl6_title: '日益壮大——新学年招生开放', tl6_desc: '继续激励年轻心灵，在巴生和雪兰莪赋能光明未来。',
+    blog_eye: '博客与资源', blog_title: '学习洞察与育儿建议',
+    blog_desc: '关于教育、育儿、IGCSE、居家教育以及帮助您的孩子在当今世界茁壮成长的专家建议。',
+    blog_tab_all: '全部', blog_tab_edu: '教育', blog_tab_parenting: '育儿',
+    blog_tab_hs: '居家教育', blog_tab_igcse: 'IGCSE', blog_tab_happy: '快乐学习',
+    blog_cat_happy: '快乐学习', blog_cat_igcse: 'IGCSE', blog_cat_hs: '居家教育',
+    blog_cat_edu: '教育', blog_cat_parenting: '育儿',
+    blog1_title: '为什么快乐的孩子学得更好', blog1_excerpt: '研究表明，情感健康直接影响认知发展和学业表现。以下是我们如何将快乐放在首位……',
+    blog2_title: '什么是剑桥IGCSE？', blog2_excerpt: '全球最受欢迎的国际资格认证完整指南——它是什么，如何运作，以及为什么对您的孩子重要……',
+    blog3_title: '马来西亚居家教育的好处', blog3_excerpt: '居家教育适合您的家庭吗？了解家庭教育的灵活性、个性化和学术优势……',
+    blog4_title: '阳光学府如何培养学生的自信', blog4_excerpt: '从公开演讲到领导力活动，了解我们的全人教育如何培养自信、坚韧的年轻人……',
+    blog5_title: '培养扎实的英语沟通能力', blog5_excerpt: '英语流利是一项全球超能力。以下是我们在阳光学府培养优秀沟通者的行之有效的策略……',
+    blog6_title: '家长如何在家中支持学习', blog6_excerpt: '家庭环境深刻塑造孩子的学习。每位家长今天就可以开始的有研究支持的实用建议……',
+    blog7_title: '情感成长在教育中的重要性', blog7_excerpt: '智商本身并不能决定成功。情商、同理心和韧性同样至关重要——原因如下……',
+    blog8_title: '小学生的趣味学习活动', blog8_excerpt: '适合7至12岁孩子的有趣、适龄活动，让在家和学校的学习变得无法抗拒……',
+    blog9_title: '为青少年准备未来大学', blog9_excerpt: '大学准备比您想象的更早开始。为您的青少年设定全球成功之路的分步指南……',
+    blog10_title: '小班教学的重要性', blog10_excerpt: '小班教学改变教育。以下是师生比为何是最关键因素之一的科学依据……',
+    contact_eye: '联系我们', contact_title: '我们期待收到您的来信',
+    contact_desc: '有问题？准备好预约参观了吗？我们友好的团队随时为您服务。随时联系我们——我们会在24小时内回复。',
+    contact_address_label: '地址', contact_address: 'No. 25-2nd Floor, Jalan Mahogani 5/KS7, 41200 巴生，雪兰莪，马来西亚',
+    contact_phone_label: '电话 / WhatsApp', contact_email_label: '电子邮件',
+    contact_web_label: '网站', contact_hours_label: '办公时间',
+    contact_hours: '周一至周五：上午8:00 – 下午5:00<br>周六：上午8:00 – 中午12:00',
+    contact_follow_label: '关注我们', contact_directions: '🗺️ 获取路线', contact_wa: '💬 立即WhatsApp',
+    form_title: '给我们发送消息', form_parent_name: '家长姓名', form_child_name: '孩子姓名',
+    form_phone: '电话 / WhatsApp', form_email: '电子邮件地址',
+    form_age: '孩子年龄', form_age_select: '选择年龄',
+    form_programme: '课程兴趣', form_prog_select: '选择课程',
+    form_message: '消息', form_send: '📩 发送消息',
+    form_note: '我们会在24小时内回复。或者通过WhatsApp联系我们获取即时回复！💬',
+    footer_desc: '位于雪兰莪巴生的国际学校与居家教育中心。剑桥IGCSE课程。为7至18岁孩子提供快乐学习。',
+    footer_quick: '快速链接', footer_home: '首页', footer_primary: '小学课程',
+    footer_secondary: '中学课程', footer_academic: '学术课程', footer_admissions: '招生入学',
+    footer_about: '关于我们', footer_vision: '我们的愿景', footer_about_us: '关于我们',
+    footer_blog: '博客', footer_contact: '联系我们', footer_wa: 'WhatsApp联系我们',
+    footer_programmes: '课程项目', footer_pri: '小学 (7–12岁)', footer_sec: '中学 (13–18岁)',
+    footer_hs: '居家教育', footer_igcse: '剑桥IGCSE', footer_tour: '预约参观',
+    footer_copy: '© 2025 Sunrise Education (阳光学府) · No. 25-2F, Jalan Mahogani 5/KS7, 41200 巴生，雪兰莪，马来西亚',
+    wa_tooltip: '与阳光学府聊天！'
   },
   bm: {
+    nav_home: '🏠 Utama', nav_primary: '📚 Rendah', nav_secondary: '🎓 Menengah',
+    nav_academic: '📖 Akademik', nav_admissions: '✏️ Kemasukan', nav_vision: '🌟 Visi',
+    nav_about: 'ℹ️ Tentang Kami', nav_blog: '📝 Blog', nav_contact: '📞 Hubungi',
+    m_home: '🏠 Utama', m_primary: '📚 Sekolah Rendah', m_secondary: '🎓 Sekolah Menengah',
+    m_academic: '📖 Akademik', m_admissions: '✏️ Kemasukan', m_vision: '🌟 Visi',
+    m_about: 'ℹ️ Tentang Kami', m_blog: '📝 Blog', m_contact: '📞 Hubungi',
+    igcse_strip: '🎓 Diiktiraf Cambridge IGCSE<span>•</span>Diiktiraf di<span>140+</span>Negara<span>•</span>Ditubuhkan 2014 Klang, Selangor',
     'h-badge': 'Sekolah Antarabangsa & Homeschooling · Klang',
     'h-title': 'Memberi Inspirasi Hati Muda, Memperkasa Masa Depan Cerah',
     'h-tag': 'Kebahagiaan · Pembelajaran · Pertumbuhan',
-    'h-cta1': 'Tempah Lawatan Sekolah',
-    'h-cta2': 'WhatsApp Kami',
+    kw_igcse: '🌍 Cambridge IGCSE', kw_homeschool: '🏡 Homeschooling',
+    kw_ages: '👧 Umur 7–18', kw_small: '🌟 Kelas Kecil',
+    'h-cta1': 'Tempah Lawatan Sekolah', 'h-cta2': 'WhatsApp Kami',
+    address_line: 'No. 25-2F, Jalan Mahogani 5/KS7, 41200 Klang',
+    stat_years: 'Tahun', stat_countries: 'Negara', stat_ages: 'Umur',
+    stat_cambridge: 'Cambridge', stat_happy: 'Gembira', stat_care: 'Prihatin',
     's1-eye': 'Mengapa Kanak-kanak Suka Sunrise',
     's1-title': 'Tempat di Mana Setiap Kanak-kanak Bersinar',
     's1-desc': 'Kami percaya setiap kanak-kanak mempunyai hadiah unik. Persekitaran kami yang mesra membantu mereka menemui potensi mereka sambil berseronok setiap hari.',
-    'c1t': 'Pembelajaran Gembira',
-    'c1d': 'Belajar melalui permainan, kreativiti, dan kegembiraan. Pelajar kami tidak sabar untuk ke sekolah setiap hari.',
+    'c1t': 'Pembelajaran Gembira', 'c1d': 'Belajar melalui permainan, kreativiti, dan kegembiraan. Pelajar kami tidak sabar untuk ke sekolah setiap hari.',
+    card_teachers_title: 'Guru Penyayang', card_teachers_desc: 'Pendidik berdedikasi yang mengenali setiap pelajar dengan nama dan meraikan setiap pencapaian, besar atau kecil.',
+    card_growth_title: 'Pertumbuhan Peribadi', card_growth_desc: 'Pembinaan karakter, kecerdasan emosi, dan kemahiran kepimpinan dijalin ke dalam pengalaman pembelajaran harian.',
+    card_creative_title: 'Aktiviti Kreatif', card_creative_desc: 'Seni, muzik, STEM, drama, sukan — kokurikulum kaya yang memupuk bakat melangkaui buku teks.',
+    card_small_title: 'Saiz Kelas Kecil', card_small_desc: 'Perhatian maksimum, pengajaran peribadi, dan hubungan guru-pelajar yang bermakna dalam setiap kelas.',
+    card_global_title: 'Pendedahan Antarabangsa', card_global_desc: 'Kurikulum Cambridge IGCSE menyediakan pelajar untuk universiti dan kerjaya di mana-mana sahaja di dunia.',
+    s2_eye: 'Mengapa Ibu Bapa Memilih Sunrise',
+    s2_title: 'Membina Kepercayaan, Satu Keluarga Pada Satu Masa',
+    s2_desc: 'Dari kecemerlangan akademik hingga kesejahteraan emosi, kami bekerjasama dengan ibu bapa untuk membesarkan anak yang yakin, gembira, dan bersedia untuk masa depan.',
+    why_igcse_title: 'Kurikulum Cambridge IGCSE', why_igcse_desc: 'Kelayakan yang diiktiraf di peringkat global membuka pintu ke 140+ negara dan universiti terkemuka di seluruh dunia.',
+    why_english_title: 'Asas Bahasa Inggeris yang Kukuh', why_english_desc: 'Pengajaran imersif dalam Bahasa Inggeris dengan modul komunikasi dan penulisan khusus.',
+    why_student_title: 'Pengajaran Berpusatkan Pelajar', why_student_desc: 'Kami memenuhi setiap kanak-kanak di mana mereka berada, menyesuaikan pendekatan kami mengikut gaya dan rentak pembelajaran unik mereka.',
+    why_parent_title: 'Perkongsian Ibu Bapa', why_parent_desc: 'Pertemuan ibu bapa-guru secara berkala, kemas kini kemajuan, dan dasar pintu terbuka supaya anda sentiasa tahu perkembangan anak anda.',
+    why_safe_title: 'Persekitaran Selamat & Penyayang', why_safe_desc: 'Budaya sekolah yang mesra dan mengalu-alukan di mana setiap kanak-kanak berasa selamat, dihormati, dan disayangi setiap hari.',
+    why_commit_title: 'Komitmen Kami kepada Setiap Keluarga',
+    quote_text: '"Pendidikan bukan hanya tentang peperiksaan. Pertumbuhan yang gembira juga sama pentingnya."',
+    quote_attr: '— Falsafah Sunrise Education',
+    hs_eye: 'Homeschooling', hs_title: 'Program Homeschooling Sunrise',
+    hs_desc: 'Pendidikan fleksibel dan peribadi yang sesuai dengan gaya hidup keluarga anda — dengan semua struktur dan sokongan kurikulum bertaraf dunia.',
+    hs_flex_title: 'Jadual Fleksibel', hs_flex_desc: 'Belajar mengikut kadar sendiri dengan jadual yang sesuai untuk kehidupan keluarga dan keperluan individu anda.',
+    hs_personal_title: 'Kurikulum Peribadi', hs_personal_desc: 'Laluan pembelajaran yang disesuaikan dibina berdasarkan kekuatan, minat, dan matlamat setiap kanak-kanak.',
+    hs_cert_title: 'Diiktiraf Cambridge', hs_cert_desc: 'Kelayakan penuh Cambridge IGCSE — standard global yang sama, disampaikan untuk pelajar di rumah.',
+    hs_support_title: 'Sokongan Khusus', hs_support_desc: 'Guru berpengalaman membimbing pelajar homeschooling dengan sumber, penilaian, dan pemeriksaan berkala.',
+    cta_title: 'Bersedia Memberi Anak Anda Permulaan Terbaik?',
+    cta_desc: 'Pengambilan terhad tersedia. Tempah lawatan sekolah percuma anda hari ini dan ketahui mengapa ratusan keluarga memilih Sunrise Education.',
+    cta_btn1: '🎒 Tempah Lawatan', cta_btn2: '💬 WhatsApp Sekarang',
+    pri_eye: 'Sekolah Rendah', pri_title: 'Program Rendah Sunrise',
+    pri_desc: 'Umur 7–12 · Membina cinta untuk belajar melalui kegembiraan, kreativiti, dan persekitaran yang mesra dan penyayang',
+    pri_sub: 'Program rendah kami memupuk rasa ingin tahu semula jadi setiap kanak-kanak dengan kurikulum holistik yang selaras dengan Cambridge yang menjadikan pembelajaran sebagai pengembaraan yang menggembirakan.',
+    btn_apply: 'Mohon Sekarang', btn_enquire: 'Bertanya',
+    core_subjects: '📚 Mata Pelajaran Teras',
+    pri_beyond_title: 'Melangkaui Bilik Darjah',
+    pri_card1_title: 'Pembinaan Karakter', pri_card1_desc: 'Pertumbuhan emosi, kerja berpasukan, kepimpinan, dan kemahiran komunikasi dibangunkan seiring dengan akademik.',
+    pri_card2_title: 'Seni Kreatif & Muzik', pri_card2_desc: 'Seni & kraf, muzik, bercerita, dan seni dramatik yang mencetuskan imaginasi dan ekspresi diri.',
+    pri_card3_title: 'Sains & STEM yang Menyeronokkan', pri_card3_desc: 'Eksperimen hands-on, permainan pendidikan, dan penerokaan sains berasaskan penemuan setiap minggu.',
+    pri_card4_title: 'Program Membaca', pri_card4_desc: 'Tabiat membaca berstruktur, fonik, pemahaman, dan cinta untuk buku dari hari pertama.',
+    pri_card5_title: 'Sukan & Pergerakan', pri_card5_desc: 'Pendidikan jasmani, permainan luar, dan sukan yang membangunkan kesihatan, koordinasi, dan semangat berpasukan.',
+    pri_card6_title: 'Logik Matematik', pri_card6_desc: 'Pemikiran kritis, penyelesaian masalah, dan penaakulan matematik dibina melalui cabaran yang menarik.',
+    sec_eye: 'Sekolah Menengah', sec_title: 'Program Menengah Sunrise',
+    sec_desc: 'Umur 13–18 · Laluan Cambridge IGCSE ke universiti global dan kejayaan masa depan',
+    sec_sub: 'Program menengah Cambridge IGCSE kami menyediakan pelajar untuk A-Level, program Foundation, Diploma, dan universiti terkemuka di lebih 140 negara.',
+    igcse_subjects: '🎓 Mata Pelajaran IGCSE',
+    sec_skills_title: 'Kemahiran Sedia Masa Depan',
+    sec_card1_title: 'Pemikiran Kritis', sec_card1_desc: 'Kemahiran analisis, penilaian, dan penyelesaian masalah yang menyediakan pelajar untuk cabaran dunia sebenar yang kompleks.',
+    sec_card2_title: 'Pengucapan Awam', sec_card2_desc: 'Latihan debat, pembentangan, dan komunikasi untuk membina orang dewasa muda yang yakin dan petah bercakap.',
+    sec_card3_title: 'Persediaan Universiti', sec_card3_desc: 'Bimbingan kenyataan peribadi, pemilihan kursus, dan sokongan permohonan untuk universiti terkemuka di seluruh dunia.',
+    sec_card4_title: 'Kesejahteraan Emosi', sec_card4_desc: 'Sokongan kesihatan mental, pembinaan daya tahan, dan kecerdasan emosi sepanjang tahun remaja.',
+    sec_card5_title: 'Projek Sains', sec_card5_desc: 'Kerja makmal hands-on, penyiasatan bebas, dan pertandingan STEM yang mencetuskan rasa ingin tahu.',
+    sec_card6_title: 'Kewarganegaraan Global', sec_card6_desc: 'Perkhidmatan komuniti, kesedaran budaya, dan perspektif global dijalin ke dalam pembelajaran harian.',
+    igcse_global_title: 'Cambridge IGCSE Diiktiraf di 140+ Negara',
+    igcse_global_desc: 'Kelayakan IGCSE anda membuka pintu ke A-Level, Foundation, Diploma dan universiti antarabangsa terkemuka di seluruh dunia.',
+    acad_eye: 'Akademik', acad_title: 'Kurikulum Cambridge IGCSE',
+    acad_desc: 'Kurikulum British bertaraf dunia yang direka untuk pelajar berfikiran antarabangsa, diiktiraf oleh universiti dan majikan di lebih 140 negara.',
+    why_igcse_title: 'Mengapa Cambridge IGCSE?',
+    igcse_point1: 'Diiktiraf di peringkat antarabangsa di lebih 140 negara',
+    igcse_point2: 'Laluan ke program A-Level, Foundation, dan Diploma',
+    igcse_point3: 'Diterima oleh universiti terkemuka di seluruh dunia',
+    igcse_point4: 'Membangunkan pemikiran kritis dan pembelajaran berdikari',
+    igcse_point5: 'Kaedah penilaian fleksibel yang berpusatkan pelajar',
+    igcse_point6: 'Membina kelebihan daya saing global',
+    acad_subjects_title: 'Mata Pelajaran yang Kami Tawarkan',
+    acad_approach_title: 'Pendekatan Pengajaran Kami',
+    approach1_title: 'Berpusatkan Pelajar', approach1_desc: 'Setiap pelajaran direka berdasarkan keperluan dan rentak pelajar',
+    approach2_title: 'Pemikiran Kritis', approach2_desc: 'Pembelajaran berasaskan analisis dan inkuiri berbanding hafalan',
+    approach3_title: 'Penilaian Fleksibel', approach3_desc: 'Kerja kursus, projek, dan peperiksaan diseimbangkan secara adil',
+    adm_eye: 'Kemasukan 2025', adm_title: 'Kanak-kanak Gembira Bermula Di Sini',
+    adm_desc: '⚠️ Pengambilan terhad tersedia. Mulakan perjalanan Sunrise anak anda hari ini — tempah lawatan sekolah percuma dan temui pasukan penyayang kami.',
+    step1_title: 'Bertanya', step1_desc: 'Hubungi kami melalui WhatsApp, telefon, atau borang dalam talian',
+    step2_title: 'Lawatan Sekolah', step2_desc: 'Lawati kampus mesra kami dan temui guru-guru kami',
+    step3_title: 'Penilaian', step3_desc: 'Penilaian ringkas pelajar untuk mencari tahap yang sesuai',
+    step4_title: 'Pertemuan Ibu Bapa', step4_desc: 'Bincangkan kurikulum, yuran, dan keperluan anak anda',
+    step5_title: 'Daftar', step5_desc: 'Lengkapkan pendaftaran dan selamat datang anak anda!',
+    adm_doc_title: 'Dokumen Pendaftaran', adm_doc_desc: 'Sijil kelahiran, kad laporan sekolah terdahulu, gambar bersaiz pasport, salinan IC ibu bapa/penjaga.',
+    adm_scholar_title: 'Peluang Biasiswa', adm_scholar_desc: 'Biasiswa berasaskan merit tersedia untuk prestasi akademik cemerlang. Hubungi kami untuk maklumat lanjut.',
+    adm_intake_title: 'Jadual Pengambilan', adm_intake_desc: 'Kami menerima pelajar sepanjang tahun. Penggal akademik baharu bermula pada Januari dan Julai setiap tahun.',
+    adm_cta_title: '🎒 Bersedia untuk Menempah Lawatan Sekolah Anda?',
+    adm_cta_desc: 'Ketahui mengapa ratusan keluarga mempercayai Sunrise Education untuk masa depan anak-anak mereka. Tempah lawatan sekolah percuma hari ini!',
+    adm_cta_wa: '💬 WhatsApp untuk Tempah', adm_cta_email: '📧 E-mel Kami',
+    vis_eye: 'Visi Kami', vis_title: 'Pendidikan untuk Dunia Esok',
+    vis_desc: 'Kami membayangkan dunia di mana setiap kanak-kanak membesar dengan gembira, yakin, dan bersedia untuk menyumbang secara bermakna kepada masyarakat global yang berubah.',
+    vis_quote: '"Pendidikan bukan hanya tentang peperiksaan. Pertumbuhan yang gembira juga sama pentingnya."',
+    vis_quote_desc: 'Kami percaya ukuran pendidikan yang hebat bukan hanya keputusan akademik, tetapi kegembiraan, keyakinan, dan karakter yang dibawa oleh setiap kanak-kanak ke dunia.',
+    vis_card1_title: 'Falsafah Pembelajaran Gembira', vis_card1_desc: 'Setiap pelajaran direka untuk mencetuskan rasa ingin tahu, meraikan usaha, dan menjadikan pembelajaran sebagai pengalaman yang benar-benar menyeronokkan untuk semua pelajar.',
+    vis_card2_title: 'Kewarganegaraan Global', vis_card2_desc: 'Kami memupuk pelajar yang sedar budaya, empati, dan bersedia untuk menyumbang secara positif kepada dunia yang pelbagai dan saling berhubung.',
+    vis_card3_title: 'Kepimpinan & Karakter', vis_card3_desc: 'Melangkaui kemahiran akademik, kami memupuk integriti, daya tahan, belas kasihan, dan kepimpinan dalam setiap pelajar dari hari pertama.',
+    vis_card4_title: 'Inovasi Masa Depan', vis_card4_desc: 'Menyediakan pelajar untuk kerjaya dan teknologi yang belum wujud melalui pemikiran kritis, kreativiti, dan kebolehsuaian.',
+    vis_card5_title: 'Kesejahteraan Emosi', vis_card5_desc: 'Kesihatan mental dan emosi sama pentingnya dengan kejayaan akademik. Setiap kanak-kanak berhak berasa selamat, dihargai, dan disayangi.',
+    vis_card6_title: 'Komuniti & Keluarga', vis_card6_desc: 'Ibu bapa, guru, dan pelajar membentuk komuniti penyayang di mana semua orang menyokong pertumbuhan dan kejayaan satu sama lain.',
+    vis_values_title: 'Nilai Teras Kami',
+    about_eye: 'Tentang Kami', about_title: 'Kisah & Perjalanan Kami',
+    about_desc: 'Sejak 2014, Sunrise Education telah menjadi suar pembelajaran yang mesra, gembira, dan berfikiran antarabangsa untuk keluarga di seluruh Klang dan Selangor.',
+    principal_title: 'Mesej Pengetua',
+    principal_msg: '"Di Sunrise Education, kami percaya setiap kanak-kanak adalah hadiah unik kepada dunia ini. Misi kami mudah: untuk mewujudkan persekitaran di mana kanak-kanak sangat gembira untuk belajar sehingga mereka lupa bahawa mereka sedang belajar. Apabila kanak-kanak tersenyum, belajar, dan membesar bersama, masa depan menjadi cerah untuk kita semua."',
+    school_leadership: 'Kepimpinan Sekolah',
+    quick_facts: 'Fakta Ringkas', fact_founded: 'Ditubuhkan', fact_location: 'Lokasi',
+    fact_curriculum: 'Kurikulum', fact_ages: 'Umur Pelajar', fact_programme: 'Program', fact_recognition: 'Pengiktirafan',
+    journey_title: 'Perjalanan Kami',
+    tl1_title: 'Sunrise Education Ditubuhkan', tl1_desc: 'Ditubuhkan dengan misi untuk membawa pendidikan standard antarabangsa yang gembira ke Klang, Selangor.',
+    tl2_title: 'Pelancaran Program Cambridge IGCSE', tl2_desc: 'Mula menawarkan kurikulum penuh Cambridge IGCSE, membawa pendidikan British bertaraf dunia ke Malaysia.',
+    tl3_title: 'Pusat Homeschooling Ditubuhkan', tl3_desc: 'Melancarkan program homeschooling mesra Malaysia, menyediakan pembelajaran fleksibel untuk keluarga di seluruh Selangor.',
+    tl4_title: 'Kemudahan Diperluas & Pembelajaran Dalam Talian', tl4_desc: 'Membesarkan kampus kami dan memperkenalkan pilihan pembelajaran hibrid, melayani lebih banyak keluarga di seluruh rantau ini.',
+    tl5_title: 'Ulang Tahun ke-10 & Program Baharu', tl5_desc: 'Meraikan satu dekad pembelajaran gembira dengan program pengayaan baharu dan kemudahan yang dinaik taraf.',
+    tl6_title: 'Berkembang Kukuh — Pengambilan Baharu Dibuka', tl6_desc: 'Terus memberi inspirasi kepada hati muda dan memperkasa masa depan cerah di seluruh Klang dan Selangor.',
+    blog_eye: 'Blog & Sumber', blog_title: 'Wawasan Pembelajaran & Petua Keibubapaan',
+    blog_desc: 'Nasihat pakar tentang pendidikan, keibubapaan, IGCSE, homeschooling, dan membantu anak anda berkembang maju dalam dunia hari ini.',
+    blog_tab_all: 'Semua', blog_tab_edu: 'Pendidikan', blog_tab_parenting: 'Keibubapaan',
+    blog_tab_hs: 'Homeschooling', blog_tab_igcse: 'IGCSE', blog_tab_happy: 'Pembelajaran Gembira',
+    blog_cat_happy: 'Pembelajaran Gembira', blog_cat_igcse: 'IGCSE', blog_cat_hs: 'Homeschooling',
+    blog_cat_edu: 'Pendidikan', blog_cat_parenting: 'Keibubapaan',
+    blog1_title: 'Mengapa Kanak-kanak Gembira Belajar Lebih Baik', blog1_excerpt: 'Kajian menunjukkan kesejahteraan emosi secara langsung memberi kesan kepada perkembangan kognitif dan prestasi akademik. Inilah cara kami mengutamakan kebahagiaan...',
+    blog2_title: 'Apa Itu Cambridge IGCSE?', blog2_excerpt: 'Panduan lengkap untuk kelayakan antarabangsa paling popular di dunia — apa itu, bagaimana ia berfungsi, dan mengapa ia penting untuk anak anda...',
+    blog3_title: 'Faedah Homeschooling di Malaysia', blog3_excerpt: 'Adakah homeschooling sesuai untuk keluarga anda? Temui fleksibiliti, personalisasi, dan kelebihan akademik pendidikan di rumah...',
+    blog4_title: 'Bagaimana Sunrise Membina Keyakinan Pelajar', blog4_excerpt: 'Dari pengucapan awam hingga aktiviti kepimpinan, temui bagaimana pendekatan holistik kami mewujudkan orang muda yang yakin dan berdaya tahan...',
+    blog5_title: 'Membina Kemahiran Komunikasi Bahasa Inggeris yang Kukuh', blog5_excerpt: 'Kefasihan Bahasa Inggeris adalah kuasa besar global. Berikut adalah strategi terbukti yang kami gunakan di Sunrise untuk memupuk komunikator yang cemerlang...',
+    blog6_title: 'Bagaimana Ibu Bapa Boleh Menyokong Pembelajaran di Rumah', blog6_excerpt: 'Persekitaran rumah secara mendalam membentuk pembelajaran kanak-kanak. Petua praktikal yang disokong kajian yang boleh dimulakan oleh setiap ibu bapa hari ini...',
+    blog7_title: 'Kepentingan Pertumbuhan Emosi dalam Pendidikan', blog7_excerpt: 'IQ sahaja tidak menentukan kejayaan. Kecerdasan emosi, empati, dan daya tahan sama pentingnya — inilah sebabnya...',
+    blog8_title: 'Aktiviti Pembelajaran Menyeronokkan untuk Pelajar Rendah', blog8_excerpt: 'Aktiviti menarik dan bersesuaian dengan umur yang menjadikan pembelajaran tidak dapat ditolak untuk kanak-kanak berumur 7–12 di rumah dan di sekolah...',
+    blog9_title: 'Menyediakan Remaja untuk Universiti Masa Depan', blog9_excerpt: 'Persediaan universiti bermula lebih awal daripada yang anda fikirkan. Panduan langkah demi langkah untuk menetapkan remaja anda ke arah kejayaan global...',
+    blog10_title: 'Kepentingan Pembelajaran Kelas Kecil', blog10_excerpt: 'Kelas kecil mengubah pendidikan. Inilah sains di sebalik mengapa nisbah guru-pelajar adalah salah satu faktor paling kritikal...',
+    contact_eye: 'Hubungi Kami', contact_title: 'Kami Suka Mendengar Daripada Anda',
+    contact_desc: 'Ada soalan? Bersedia untuk menempah lawatan? Pasukan mesra kami sedia membantu. Hubungi kami bila-bila masa — kami membalas dalam masa 24 jam.',
+    contact_address_label: 'Alamat', contact_address: 'No. 25-2nd Floor, Jalan Mahogani 5/KS7, 41200 Klang, Selangor, Malaysia',
+    contact_phone_label: 'Telefon / WhatsApp', contact_email_label: 'E-mel',
+    contact_web_label: 'Laman Web', contact_hours_label: 'Waktu Pejabat',
+    contact_hours: 'Isnin–Jumaat: 8:00pg – 5:00ptg<br>Sabtu: 8:00pg – 12:00tgh',
+    contact_follow_label: 'Ikuti Kami', contact_directions: '🗺️ Dapatkan Arah', contact_wa: '💬 WhatsApp Sekarang',
+    form_title: 'Hantar Mesej Kepada Kami', form_parent_name: 'Nama Ibu Bapa', form_child_name: 'Nama Anak',
+    form_phone: 'Telefon / WhatsApp', form_email: 'Alamat E-mel',
+    form_age: 'Umur Anak', form_age_select: 'Pilih umur',
+    form_programme: 'Minat Program', form_prog_select: 'Pilih program',
+    form_message: 'Mesej', form_send: '📩 Hantar Mesej',
+    form_note: 'Kami membalas dalam masa 24 jam. Atau WhatsApp kami untuk balasan segera! 💬',
+    footer_desc: 'Pusat Sekolah Antarabangsa & Homeschooling di Klang, Selangor. Kurikulum Cambridge IGCSE. Pembelajaran gembira untuk umur 7–18.',
+    footer_quick: 'Pautan Pantas', footer_home: 'Utama', footer_primary: 'Sekolah Rendah',
+    footer_secondary: 'Sekolah Menengah', footer_academic: 'Akademik', footer_admissions: 'Kemasukan',
+    footer_about: 'Tentang', footer_vision: 'Visi Kami', footer_about_us: 'Tentang Kami',
+    footer_blog: 'Blog', footer_contact: 'Hubungi', footer_wa: 'WhatsApp Kami',
+    footer_programmes: 'Program', footer_pri: 'Rendah (7–12)', footer_sec: 'Menengah (13–18)',
+    footer_hs: 'Homeschooling', footer_igcse: 'Cambridge IGCSE', footer_tour: 'Tempah Lawatan',
+    footer_copy: '© 2025 Sunrise Education (阳光学府) · No. 25-2F, Jalan Mahogani 5/KS7, 41200 Klang, Selangor, Malaysia',
+    wa_tooltip: 'Berbual dengan Sunrise Education!'
   }
 };
 
-// ── SECTION SWITCHING ──
+// ── 页面切换 ──
 function showSection(name) {
   document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
   document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
@@ -1024,21 +1485,40 @@ function showSection(name) {
   return false;
 }
 
-// ── LANGUAGE ──
+// ── 语言切换（完整版） ──
 function setLang(lang) {
   currentLang = lang;
   localStorage.setItem('sunrise_lang', lang);
   document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
   document.getElementById('lang' + lang.toUpperCase()).classList.add('active');
-  const trans = t[lang] || t['en'];
+  const trans = t[lang] || t['zh'];
+  
+  // 更新所有带 data-key 属性的元素
+  document.querySelectorAll('[data-key]').forEach(el => {
+    const key = el.getAttribute('data-key');
+    if (trans[key]) {
+      if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') {
+        el.placeholder = trans[key];
+      } else if (el.tagName === 'SELECT' || el.tagName === 'OPTION') {
+        el.textContent = trans[key];
+      } else {
+        el.innerHTML = trans[key];
+      }
+    }
+  });
+  
+  // 更新带 id 的元素（兼容旧版）
   Object.entries(trans).forEach(([id, val]) => {
     const el = document.getElementById(id);
-    if (el) el.textContent = val;
+    if (el && !el.hasAttribute('data-key')) {
+      el.textContent = val;
+    }
   });
+  
   document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang === 'bm' ? 'ms' : 'en';
 }
 
-// ── THEME ──
+// ── 主题切换 ──
 function setTheme(theme) {
   currentTheme = theme;
   localStorage.setItem('sunrise_theme', theme);
@@ -1048,19 +1528,19 @@ function setTheme(theme) {
   if (ids[theme]) document.getElementById(ids[theme]).classList.add('active');
 }
 
-// ── MOBILE MENU ──
+// ── 移动端菜单 ──
 function toggleMobile() {
   document.getElementById('mobile-menu').classList.toggle('open');
 }
 
-// ── SCROLL PROGRESS ──
+// ── 滚动进度条 ──
 window.addEventListener('scroll', () => {
   const h = document.body.scrollHeight - window.innerHeight;
   const w = h > 0 ? (window.scrollY / h * 100) : 0;
   document.getElementById('scroll-bar').style.width = w + '%';
 });
 
-// ── REVEAL ON SCROLL ──
+// ── 滚动显示动画 ──
 function initReveal() {
   setTimeout(() => {
     const els = document.querySelectorAll('.reveal:not(.visible)');
@@ -1071,12 +1551,17 @@ function initReveal() {
   }, 100);
 }
 
-// ── FORM SUBMIT ──
+// ── 表单提交 ──
 function submitForm() {
-  alert('Thank you for your message! 🌟\nOur team will contact you within 24 hours.\nFor faster response, WhatsApp us at +6 012-425 1556 😊');
+  const msgs = {
+    en: 'Thank you for your message! 🌟\nOur team will contact you within 24 hours.\nFor faster response, WhatsApp us at +6 012-425 1556 😊',
+    zh: '感谢您的留言！🌟\n我们的团队将在24小时内与您联系。\n如需更快回复，请通过WhatsApp联系我们：+6 012-425 1556 😊',
+    bm: 'Terima kasih atas mesej anda! 🌟\nPasukan kami akan menghubungi anda dalam masa 24 jam.\nUntuk respons lebih pantas, WhatsApp kami di +6 012-425 1556 😊'
+  };
+  alert(msgs[currentLang] || msgs['zh']);
 }
 
-// ── BLOG TABS ──
+// ── 博客标签切换 ──
 document.querySelectorAll('.ptab').forEach(tab => {
   tab.addEventListener('click', function() {
     document.querySelectorAll('.ptab').forEach(t => t.classList.remove('active'));
@@ -1084,7 +1569,7 @@ document.querySelectorAll('.ptab').forEach(tab => {
   });
 });
 
-// ── INIT ──
+// ── 初始化 ──
 document.addEventListener('DOMContentLoaded', () => {
   setTheme(currentTheme);
   setLang(currentLang);
