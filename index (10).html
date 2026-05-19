@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunrise Education (阳光学府) | International School & Homeschooling | Klang, Selangor</title>
+<meta name="description" content="Sunrise Education (阳光学府) – Cambridge IGCSE International School & Homeschooling in Klang, Selangor. Happy learning for ages 7–18. Warm, caring, future-ready education.">
+<meta name="keywords" content="Sunrise Education, international school Klang, IGCSE Malaysia, Cambridge homeschool, homeschooling Selangor, happy learning Malaysia">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Nunito:wght@300;400;600;700;800&family=Noto+Sans+SC:wght@300;400;700&display=swap" rel="stylesheet">
+<style>
+:root {
+  --sun-gold: #F5A623;
+  --sun-orange: #F07D2A;
+  --sun-yellow: #FFF0C8;
+  --sun-warm: #FFF8ED;
+  --sun-sky: #4AAAD4;
+  --sun-sky-deep: #2176A4;
+  --sun-green: #5DB87A;
+  --sun-red: #E05C5C;
+  --sun-text: #2D1F0F;
+  --sun-muted: #7A6247;
+  --sun-white: #FFFFFF;
+  --sun-card: rgba(255,255,255,0.92);
+  --nav-bg: rgba(255,252,245,0.96);
+  --hero-grad1: #FFF8E7;
+  --hero-grad2: #FFE8B8;
+  --section-alt: #FFF4E0;
+  --footer-bg: #2D1F0F;
+  --border: rgba(245,166,35,0.25);
+  --shadow: 0 8px 40px rgba(240,125,42,0.10);
+  --radius: 20px;
+  --radius-sm: 12px;
+  --font-display: 'Cormorant Garamond', Georgia, serif;
+  --font-body: 'Nunito', 'Noto Sans SC', sans-serif;
+  --transition: 0.35s cubic-bezier(0.4,0,0.2,1);
+}
+[data-theme="light"] {
+  --sun-warm: #F5F9FF;
+  --hero-grad1: #E8F4FF;
+  --hero-grad2: #D0EAFF;
+  --section-alt: #EEF6FF;
+  --sun-card: rgba(255,255,255,0.95);
+  --nav-bg: rgba(245,249,255,0.97);
+  --sun-gold: #2176A4;
+  --sun-orange: #1B5F8A;
+  --border: rgba(33,118,164,0.18);
+  --shadow: 0 8px 40px rgba(33,118,164,0.10);
+}
+[data-theme="dark"] {
+  --sun-warm: #12100E;
+  --hero-grad1: #1A140D;
+  --hero-grad2: #221808;
+  --section-alt: #1C1610;
+  --sun-card: rgba(35,27,18,0.96);
+  --nav-bg: rgba(18,16,14,0.97);
+  --sun-text: #F5E8D0;
+  --sun-muted: #BDA88A;
+  --sun-white: #F0E4CC;
+  --border: rgba(245,166,35,0.15);
+  --shadow: 0 8px 40px rgba(0,0,0,0.45);
+  --footer-bg: #0C0A07;
+}
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;font-size:16px}
+body{font-family:var(--font-body);background:var(--sun-warm);color:var(--sun-text);transition:background var(--transition),color var(--transition);overflow-x:hidden;line-height:1.7}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button{cursor:pointer;font-family:var(--font-body);border:none;background:none}
+
+/* ── NAV ── */
+#navbar{position:fixed;top:0;left:0;right:0;z-index:1000;background:var(--nav-bg);backdrop-filter:blur(18px);border-bottom:1px solid var(--border);transition:all var(--transition)}
+.nav-inner{max-width:1280px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;gap:16px}
+.logo{display:flex;align-items:center;gap:10px;flex-shrink:0}
+.logo-sun{width:42px;height:42px;position:relative}
+.logo-sun svg{width:42px;height:42px}
+.logo-text{display:flex;flex-direction:column;line-height:1.1}
+.logo-text .en{font-family:var(--font-display);font-size:1.2rem;font-weight:700;color:var(--sun-orange);letter-spacing:0.01em}
+.logo-text .zh{font-size:0.72rem;color:var(--sun-muted);font-weight:600;letter-spacing:0.08em}
+.nav-links{display:flex;align-items:center;gap:2px;margin-left:auto;flex-wrap:nowrap}
+.nav-links a{font-size:0.78rem;font-weight:700;padding:6px 10px;border-radius:8px;color:var(--sun-muted);letter-spacing:0.04em;transition:all 0.2s;text-transform:uppercase;white-space:nowrap}
+.nav-links a:hover,.nav-links a.active{color:var(--sun-orange);background:rgba(245,166,35,0.1)}
+.nav-controls{display:flex;align-items:center;gap:6px;margin-left:8px}
+.ctrl-btn{width:34px;height:34px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:0.75rem;font-weight:700;color:var(--sun-muted);border:1px solid var(--border);transition:all 0.2s;background:transparent}
+.ctrl-btn:hover{background:var(--sun-gold);color:white;border-color:var(--sun-gold)}
+.ctrl-btn.active{background:var(--sun-gold);color:white;border-color:var(--sun-gold)}
+.lang-btn{font-size:0.7rem;padding:0 8px;width:auto}
+.hamburger{display:none;flex-direction:column;gap:5px;width:34px;height:34px;align-items:center;justify-content:center;border-radius:10px;border:1px solid var(--border)}
+.hamburger span{display:block;width:18px;height:2px;background:var(--sun-orange);border-radius:2px;transition:all 0.3s}
+
+/* ── MOBILE MENU ── */
+#mobile-menu{display:none;position:fixed;top:68px;left:0;right:0;z-index:999;background:var(--nav-bg);backdrop-filter:blur(18px);border-bottom:1px solid var(--border);padding:12px 0 16px}
+#mobile-menu.open{display:block}
+#mobile-menu a{display:block;padding:10px 28px;font-size:0.85rem;font-weight:700;letter-spacing:0.04em;text-transform:uppercase;color:var(--sun-muted)}
+#mobile-menu a:hover{color:var(--sun-orange)}
+
+/* ── SECTIONS ── */
+.page-section{display:none;animation:fadeIn 0.4s ease}
+.page-section.active{display:block}
+@keyframes fadeIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── HERO ── */
+#hero{min-height:100vh;background:linear-gradient(150deg,var(--hero-grad1) 0%,var(--hero-grad2) 60%,var(--sun-yellow) 100%);display:flex;align-items:center;position:relative;overflow:hidden;padding-top:68px}
+.hero-shapes{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.shape{position:absolute;border-radius:50%;opacity:0.25;animation:float 8s ease-in-out infinite}
+.s1{width:420px;height:420px;background:radial-gradient(circle,var(--sun-gold),transparent 70%);top:-100px;right:-80px;animation-delay:0s}
+.s2{width:280px;height:280px;background:radial-gradient(circle,#F07D2A,transparent 70%);bottom:60px;left:-60px;animation-delay:-3s}
+.s3{width:180px;height:180px;background:radial-gradient(circle,var(--sun-sky),transparent 70%);top:40%;right:18%;animation-delay:-5s}
+@keyframes float{0%,100%{transform:translateY(0) scale(1)}50%{transform:translateY(-24px) scale(1.04)}}
+.hero-content{max-width:1280px;margin:0 auto;padding:60px 24px 80px;display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center;position:relative;z-index:1}
+.hero-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(245,166,35,0.15);border:1px solid rgba(245,166,35,0.3);border-radius:30px;padding:6px 16px;font-size:0.75rem;font-weight:700;color:var(--sun-orange);letter-spacing:0.06em;text-transform:uppercase;margin-bottom:20px;animation:slideUp 0.6s ease 0.1s both}
+.hero-badge .dot{width:8px;height:8px;background:var(--sun-gold);border-radius:50%;animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{transform:scale(1);opacity:1}50%{transform:scale(1.4);opacity:0.6}}
+.hero-title{font-family:var(--font-display);font-size:clamp(2.4rem,5vw,4rem);font-weight:700;line-height:1.12;color:var(--sun-text);margin-bottom:12px;animation:slideUp 0.6s ease 0.2s both}
+.hero-title em{color:var(--sun-orange);font-style:normal}
+.hero-tagline{font-size:clamp(1rem,2vw,1.25rem);color:var(--sun-muted);margin-bottom:8px;font-weight:400;animation:slideUp 0.6s ease 0.3s both}
+.hero-keywords{display:flex;gap:10px;flex-wrap:wrap;margin:18px 0 28px;animation:slideUp 0.6s ease 0.4s both}
+.kw{background:var(--sun-card);border:1px solid var(--border);border-radius:30px;padding:5px 14px;font-size:0.78rem;font-weight:700;color:var(--sun-muted);letter-spacing:0.03em}
+.hero-ctas{display:flex;gap:14px;flex-wrap:wrap;animation:slideUp 0.6s ease 0.5s both}
+.btn-primary{display:inline-flex;align-items:center;gap:8px;background:linear-gradient(135deg,var(--sun-gold),var(--sun-orange));color:white;padding:14px 28px;border-radius:50px;font-weight:800;font-size:0.9rem;letter-spacing:0.02em;box-shadow:0 4px 20px rgba(245,166,35,0.4);transition:all 0.3s;white-space:nowrap}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(245,166,35,0.5)}
+.btn-secondary{display:inline-flex;align-items:center;gap:8px;background:var(--sun-card);color:var(--sun-orange);padding:14px 28px;border-radius:50px;font-weight:800;font-size:0.9rem;border:2px solid var(--sun-gold);transition:all 0.3s;white-space:nowrap}
+.btn-secondary:hover{transform:translateY(-2px);background:var(--sun-gold);color:white}
+.hero-visual{position:relative;animation:slideUp 0.6s ease 0.3s both}
+.hero-card-main{background:var(--sun-card);border-radius:24px;padding:28px;box-shadow:var(--shadow);border:1px solid var(--border)}
+.hero-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:18px}
+.stat-box{background:linear-gradient(135deg,var(--hero-grad1),var(--hero-grad2));border-radius:14px;padding:16px 12px;text-align:center;border:1px solid var(--border)}
+.stat-num{font-family:var(--font-display);font-size:1.9rem;font-weight:700;color:var(--sun-orange);line-height:1}
+.stat-label{font-size:0.68rem;color:var(--sun-muted);font-weight:700;letter-spacing:0.05em;text-transform:uppercase;margin-top:4px}
+.hero-school-name{font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--sun-text);margin-bottom:6px}
+.hero-sub{font-size:0.82rem;color:var(--sun-muted);display:flex;align-items:center;gap:6px}
+.hero-sub svg{color:var(--sun-gold)}
+@keyframes slideUp{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+
+/* ── SECTION STYLES ── */
+.section-wrap{max-width:1280px;margin:0 auto;padding:80px 24px}
+.section-header{text-align:center;margin-bottom:56px}
+.section-eyebrow{display:inline-block;font-size:0.72rem;font-weight:800;letter-spacing:0.12em;text-transform:uppercase;color:var(--sun-orange);background:rgba(245,166,35,0.1);padding:5px 16px;border-radius:30px;margin-bottom:14px;border:1px solid rgba(245,166,35,0.2)}
+.section-title{font-family:var(--font-display);font-size:clamp(1.8rem,4vw,2.8rem);font-weight:700;color:var(--sun-text);line-height:1.2;margin-bottom:14px}
+.section-title em{color:var(--sun-orange);font-style:normal}
+.section-desc{font-size:1rem;color:var(--sun-muted);max-width:600px;margin:0 auto;line-height:1.8}
+.alt-bg{background:var(--section-alt)}
+
+/* ── CARDS ── */
+.cards-grid{display:grid;gap:20px}
+.cards-3{grid-template-columns:repeat(3,1fr)}
+.cards-4{grid-template-columns:repeat(4,1fr)}
+.cards-2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--sun-card);border-radius:var(--radius);padding:28px;border:1px solid var(--border);transition:all 0.3s;position:relative;overflow:hidden}
+.card:hover{transform:translateY(-5px);box-shadow:var(--shadow)}
+.card-icon{width:52px;height:52px;border-radius:14px;display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:1.4rem}
+.icon-sun{background:linear-gradient(135deg,#FFF0B8,#FFD76E)}
+.icon-blue{background:linear-gradient(135deg,#D0EAFF,#90CAFF)}
+.icon-green{background:linear-gradient(135deg,#D0F0E0,#80D4A8)}
+.icon-pink{background:linear-gradient(135deg,#FFE0E8,#FFB8CC)}
+.icon-purple{background:linear-gradient(135deg,#E8D8FF,#C8A8FF)}
+.icon-teal{background:linear-gradient(135deg,#D0F4F0,#80DDD8)}
+.card-title{font-weight:800;font-size:1rem;color:var(--sun-text);margin-bottom:8px}
+.card-text{font-size:0.88rem;color:var(--sun-muted);line-height:1.7}
+.card-accent{position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,var(--sun-gold),var(--sun-orange))}
+
+/* ── WHY US ── */
+.why-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.why-list{display:flex;flex-direction:column;gap:20px}
+.why-item{display:flex;align-items:flex-start;gap:16px}
+.why-icon{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--sun-yellow),rgba(245,166,35,0.3));display:flex;align-items:center;justify-content:center;font-size:1.2rem;flex-shrink:0;border:1px solid rgba(245,166,35,0.2)}
+.why-content h4{font-weight:800;font-size:0.95rem;color:var(--sun-text);margin-bottom:4px}
+.why-content p{font-size:0.84rem;color:var(--sun-muted);line-height:1.6}
+.why-visual{border-radius:24px;overflow:hidden;position:relative;background:linear-gradient(135deg,var(--sun-yellow),#FFD8A0);padding:32px;text-align:center}
+.why-badge-cloud{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.wbadge{background:var(--sun-card);border-radius:30px;padding:8px 16px;font-size:0.78rem;font-weight:700;color:var(--sun-orange);border:1px solid rgba(245,166,35,0.25);transition:all 0.3s}
+.wbadge:hover{background:var(--sun-gold);color:white}
+
+/* ── PROGRAMS ── */
+.program-hero{background:linear-gradient(135deg,var(--sun-card),var(--hero-grad2));border-radius:24px;padding:40px;margin-bottom:32px;display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center;border:1px solid var(--border)}
+.prog-title{font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--sun-text);margin-bottom:10px}
+.prog-subtitle{color:var(--sun-muted);font-size:0.92rem;margin-bottom:20px}
+.prog-tags{display:flex;flex-wrap:wrap;gap:8px}
+.prog-tag{background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:20px;padding:4px 14px;font-size:0.75rem;font-weight:700;color:var(--sun-orange);letter-spacing:0.03em}
+.subjects-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}
+.subject-pill{background:var(--sun-card);border:1px solid var(--border);border-radius:12px;padding:10px 14px;font-size:0.78rem;font-weight:700;color:var(--sun-muted);display:flex;align-items:center;gap:8px;transition:all 0.2s}
+.subject-pill:hover{border-color:var(--sun-gold);color:var(--sun-orange)}
+.subject-pill .dot{width:6px;height:6px;background:var(--sun-gold);border-radius:50%;flex-shrink:0}
+
+/* ── ADMISSIONS ── */
+.admission-steps{display:flex;gap:0;position:relative}
+.admission-steps::before{content:'';position:absolute;top:26px;left:26px;right:26px;height:2px;background:linear-gradient(90deg,var(--sun-gold),var(--sun-orange));z-index:0}
+.step{flex:1;text-align:center;position:relative;z-index:1;padding:0 8px}
+.step-num{width:52px;height:52px;border-radius:50%;background:linear-gradient(135deg,var(--sun-gold),var(--sun-orange));color:white;display:flex;align-items:center;justify-content:center;font-weight:800;font-size:1.1rem;margin:0 auto 14px;box-shadow:0 4px 16px rgba(245,166,35,0.35);border:3px solid var(--sun-warm)}
+.step-title{font-weight:800;font-size:0.88rem;color:var(--sun-text);margin-bottom:6px}
+.step-text{font-size:0.78rem;color:var(--sun-muted);line-height:1.5}
+.admission-cta{background:linear-gradient(135deg,var(--sun-gold),var(--sun-orange));border-radius:24px;padding:48px;text-align:center;color:white;margin-top:40px}
+.admission-cta h3{font-family:var(--font-display);font-size:2rem;font-weight:700;margin-bottom:10px}
+.admission-cta p{opacity:0.9;margin-bottom:24px;font-size:0.95rem}
+.btn-white{display:inline-flex;align-items:center;gap:8px;background:white;color:var(--sun-orange);padding:14px 28px;border-radius:50px;font-weight:800;font-size:0.9rem;transition:all 0.3s;box-shadow:0 4px 20px rgba(0,0,0,0.1)}
+.btn-white:hover{transform:translateY(-2px);box-shadow:0 8px 30px rgba(0,0,0,0.15)}
+
+/* ── BLOG ── */
+.blog-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.blog-card{background:var(--sun-card);border-radius:20px;overflow:hidden;border:1px solid var(--border);transition:all 0.3s}
+.blog-card:hover{transform:translateY(-6px);box-shadow:var(--shadow)}
+.blog-thumb{height:160px;display:flex;align-items:center;justify-content:center;font-size:2.5rem;position:relative;overflow:hidden}
+.blog-body{padding:20px}
+.blog-meta{display:flex;align-items:center;gap:10px;margin-bottom:10px}
+.blog-cat{font-size:0.68rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:var(--sun-orange);background:rgba(245,166,35,0.12);padding:3px 10px;border-radius:20px;border:1px solid rgba(245,166,35,0.2)}
+.blog-time{font-size:0.7rem;color:var(--sun-muted)}
+.blog-title{font-weight:800;font-size:0.95rem;color:var(--sun-text);line-height:1.4;margin-bottom:8px}
+.blog-excerpt{font-size:0.8rem;color:var(--sun-muted);line-height:1.6}
+
+/* ── CONTACT ── */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
+.contact-info{display:flex;flex-direction:column;gap:20px}
+.contact-item{display:flex;align-items:flex-start;gap:14px}
+.contact-icon{width:44px;height:44px;border-radius:12px;background:linear-gradient(135deg,var(--sun-yellow),rgba(245,166,35,0.3));display:flex;align-items:center;justify-content:center;font-size:1.1rem;flex-shrink:0}
+.contact-label{font-size:0.72rem;font-weight:800;text-transform:uppercase;letter-spacing:0.08em;color:var(--sun-muted);margin-bottom:4px}
+.contact-value{font-weight:700;color:var(--sun-text);font-size:0.92rem}
+.contact-value a{color:var(--sun-orange)}
+.contact-form{background:var(--sun-card);border-radius:24px;padding:32px;border:1px solid var(--border)}
+.form-row{display:flex;flex-direction:column;gap:6px;margin-bottom:16px}
+.form-row label{font-size:0.78rem;font-weight:700;color:var(--sun-muted);letter-spacing:0.04em}
+.form-row input,.form-row textarea,.form-row select{background:var(--sun-warm);border:1.5px solid var(--border);border-radius:12px;padding:12px 16px;font-family:var(--font-body);font-size:0.88rem;color:var(--sun-text);outline:none;transition:border-color 0.2s;width:100%}
+.form-row input:focus,.form-row textarea:focus,.form-row select:focus{border-color:var(--sun-gold)}
+.form-row textarea{min-height:100px;resize:vertical}
+.form-2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.map-frame{border-radius:20px;overflow:hidden;border:1px solid var(--border);margin-top:24px}
+
+/* ── ABOUT ── */
+.timeline{position:relative;padding-left:32px}
+.timeline::before{content:'';position:absolute;left:0;top:0;bottom:0;width:2px;background:linear-gradient(180deg,var(--sun-gold),var(--sun-orange))}
+.tl-item{position:relative;padding-bottom:32px;padding-left:24px}
+.tl-dot{position:absolute;left:-39px;top:4px;width:14px;height:14px;border-radius:50%;background:var(--sun-gold);border:3px solid var(--sun-warm)}
+.tl-year{font-size:0.72rem;font-weight:800;letter-spacing:0.08em;color:var(--sun-orange);margin-bottom:4px;text-transform:uppercase}
+.tl-title{font-weight:800;font-size:0.95rem;color:var(--sun-text);margin-bottom:6px}
+.tl-text{font-size:0.84rem;color:var(--sun-muted);line-height:1.6}
+.vision-cards{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+.v-card{background:linear-gradient(135deg,var(--sun-card),var(--hero-grad1));border-radius:20px;padding:28px;border:1px solid var(--border);text-align:center}
+.v-card .icon{font-size:2rem;margin-bottom:14px}
+.v-card h4{font-family:var(--font-display);font-size:1.15rem;font-weight:700;color:var(--sun-text);margin-bottom:8px}
+.v-card p{font-size:0.84rem;color:var(--sun-muted);line-height:1.6}
+
+/* ── FOOTER ── */
+footer{background:var(--footer-bg);color:#C4A882;padding:60px 24px 30px}
+.footer-inner{max-width:1280px;margin:0 auto}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:40px;margin-bottom:48px}
+.footer-brand .logo-text .en{color:#F5A623}
+.footer-brand p{font-size:0.84rem;line-height:1.7;color:#A08060;margin-top:14px}
+.footer-col h5{font-size:0.72rem;font-weight:800;letter-spacing:0.1em;text-transform:uppercase;color:#F5A623;margin-bottom:16px}
+.footer-col a{display:block;font-size:0.82rem;color:#A08060;margin-bottom:8px;transition:color 0.2s}
+.footer-col a:hover{color:#F5A623}
+.footer-bottom{border-top:1px solid rgba(255,255,255,0.08);padding-top:24px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px}
+.footer-bottom p{font-size:0.78rem;color:#6A5040}
+.social-links{display:flex;gap:10px}
+.social-link{width:36px;height:36px;border-radius:10px;background:rgba(255,255,255,0.06);display:flex;align-items:center;justify-content:center;font-size:0.9rem;color:#A08060;transition:all 0.2s}
+.social-link:hover{background:rgba(245,166,35,0.2);color:#F5A623}
+
+/* ── FLOATING WHATSAPP ── */
+#wa-float{position:fixed;bottom:28px;right:28px;z-index:9999;display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+.wa-bubble{background:#25D366;color:white;width:58px;height:58px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.4rem;box-shadow:0 4px 24px rgba(37,211,102,0.4);cursor:pointer;transition:all 0.3s;animation:waPulse 3s infinite}
+.wa-bubble:hover{transform:scale(1.1);box-shadow:0 8px 32px rgba(37,211,102,0.5)}
+@keyframes waPulse{0%,100%{box-shadow:0 4px 24px rgba(37,211,102,0.4)}50%{box-shadow:0 4px 40px rgba(37,211,102,0.65)}}
+.wa-tooltip{background:white;color:var(--sun-text);padding:8px 14px;border-radius:12px;font-size:0.78rem;font-weight:700;box-shadow:0 4px 20px rgba(0,0,0,0.12);white-space:nowrap;display:none}
+#wa-float:hover .wa-tooltip{display:block}
+
+/* ── SCROLL INDICATOR ── */
+#scroll-bar{position:fixed;top:68px;left:0;height:3px;background:linear-gradient(90deg,var(--sun-gold),var(--sun-orange));z-index:999;transition:width 0.1s;border-radius:0 2px 2px 0}
+
+/* ── ANIMATIONS ── */
+.reveal{opacity:0;transform:translateY(30px);transition:opacity 0.6s ease,transform 0.6s ease}
+.reveal.visible{opacity:1;transform:translateY(0)}
+
+/* ── IGCSE BADGE ── */
+.igcse-strip{background:linear-gradient(90deg,#003087,#0057B8);color:white;text-align:center;padding:14px;font-size:0.78rem;font-weight:700;letter-spacing:0.06em}
+.igcse-strip span{color:#F5A623;margin:0 6px}
+
+/* ── PAGE TABS ── */
+.page-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:32px;padding-bottom:20px;border-bottom:1px solid var(--border)}
+.ptab{padding:8px 18px;border-radius:30px;font-size:0.8rem;font-weight:700;color:var(--sun-muted);background:var(--sun-card);border:1px solid var(--border);cursor:pointer;transition:all 0.2s;letter-spacing:0.03em}
+.ptab.active,.ptab:hover{background:linear-gradient(135deg,var(--sun-gold),var(--sun-orange));color:white;border-color:transparent}
+
+/* ── RESPONSIVE ── */
+@media(max-width:1024px){
+  .cards-4{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media(max-width:768px){
+  .nav-links{display:none}
+  .hamburger{display:flex}
+  .hero-content{grid-template-columns:1fr;gap:32px}
+  .hero-visual{order:-1}
+  .cards-3,.cards-2{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .admission-steps{flex-direction:column}
+  .admission-steps::before{display:none}
+  .blog-grid{grid-template-columns:1fr}
+  .program-hero{grid-template-columns:1fr}
+  .subjects-grid{grid-template-columns:repeat(2,1fr)}
+  .vision-cards{grid-template-columns:1fr}
+  .form-2{grid-template-columns:1fr}
+  .hero-stats{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:480px){
+  .footer-grid{grid-template-columns:1fr}
+  .hero-stats{grid-template-columns:repeat(2,1fr)}
+  .subjects-grid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body data-theme="warm">
+
+<!-- SCROLL PROGRESS -->
+<div id="scroll-bar" style="width:0%"></div>
+
+<!-- NAVBAR -->
+<nav id="navbar">
+  <div class="nav-inner">
+    <a href="#" class="logo" onclick="showSection('home')">
+      <div class="logo-sun">
+        <svg viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="21" cy="21" r="10" fill="#F5A623"/>
+          <g stroke="#F5A623" stroke-width="2" stroke-linecap="round">
+            <line x1="21" y1="4" x2="21" y2="8"/>
+            <line x1="21" y1="34" x2="21" y2="38"/>
+            <line x1="4" y1="21" x2="8" y2="21"/>
+            <line x1="34" y1="21" x2="38" y2="21"/>
+            <line x1="8.7" y1="8.7" x2="11.5" y2="11.5"/>
+            <line x1="30.5" y1="30.5" x2="33.3" y2="33.3"/>
+            <line x1="33.3" y1="8.7" x2="30.5" y2="11.5"/>
+            <line x1="11.5" y1="30.5" x2="8.7" y2="33.3"/>
+          </g>
+        </svg>
+      </div>
+      <div class="logo-text">
+        <span class="en">Sunrise Education</span>
+        <span class="zh">阳光学府</span>
+      </div>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#" onclick="showSection('home')" class="active" id="nav-home">Home</a>
+      <a href="#" onclick="showSection('primary')" id="nav-primary">Primary</a>
+      <a href="#" onclick="showSection('secondary')" id="nav-secondary">Secondary</a>
+      <a href="#" onclick="showSection('academic')" id="nav-academic">Academic</a>
+      <a href="#" onclick="showSection('admissions')" id="nav-admissions">Admissions</a>
+      <a href="#" onclick="showSection('vision')" id="nav-vision">Vision</a>
+      <a href="#" onclick="showSection('about')" id="nav-about">About Us</a>
+      <a href="#" onclick="showSection('blog')" id="nav-blog">Blog</a>
+      <a href="#" onclick="showSection('contact')" id="nav-contact">Contact</a>
+    </div>
+    <div class="nav-controls">
+      <button class="ctrl-btn lang-btn active" id="langEN" onclick="setLang('en')" title="English">EN</button>
+      <button class="ctrl-btn lang-btn" id="langZH" onclick="setLang('zh')" title="中文">中</button>
+      <button class="ctrl-btn lang-btn" id="langBM" onclick="setLang('bm')" title="Bahasa Melayu">BM</button>
+      <button class="ctrl-btn active" id="themeWarm" onclick="setTheme('warm')" title="Warm Theme">☀️</button>
+      <button class="ctrl-btn" id="themeLight" onclick="setTheme('light')" title="Light Theme">🌅</button>
+      <button class="ctrl-btn" id="themeDark" onclick="setTheme('dark')" title="Dark Theme">🌙</button>
+    </div>
+    <button class="hamburger" onclick="toggleMobile()" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<!-- MOBILE MENU -->
+<div id="mobile-menu">
+  <a href="#" onclick="showSection('home');toggleMobile()" id="m-home">🏠 Home</a>
+  <a href="#" onclick="showSection('primary');toggleMobile()" id="m-primary">📚 Primary School</a>
+  <a href="#" onclick="showSection('secondary');toggleMobile()" id="m-secondary">🎓 Secondary School</a>
+  <a href="#" onclick="showSection('academic');toggleMobile()" id="m-academic">📖 Academic</a>
+  <a href="#" onclick="showSection('admissions');toggleMobile()" id="m-admissions">✏️ Admissions</a>
+  <a href="#" onclick="showSection('vision');toggleMobile()" id="m-vision">🌟 Vision</a>
+  <a href="#" onclick="showSection('about');toggleMobile()" id="m-about">ℹ️ About Us</a>
+  <a href="#" onclick="showSection('blog');toggleMobile()" id="m-blog">📝 Blog</a>
+  <a href="#" onclick="showSection('contact');toggleMobile()" id="m-contact">📞 Contact</a>
+</div>
+
+<!-- IGCSE STRIP -->
+<div class="igcse-strip" style="margin-top:68px">
+  🎓 Cambridge IGCSE Certified<span>•</span>Recognised in<span>140+</span>Countries<span>•</span>Est. 2014 Klang, Selangor
+</div>
+
+<!-- ══════════════════════ HOME ══════════════════════ -->
+<div id="sec-home" class="page-section active">
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-shapes">
+      <div class="shape s1"></div>
+      <div class="shape s2"></div>
+      <div class="shape s3"></div>
+    </div>
+    <div class="hero-content">
+      <div>
+        <div class="hero-badge"><div class="dot"></div><span id="h-badge">International School & Homeschooling · Klang</span></div>
+        <h1 class="hero-title" id="h-title">Inspiring Young <em>Hearts</em>, Empowering <em>Bright</em> Futures</h1>
+        <p class="hero-tagline" id="h-tag">Happiness · Learning · Growth</p>
+        <div class="hero-keywords">
+          <span class="kw">🌍 Cambridge IGCSE</span>
+          <span class="kw">🏡 Homeschooling</span>
+          <span class="kw">👧 Ages 7–18</span>
+          <span class="kw">🌟 Small Classes</span>
+        </div>
+        <div class="hero-ctas">
+          <a class="btn-primary" href="#" onclick="showSection('admissions')">🎒 <span id="h-cta1">Book a School Tour</span></a>
+          <a class="btn-secondary" href="https://wa.me/60124251556" target="_blank" rel="noopener">💬 <span id="h-cta2">WhatsApp Us</span></a>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-card-main">
+          <div class="hero-school-name">☀️ Sunrise Education<br><small style="font-size:0.65rem;color:var(--sun-muted);font-family:var(--font-body)">阳光学府</small></div>
+          <div class="hero-sub">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+            No. 25-2F, Jalan Mahogani 5/KS7, 41200 Klang
+          </div>
+          <div class="hero-stats">
+            <div class="stat-box">
+              <div class="stat-num">10+</div>
+              <div class="stat-label">Years</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">140+</div>
+              <div class="stat-label">Countries</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">7–18</div>
+              <div class="stat-label">Ages</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">IGCSE</div>
+              <div class="stat-label">Cambridge</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Happy</div>
+            </div>
+            <div class="stat-box">
+              <div class="stat-num">❤️</div>
+              <div class="stat-label">Care</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHILDREN LOVE -->
+  <section style="background:var(--sun-warm)">
+    <div class="section-wrap">
+      <div class="section-header reveal">
+        <div class="section-eyebrow" id="s1-eye">Why Children Love Us</div>
+        <h2 class="section-title" id="s1-title">A Place Where <em>Every Child</em> Shines</h2>
+        <p class="section-desc" id="s1-desc">We believe every child has unique gifts. Our warm, nurturing environment helps them discover their potential while having fun every single day.</p>
+      </div>
+      <div class="cards-grid cards-3 reveal">
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">😊</div><div class="card-title" id="c1t">Happy Learning</div><div class="card-text" id="c1d">Learning through play, creativity, and joy. Our students look forward to coming to school every day.</div></div>
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">👨‍🏫</div><div class="card-title">Caring Teachers</div><div class="card-text">Dedicated educators who know every student by name and celebrate every achievement, big or small.</div></div>
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-green">🌱</div><div class="card-title">Personal Growth</div><div class="card-text">Character building, emotional intelligence, and leadership skills woven into daily learning experiences.</div></div>
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-pink">🎨</div><div class="card-title">Creative Activities</div><div class="card-text">Art, music, STEM, drama, sports — a rich co-curriculum that nurtures talent beyond the textbook.</div></div>
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-purple">🏆</div><div class="card-title">Small Class Sizes</div><div class="card-text">Maximum attention, personalised instruction, and meaningful teacher-student relationships in every class.</div></div>
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-teal">🌍</div><div class="card-title">International Exposure</div><div class="card-text">Cambridge IGCSE curriculum preparing students for universities and careers anywhere in the world.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY PARENTS CHOOSE -->
+  <section class="alt-bg">
+    <div class="section-wrap">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Why Parents Choose Sunrise</div>
+        <h2 class="section-title">Building <em>Trust</em>, One Family at a Time</h2>
+        <p class="section-desc">From academic excellence to emotional wellbeing, we partner with parents to raise confident, happy, future-ready children.</p>
+      </div>
+      <div class="why-grid reveal">
+        <div class="why-list">
+          <div class="why-item"><div class="why-icon">🎓</div><div class="why-content"><h4>Cambridge IGCSE Curriculum</h4><p>Globally recognised qualification opening doors to 140+ countries and top universities worldwide.</p></div></div>
+          <div class="why-item"><div class="why-icon">🔬</div><div class="why-content"><h4>Strong English Foundation</h4><p>Immersive English-medium instruction with dedicated communication and writing modules.</p></div></div>
+          <div class="why-item"><div class="why-icon">💡</div><div class="why-content"><h4>Student-Centred Teaching</h4><p>We meet each child where they are, adapting our approach to their unique learning style and pace.</p></div></div>
+          <div class="why-item"><div class="why-icon">🤝</div><div class="why-content"><h4>Parent Partnership</h4><p>Regular parent-teacher meetings, progress updates, and an open-door policy so you're always in the loop.</p></div></div>
+          <div class="why-item"><div class="why-icon">❤️</div><div class="why-content"><h4>Safe & Caring Environment</h4><p>A warm, welcoming school culture where every child feels safe, respected, and loved every day.</p></div></div>
+        </div>
+        <div class="why-visual">
+          <h3 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--sun-text);margin-bottom:20px">Our Commitment to Every Family</h3>
+          <div class="why-badge-cloud">
+            <span class="wbadge">✅ Cambridge Certified</span>
+            <span class="wbadge">🌟 Happy Learners</span>
+            <span class="wbadge">📊 Academic Excellence</span>
+            <span class="wbadge">🏡 Homeschooling Option</span>
+            <span class="wbadge">🎯 Personalised Learning</span>
+            <span class="wbadge">💬 Parent Updates</span>
+            <span class="wbadge">🌍 Global Pathways</span>
+            <span class="wbadge">👨‍👩‍👧 Family Friendly</span>
+            <span class="wbadge">🎨 Creative Arts</span>
+            <span class="wbadge">⚽ Sports & Activities</span>
+            <span class="wbadge">🧑‍🔬 STEM Education</span>
+            <span class="wbadge">📖 Reading Programme</span>
+          </div>
+          <div style="margin-top:24px;padding:16px;background:var(--sun-card);border-radius:16px;border:1px solid var(--border)">
+            <p style="font-family:var(--font-display);font-size:1.1rem;font-style:italic;color:var(--sun-text);text-align:center;line-height:1.5">"Education is not just about exams. Happy growth matters equally."</p>
+            <p style="font-size:0.75rem;color:var(--sun-muted);text-align:center;margin-top:8px">— Sunrise Education Philosophy</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOMESCHOOLING -->
+  <section style="background:var(--sun-warm)">
+    <div class="section-wrap">
+      <div class="section-header reveal">
+        <div class="section-eyebrow">Homeschooling</div>
+        <h2 class="section-title">Sunrise <em>Homeschooling</em> Programme</h2>
+        <p class="section-desc">Flexible, personalised education that fits your family's lifestyle — with all the structure and support of a world-class curriculum.</p>
+      </div>
+      <div class="cards-grid cards-4 reveal">
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">📅</div><div class="card-title">Flexible Schedule</div><div class="card-text">Learn at your own pace with a timetable that works for your family life and individual needs.</div></div>
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">🎯</div><div class="card-title">Personalised Curriculum</div><div class="card-text">Tailored learning paths built around each child's strengths, interests, and goals.</div></div>
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-green">📜</div><div class="card-title">Cambridge Certified</div><div class="card-text">Full Cambridge IGCSE qualification — the same global standard, delivered for home learners.</div></div>
+        <div class="card"><div class="card-accent"></div><div class="card-icon icon-pink">👩‍💻</div><div class="card-title">Dedicated Support</div><div class="card-text">Experienced teachers guide homeschoolers with resources, assessments, and regular check-ins.</div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUICK CTA -->
+  <section style="background:linear-gradient(135deg,var(--sun-gold),var(--sun-orange));padding:60px 24px;text-align:center">
+    <div style="max-width:700px;margin:0 auto">
+      <h2 style="font-family:var(--font-display);font-size:2.2rem;font-weight:700;color:white;margin-bottom:12px">Ready to Give Your Child the Best Start?</h2>
+      <p style="color:rgba(255,255,255,0.88);font-size:1rem;margin-bottom:28px">Limited intake available. Book your free school tour today and discover why hundreds of families choose Sunrise Education.</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a class="btn-white" href="#" onclick="showSection('admissions')">🎒 Book a Tour</a>
+        <a href="https://wa.me/60124251556" target="_blank" rel="noopener" class="btn-white" style="background:rgba(255,255,255,0.15);color:white;border:2px solid rgba(255,255,255,0.5)">💬 WhatsApp Now</a>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- ══════════════════════ PRIMARY ══════════════════════ -->
+<div id="sec-primary" class="page-section">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">Primary School</div>
+      <h2 class="section-title">Sunrise <em>Primary</em> Programme</h2>
+      <p class="section-desc">Ages 7–12 · Building a love for learning through joy, creativity, and a warm, caring environment</p>
+    </div>
+    <div class="program-hero reveal">
+      <div>
+        <div class="prog-title">🌟 Primary Years<br><small style="font-size:0.6em;font-family:var(--font-body);color:var(--sun-muted)">Ages 7–12</small></div>
+        <p class="prog-subtitle">Our primary programme nurtures every child's natural curiosity with a holistic Cambridge-aligned curriculum that makes learning a joyful adventure.</p>
+        <div class="prog-tags">
+          <span class="prog-tag">Small Classes</span>
+          <span class="prog-tag">Play-Based Learning</span>
+          <span class="prog-tag">English Immersion</span>
+          <span class="prog-tag">Creative Arts</span>
+          <span class="prog-tag">Character Building</span>
+          <span class="prog-tag">STEM Exploration</span>
+        </div>
+        <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn-primary" href="#" onclick="showSection('admissions')">Apply Now</a>
+          <a class="btn-secondary" href="https://wa.me/60124251556" target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-weight:800;color:var(--sun-text);margin-bottom:14px;font-size:0.9rem">📚 Core Subjects</h4>
+        <div class="subjects-grid">
+          <div class="subject-pill"><div class="dot"></div>English Language</div>
+          <div class="subject-pill"><div class="dot"></div>Mathematics</div>
+          <div class="subject-pill"><div class="dot"></div>Science</div>
+          <div class="subject-pill"><div class="dot"></div>Bahasa Melayu</div>
+          <div class="subject-pill"><div class="dot"></div>Chinese Language</div>
+          <div class="subject-pill"><div class="dot"></div>Reading & Writing</div>
+          <div class="subject-pill"><div class="dot"></div>Creative Writing</div>
+          <div class="subject-pill"><div class="dot"></div>Public Speaking</div>
+          <div class="subject-pill"><div class="dot"></div>Social Studies</div>
+        </div>
+      </div>
+    </div>
+    <div class="section-header reveal" style="margin-bottom:32px">
+      <h2 class="section-title">Beyond the <em>Classroom</em></h2>
+    </div>
+    <div class="cards-grid cards-3 reveal">
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">🎭</div><div class="card-title">Character Building</div><div class="card-text">Emotional growth, teamwork, leadership, and communication skills developed alongside academics.</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">🎨</div><div class="card-title">Creative Arts & Music</div><div class="card-text">Art & craft, music, storytelling, and dramatic arts that spark imagination and self-expression.</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-green">🔭</div><div class="card-title">Fun Science & STEM</div><div class="card-text">Hands-on experiments, educational games, and discovery-based science exploration every week.</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-pink">📖</div><div class="card-title">Reading Programme</div><div class="card-text">Structured reading habits, phonics, comprehension, and a love for books from day one.</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-purple">⚽</div><div class="card-title">Sports & Movement</div><div class="card-text">Physical education, outdoor play, and sports that develop health, coordination, and team spirit.</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-teal">🧮</div><div class="card-title">Maths Logic</div><div class="card-text">Critical thinking, problem-solving, and mathematical reasoning built through engaging challenges.</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════ SECONDARY ══════════════════════ -->
+<div id="sec-secondary" class="page-section">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">Secondary School</div>
+      <h2 class="section-title">Sunrise <em>Secondary</em> Programme</h2>
+      <p class="section-desc">Ages 13–18 · Cambridge IGCSE pathway to global universities and future success</p>
+    </div>
+    <div class="program-hero reveal">
+      <div>
+        <div class="prog-title">🎓 Secondary Years<br><small style="font-size:0.6em;font-family:var(--font-body);color:var(--sun-muted)">Ages 13–18</small></div>
+        <p class="prog-subtitle">Our Cambridge IGCSE secondary programme prepares students for A-Levels, Foundation programmes, Diplomas, and top universities across 140+ countries.</p>
+        <div class="prog-tags">
+          <span class="prog-tag">Cambridge IGCSE</span>
+          <span class="prog-tag">University Prep</span>
+          <span class="prog-tag">Critical Thinking</span>
+          <span class="prog-tag">Leadership</span>
+          <span class="prog-tag">Career Guidance</span>
+          <span class="prog-tag">Global Pathways</span>
+        </div>
+        <div style="margin-top:20px;display:flex;gap:12px;flex-wrap:wrap">
+          <a class="btn-primary" href="#" onclick="showSection('admissions')">Apply Now</a>
+          <a class="btn-secondary" href="https://wa.me/60124251556" target="_blank" rel="noopener">Enquire</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-weight:800;color:var(--sun-text);margin-bottom:14px;font-size:0.9rem">🎓 IGCSE Subjects</h4>
+        <div class="subjects-grid">
+          <div class="subject-pill"><div class="dot"></div>English Language</div>
+          <div class="subject-pill"><div class="dot"></div>English Literature</div>
+          <div class="subject-pill"><div class="dot"></div>Mathematics</div>
+          <div class="subject-pill"><div class="dot"></div>Add. Mathematics</div>
+          <div class="subject-pill"><div class="dot"></div>Biology</div>
+          <div class="subject-pill"><div class="dot"></div>Chemistry</div>
+          <div class="subject-pill"><div class="dot"></div>Physics</div>
+          <div class="subject-pill"><div class="dot"></div>ICT</div>
+          <div class="subject-pill"><div class="dot"></div>Business Studies</div>
+          <div class="subject-pill"><div class="dot"></div>Economics</div>
+          <div class="subject-pill"><div class="dot"></div>Accounting</div>
+          <div class="subject-pill"><div class="dot"></div>Global Perspectives</div>
+        </div>
+      </div>
+    </div>
+    <div class="section-header reveal" style="margin-bottom:32px">
+      <h2 class="section-title">Future-Ready <em>Skills</em></h2>
+    </div>
+    <div class="cards-grid cards-3 reveal">
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">💡</div><div class="card-title">Critical Thinking</div><div class="card-text">Analysis, evaluation, and problem-solving skills that prepare students for complex real-world challenges.</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">🗣️</div><div class="card-title">Public Speaking</div><div class="card-text">Debate, presentations, and communication training to build confident, articulate young adults.</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-green">🎓</div><div class="card-title">University Preparation</div><div class="card-text">Personal statement guidance, course selection, and application support for top universities worldwide.</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-pink">❤️</div><div class="card-title">Emotional Wellness</div><div class="card-text">Mental health support, resilience building, and emotional intelligence throughout the teenage years.</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-purple">🔬</div><div class="card-title">Science Projects</div><div class="card-text">Hands-on lab work, independent investigations, and STEM competitions that ignite curiosity.</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-teal">🌍</div><div class="card-title">Global Citizenship</div><div class="card-text">Community service, cultural awareness, and global perspectives woven into everyday learning.</div></div>
+    </div>
+    <div style="background:linear-gradient(135deg,#003087,#0057B8);border-radius:24px;padding:40px;text-align:center;margin-top:40px">
+      <h3 style="font-family:var(--font-display);font-size:1.8rem;font-weight:700;color:white;margin-bottom:10px">Cambridge IGCSE Recognised in 140+ Countries</h3>
+      <p style="color:rgba(255,255,255,0.8);margin-bottom:24px">Your IGCSE qualification opens doors to A-Level, Foundation, Diploma and top international universities globally.</p>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
+        <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:30px;padding:8px 20px;color:white;font-size:0.82rem;font-weight:700">🇬🇧 UK Universities</span>
+        <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:30px;padding:8px 20px;color:white;font-size:0.82rem;font-weight:700">🇦🇺 Australian Unis</span>
+        <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:30px;padding:8px 20px;color:white;font-size:0.82rem;font-weight:700">🇸🇬 Singapore Pathways</span>
+        <span style="background:rgba(255,255,255,0.15);border:1px solid rgba(255,255,255,0.3);border-radius:30px;padding:8px 20px;color:white;font-size:0.82rem;font-weight:700">🌏 Malaysia Local Unis</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════ ACADEMIC ══════════════════════ -->
+<div id="sec-academic" class="page-section">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">Academic</div>
+      <h2 class="section-title">Cambridge <em>IGCSE</em> Curriculum</h2>
+      <p class="section-desc">A world-class British curriculum designed for internationally minded learners, recognised by universities and employers across 140+ nations.</p>
+    </div>
+    <div style="background:linear-gradient(135deg,#003087,#0057B8);border-radius:24px;padding:40px;margin-bottom:40px" class="reveal">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:30px;align-items:center">
+        <div>
+          <h3 style="font-family:var(--font-display);font-size:1.8rem;font-weight:700;color:white;margin-bottom:12px">Why Cambridge IGCSE?</h3>
+          <ul style="list-style:none;display:flex;flex-direction:column;gap:10px">
+            <li style="color:rgba(255,255,255,0.9);font-size:0.88rem;display:flex;gap:10px"><span>✅</span>Internationally recognised across 140+ countries</li>
+            <li style="color:rgba(255,255,255,0.9);font-size:0.88rem;display:flex;gap:10px"><span>✅</span>Pathway to A-Level, Foundation, and Diploma programmes</li>
+            <li style="color:rgba(255,255,255,0.9);font-size:0.88rem;display:flex;gap:10px"><span>✅</span>Accepted by top universities worldwide</li>
+            <li style="color:rgba(255,255,255,0.9);font-size:0.88rem;display:flex;gap:10px"><span>✅</span>Develops critical thinking and independent learning</li>
+            <li style="color:rgba(255,255,255,0.9);font-size:0.88rem;display:flex;gap:10px"><span>✅</span>Student-centred, flexible assessment methods</li>
+            <li style="color:rgba(255,255,255,0.9);font-size:0.88rem;display:flex;gap:10px"><span>✅</span>Builds global competitive advantage</li>
+          </ul>
+        </div>
+        <div style="text-align:center">
+          <div style="font-size:5rem;margin-bottom:8px">🎓</div>
+          <div style="color:white;font-family:var(--font-display);font-size:1.4rem;font-weight:700">Cambridge Assessment<br>International Education</div>
+          <div style="color:rgba(255,255,255,0.7);font-size:0.8rem;margin-top:8px">Est. 1858 · University of Cambridge</div>
+        </div>
+      </div>
+    </div>
+    <div class="section-header reveal" style="margin-bottom:32px">
+      <h2 class="section-title">Subjects We <em>Offer</em></h2>
+    </div>
+    <div class="cards-grid cards-4 reveal">
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">📝</div><div class="card-title">English</div><div class="card-text">Language, Literature, Creative Writing, Communication Skills</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">📐</div><div class="card-title">Mathematics</div><div class="card-text">Core Maths, Additional Mathematics, Problem Solving</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-green">🔬</div><div class="card-title">Sciences</div><div class="card-text">Biology, Chemistry, Physics, Combined Science</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-teal">💻</div><div class="card-title">ICT</div><div class="card-text">Information & Communications Technology, Digital Skills</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-pink">📊</div><div class="card-title">Business</div><div class="card-text">Business Studies, Economics, Accounting, Entrepreneurship</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-purple">🌍</div><div class="card-title">Global Perspectives</div><div class="card-text">Critical Thinking, Research, Global Issues, Debate</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">🎨</div><div class="card-title">Creative Arts</div><div class="card-text">Visual Arts, Music, Drama, Design, Creative Expression</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">🗺️</div><div class="card-title">Humanities</div><div class="card-text">History, Geography, Sociology, Cultural Studies</div></div>
+    </div>
+    <div style="background:var(--sun-card);border-radius:24px;padding:40px;margin-top:40px;border:1px solid var(--border)" class="reveal">
+      <h3 style="font-family:var(--font-display);font-size:1.6rem;font-weight:700;color:var(--sun-text);text-align:center;margin-bottom:28px">Our Teaching Approach</h3>
+      <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px">
+        <div style="text-align:center;padding:20px;background:var(--sun-warm);border-radius:16px;border:1px solid var(--border)">
+          <div style="font-size:2rem;margin-bottom:10px">🧑‍🎓</div>
+          <div style="font-weight:800;color:var(--sun-text);margin-bottom:6px;font-size:0.9rem">Student-Centred</div>
+          <div style="font-size:0.8rem;color:var(--sun-muted)">Every lesson designed around the learner's needs and pace</div>
+        </div>
+        <div style="text-align:center;padding:20px;background:var(--sun-warm);border-radius:16px;border:1px solid var(--border)">
+          <div style="font-size:2rem;margin-bottom:10px">🤔</div>
+          <div style="font-weight:800;color:var(--sun-text);margin-bottom:6px;font-size:0.9rem">Critical Thinking</div>
+          <div style="font-size:0.8rem;color:var(--sun-muted)">Analysis and inquiry-based learning over rote memorisation</div>
+        </div>
+        <div style="text-align:center;padding:20px;background:var(--sun-warm);border-radius:16px;border:1px solid var(--border)">
+          <div style="font-size:2rem;margin-bottom:10px">🌟</div>
+          <div style="font-weight:800;color:var(--sun-text);margin-bottom:6px;font-size:0.9rem">Flexible Assessment</div>
+          <div style="font-size:0.8rem;color:var(--sun-muted)">Coursework, projects, and examinations balanced fairly</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════ ADMISSIONS ══════════════════════ -->
+<div id="sec-admissions" class="page-section">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">Admissions 2025</div>
+      <h2 class="section-title">Happy Children <em>Start Here</em></h2>
+      <p class="section-desc">⚠️ Limited intake available. Begin your child's Sunrise journey today — book a free school tour and meet our caring team.</p>
+    </div>
+    <div class="admission-steps reveal">
+      <div class="step"><div class="step-num">1</div><div class="step-title">Enquire</div><div class="step-text">Contact us via WhatsApp, phone, or online form</div></div>
+      <div class="step"><div class="step-num">2</div><div class="step-title">School Tour</div><div class="step-text">Visit our warm campus and meet our teachers</div></div>
+      <div class="step"><div class="step-num">3</div><div class="step-title">Assessment</div><div class="step-text">Brief student evaluation to find the right level</div></div>
+      <div class="step"><div class="step-num">4</div><div class="step-title">Parent Meeting</div><div class="step-text">Discuss curriculum, fees, and your child's needs</div></div>
+      <div class="step"><div class="step-num">5</div><div class="step-title">Enrol</div><div class="step-text">Complete registration and welcome your child!</div></div>
+    </div>
+    <div class="cards-grid cards-3 reveal" style="margin-top:40px">
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-sun">📋</div><div class="card-title">Registration Documents</div><div class="card-text">Birth certificate, previous school report card, passport-size photo, parent/guardian IC copy.</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-blue">💰</div><div class="card-title">Scholarship Opportunities</div><div class="card-text">Merit-based scholarships available for outstanding academic performance. Contact us to learn more.</div></div>
+      <div class="card"><div class="card-accent"></div><div class="card-icon icon-green">🗓️</div><div class="card-title">Intake Schedule</div><div class="card-text">We accept students year-round. New academic terms begin in January and July each year.</div></div>
+    </div>
+    <div class="admission-cta reveal">
+      <h3>🎒 Ready to Book Your School Tour?</h3>
+      <p>Discover why hundreds of families trust Sunrise Education for their children's future. Book a free school visit today!</p>
+      <div style="display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+        <a href="https://wa.me/60124251556?text=Hello%20Sunrise%20Education!%20I%20would%20like%20to%20book%20a%20school%20tour." target="_blank" rel="noopener" class="btn-white">💬 WhatsApp to Book</a>
+        <a href="mailto:LOVE@sun.edu.my" class="btn-white" style="background:rgba(255,255,255,0.15);color:white;border:2px solid rgba(255,255,255,0.5)">📧 Email Us</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════ VISION ══════════════════════ -->
+<div id="sec-vision" class="page-section">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">Our Vision</div>
+      <h2 class="section-title">Education for <em>Tomorrow's</em> World</h2>
+      <p class="section-desc">We envision a world where every child grows up happy, confident, and equipped to contribute meaningfully to a changing global society.</p>
+    </div>
+    <div style="background:linear-gradient(135deg,var(--sun-yellow),rgba(245,166,35,0.2));border-radius:24px;padding:48px;text-align:center;margin-bottom:40px;border:1px solid rgba(245,166,35,0.25)" class="reveal">
+      <div style="font-size:3rem;margin-bottom:16px">☀️</div>
+      <h3 style="font-family:var(--font-display);font-size:2rem;font-weight:700;color:var(--sun-text);margin-bottom:14px">"Education is not just about exams.<br>Happy growth matters equally."</h3>
+      <p style="color:var(--sun-muted);font-size:1rem;max-width:600px;margin:0 auto">We believe the measure of great education is not just academic results, but the joy, confidence, and character each child carries into the world.</p>
+    </div>
+    <div class="vision-cards reveal">
+      <div class="v-card"><div class="icon">🌟</div><h4>Happy Learning Philosophy</h4><p>Every lesson is designed to ignite curiosity, celebrate effort, and make learning a genuinely enjoyable experience for all students.</p></div>
+      <div class="v-card"><div class="icon">🌍</div><h4>Global Citizenship</h4><p>We nurture students who are culturally aware, empathetic, and ready to contribute positively to a diverse, interconnected world.</p></div>
+      <div class="v-card"><div class="icon">🏆</div><h4>Leadership & Character</h4><p>Beyond academic skills, we cultivate integrity, resilience, compassion, and leadership in every student from day one.</p></div>
+      <div class="v-card"><div class="icon">🚀</div><h4>Future Innovation</h4><p>Preparing students for careers and technologies that don't exist yet through critical thinking, creativity, and adaptability.</p></div>
+      <div class="v-card"><div class="icon">❤️</div><h4>Emotional Wellbeing</h4><p>Mental and emotional health are as important as academic success. Every child deserves to feel safe, valued, and loved.</p></div>
+      <div class="v-card"><div class="icon">🤝</div><h4>Community & Family</h4><p>Parents, teachers, and students form a caring community where everyone supports each other's growth and success.</p></div>
+    </div>
+    <div style="background:var(--sun-card);border-radius:24px;padding:40px;margin-top:40px;border:1px solid var(--border);text-align:center" class="reveal">
+      <h3 style="font-family:var(--font-display);font-size:1.6rem;color:var(--sun-text);margin-bottom:16px">Our Core Values</h3>
+      <div style="display:flex;flex-wrap:wrap;gap:12px;justify-content:center">
+        <span style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:30px;padding:8px 20px;font-weight:700;color:var(--sun-orange);font-size:0.85rem">🌟 Warm</span>
+        <span style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:30px;padding:8px 20px;font-weight:700;color:var(--sun-orange);font-size:0.85rem">💡 Intelligent</span>
+        <span style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:30px;padding:8px 20px;font-weight:700;color:var(--sun-orange);font-size:0.85rem">🎯 Personalised</span>
+        <span style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:30px;padding:8px 20px;font-weight:700;color:var(--sun-orange);font-size:0.85rem">🚀 Future Ready</span>
+        <span style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:30px;padding:8px 20px;font-weight:700;color:var(--sun-orange);font-size:0.85rem">❤️ Caring</span>
+        <span style="background:rgba(245,166,35,0.12);border:1px solid rgba(245,166,35,0.25);border-radius:30px;padding:8px 20px;font-weight:700;color:var(--sun-orange);font-size:0.85rem">🌍 Global</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════ ABOUT ══════════════════════ -->
+<div id="sec-about" class="page-section">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">About Us</div>
+      <h2 class="section-title">Our <em>Story</em> & Journey</h2>
+      <p class="section-desc">Since 2014, Sunrise Education has been a beacon of warm, joyful, internationally-minded learning for families across Klang and Selangor.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-bottom:60px" class="reveal">
+      <div>
+        <div style="background:linear-gradient(135deg,var(--sun-yellow),rgba(245,166,35,0.2));border-radius:24px;padding:32px;border:1px solid rgba(245,166,35,0.2);margin-bottom:24px">
+          <h3 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--sun-text);margin-bottom:14px">Principal's Message</h3>
+          <p style="color:var(--sun-muted);font-size:0.88rem;line-height:1.8;font-style:italic">"At Sunrise Education, we believe every child is a unique gift to this world. Our mission is simple: to create an environment where children are so happy to learn that they forget they are studying. When children smile, learn, and grow together, the future becomes bright for all of us."</p>
+          <div style="margin-top:16px;display:flex;align-items:center;gap:12px">
+            <div style="width:44px;height:44px;border-radius:50%;background:linear-gradient(135deg,var(--sun-gold),var(--sun-orange));display:flex;align-items:center;justify-content:center;color:white;font-weight:800">SE</div>
+            <div><div style="font-weight:800;color:var(--sun-text);font-size:0.88rem">School Leadership</div><div style="font-size:0.75rem;color:var(--sun-muted)">Sunrise Education (阳光学府)</div></div>
+          </div>
+        </div>
+        <div style="background:var(--sun-card);border-radius:20px;padding:24px;border:1px solid var(--border)">
+          <h4 style="font-weight:800;color:var(--sun-text);margin-bottom:14px">Quick Facts</h4>
+          <div style="display:flex;flex-direction:column;gap:10px">
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--sun-muted);font-size:0.85rem">Founded</span><span style="font-weight:700;color:var(--sun-text);font-size:0.85rem">2014</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--sun-muted);font-size:0.85rem">Location</span><span style="font-weight:700;color:var(--sun-text);font-size:0.85rem">Klang, Selangor</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--sun-muted);font-size:0.85rem">Curriculum</span><span style="font-weight:700;color:var(--sun-text);font-size:0.85rem">Cambridge IGCSE</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--sun-muted);font-size:0.85rem">Student Ages</span><span style="font-weight:700;color:var(--sun-text);font-size:0.85rem">7 – 18 years</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0;border-bottom:1px solid var(--border)"><span style="color:var(--sun-muted);font-size:0.85rem">Programme</span><span style="font-weight:700;color:var(--sun-text);font-size:0.85rem">School + Homeschooling</span></div>
+            <div style="display:flex;justify-content:space-between;padding:8px 0"><span style="color:var(--sun-muted);font-size:0.85rem">Recognition</span><span style="font-weight:700;color:var(--sun-text);font-size:0.85rem">140+ Countries</span></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-family:var(--font-display);font-size:1.5rem;font-weight:700;color:var(--sun-text);margin-bottom:24px">Our Journey</h3>
+        <div class="timeline">
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2014</div><div class="tl-title">Sunrise Education Founded</div><div class="tl-text">Established with a mission to bring happy, international-standard education to Klang, Selangor.</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2016</div><div class="tl-title">Cambridge IGCSE Programme Launch</div><div class="tl-text">Began offering the full Cambridge IGCSE curriculum, bringing world-class British education to Malaysia.</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2018</div><div class="tl-title">Homeschooling Centre Established</div><div class="tl-text">Launched Malaysia's warm homeschooling programme, providing flexible learning for families across Selangor.</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2020</div><div class="tl-title">Expanded Facilities & Online Learning</div><div class="tl-text">Grew our campus and introduced hybrid learning options, serving more families across the region.</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2023</div><div class="tl-title">10-Year Anniversary & New Programmes</div><div class="tl-text">Celebrated a decade of happy learning with new enrichment programmes and upgraded facilities.</div></div>
+          <div class="tl-item"><div class="tl-dot"></div><div class="tl-year">2025</div><div class="tl-title">Growing Strong — New Intake Open</div><div class="tl-text">Continuing to inspire young hearts and empower bright futures across Klang and Selangor.</div></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════ BLOG ══════════════════════ -->
+<div id="sec-blog" class="page-section">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">Blog & Resources</div>
+      <h2 class="section-title">Learning Insights & <em>Parenting Tips</em></h2>
+      <p class="section-desc">Expert advice on education, parenting, IGCSE, homeschooling, and helping your child thrive in today's world.</p>
+    </div>
+    <div class="page-tabs reveal">
+      <button class="ptab active">All</button>
+      <button class="ptab">Education</button>
+      <button class="ptab">Parenting</button>
+      <button class="ptab">Homeschooling</button>
+      <button class="ptab">IGCSE</button>
+      <button class="ptab">Happy Learning</button>
+    </div>
+    <div class="blog-grid reveal">
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#FFF0C8,#FFD880)">😊</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Happy Learning</span><span class="blog-time">⏱ 5 min</span></div><div class="blog-title">Why Happy Children Learn Better</div><div class="blog-excerpt">Research shows emotional wellbeing directly impacts cognitive development and academic performance. Here's how we put happiness first...</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#D0EAFF,#90CAFF)">🎓</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">IGCSE</span><span class="blog-time">⏱ 7 min</span></div><div class="blog-title">What Is Cambridge IGCSE?</div><div class="blog-excerpt">A complete guide to the world's most popular international qualification — what it is, how it works, and why it matters for your child...</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#D0F0E0,#80D4A8)">🏡</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Homeschooling</span><span class="blog-time">⏱ 6 min</span></div><div class="blog-title">Benefits of Homeschooling in Malaysia</div><div class="blog-excerpt">Is homeschooling right for your family? Discover the flexibility, personalisation, and academic advantages of home education...</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#FFE0E8,#FFB8CC)">💪</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Education</span><span class="blog-time">⏱ 4 min</span></div><div class="blog-title">How Sunrise Builds Student Confidence</div><div class="blog-excerpt">From public speaking to leadership activities, discover how our holistic approach creates confident, resilient young people...</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#E8D8FF,#C8A8FF)">🗣️</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Education</span><span class="blog-time">⏱ 5 min</span></div><div class="blog-title">Building Strong English Communication Skills</div><div class="blog-excerpt">English fluency is a global superpower. Here are proven strategies we use at Sunrise to nurture outstanding communicators...</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#D0F4F0,#80DDD8)">👨‍👩‍👧</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Parenting</span><span class="blog-time">⏱ 6 min</span></div><div class="blog-title">How Parents Can Support Learning at Home</div><div class="blog-excerpt">The home environment profoundly shapes a child's learning. Practical, research-backed tips every parent can start today...</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#FFF0C8,#FFD880)">🧠</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Parenting</span><span class="blog-time">⏱ 5 min</span></div><div class="blog-title">The Importance of Emotional Growth in Education</div><div class="blog-excerpt">IQ alone doesn't determine success. Emotional intelligence, empathy, and resilience are equally vital — here's why...</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#D0EAFF,#90CAFF)">🎮</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Happy Learning</span><span class="blog-time">⏱ 4 min</span></div><div class="blog-title">Fun Learning Activities for Primary Students</div><div class="blog-excerpt">Engaging, age-appropriate activities that make learning irresistible for children aged 7–12 at home and in school...</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#D0F0E0,#80D4A8)">🏛️</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">IGCSE</span><span class="blog-time">⏱ 7 min</span></div><div class="blog-title">Preparing Teenagers for Future Universities</div><div class="blog-excerpt">University preparation begins earlier than you think. A step-by-step guide to setting your teenager up for global success...</div></div></div>
+      <div class="blog-card"><div class="blog-thumb" style="background:linear-gradient(135deg,#FFE0E8,#FFB8CC)">👨‍🏫</div><div class="blog-body"><div class="blog-meta"><span class="blog-cat">Education</span><span class="blog-time">⏱ 5 min</span></div><div class="blog-title">The Importance of Small Class Learning</div><div class="blog-excerpt">Small classes transform education. Here's the science behind why teacher-student ratio is one of the most critical factors...</div></div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ══════════════════════ CONTACT ══════════════════════ -->
+<div id="sec-contact" class="page-section">
+  <div class="section-wrap">
+    <div class="section-header reveal">
+      <div class="section-eyebrow">Contact Us</div>
+      <h2 class="section-title">We'd Love to <em>Hear</em> From You</h2>
+      <p class="section-desc">Have questions? Ready to book a tour? Our friendly team is here to help. Reach out any time — we respond within 24 hours.</p>
+    </div>
+    <div class="contact-grid reveal">
+      <div>
+        <div class="contact-info">
+          <div class="contact-item"><div class="contact-icon">📍</div><div><div class="contact-label">Address</div><div class="contact-value">No. 25-2nd Floor, Jalan Mahogani 5/KS7<br>41200 Klang, Selangor, Malaysia</div></div></div>
+          <div class="contact-item"><div class="contact-icon">📞</div><div><div class="contact-label">Phone / WhatsApp</div><div class="contact-value"><a href="tel:+60124251556">+6 012-425 1556</a></div></div></div>
+          <div class="contact-item"><div class="contact-icon">📧</div><div><div class="contact-label">Email</div><div class="contact-value"><a href="mailto:LOVE@sun.edu.my">LOVE@sun.edu.my</a></div></div></div>
+          <div class="contact-item"><div class="contact-icon">🌐</div><div><div class="contact-label">Website</div><div class="contact-value"><a href="https://www.sun.edu.my" target="_blank" rel="noopener">www.sun.edu.my</a></div></div></div>
+          <div class="contact-item"><div class="contact-icon">⏰</div><div><div class="contact-label">Office Hours</div><div class="contact-value">Mon–Fri: 8:00am – 5:00pm<br>Sat: 8:00am – 12:00pm</div></div></div>
+          <div class="contact-item"><div class="contact-icon">📱</div><div><div class="contact-label">Follow Us</div><div class="contact-value"><a href="https://www.facebook.com/SunriseResourceCentre" target="_blank" rel="noopener">Facebook: Sunrise Resource Centre</a><br><a href="https://www.instagram.com/sunrisecenters" target="_blank" rel="noopener">Instagram: @sunrisecenters</a></div></div></div>
+        </div>
+        <div class="map-frame">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3984.0679!2d101.4454!3d3.0319!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zM8KwMDEnNTQuOCJOIDEwMcKwMjYnNDMuNCJF!5e0!3m2!1sen!2smy!4v1000000000000" width="100%" height="240" style="border:0;display:block" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Sunrise Education Location"></iframe>
+        </div>
+        <div style="margin-top:16px">
+          <a href="https://goo.gl/maps/KlangSunriseEducation" target="_blank" rel="noopener" class="btn-secondary" style="display:inline-flex;margin-right:10px">🗺️ Get Directions</a>
+          <a href="https://wa.me/60124251556" target="_blank" rel="noopener" class="btn-primary">💬 WhatsApp Now</a>
+        </div>
+      </div>
+      <div class="contact-form">
+        <h3 style="font-family:var(--font-display);font-size:1.4rem;font-weight:700;color:var(--sun-text);margin-bottom:24px">Send Us a Message</h3>
+        <div class="form-2">
+          <div class="form-row"><label>Parent Name</label><input type="text" placeholder="Your full name"></div>
+          <div class="form-row"><label>Child's Name</label><input type="text" placeholder="Child's name"></div>
+        </div>
+        <div class="form-2">
+          <div class="form-row"><label>Phone / WhatsApp</label><input type="tel" placeholder="+60 12-345 6789"></div>
+          <div class="form-row"><label>Email Address</label><input type="email" placeholder="your@email.com"></div>
+        </div>
+        <div class="form-row"><label>Child's Age</label><select><option>Select age</option><option>7–9 years (Primary)</option><option>10–12 years (Primary)</option><option>13–15 years (Secondary)</option><option>16–18 years (Secondary)</option></select></div>
+        <div class="form-row"><label>Programme Interest</label><select><option>Select programme</option><option>Primary School</option><option>Secondary School (IGCSE)</option><option>Homeschooling</option><option>Both School & Homeschooling</option></select></div>
+        <div class="form-row"><label>Message</label><textarea placeholder="Tell us about your child and how we can help..."></textarea></div>
+        <button onclick="submitForm()" class="btn-primary" style="width:100%;justify-content:center;margin-top:4px">📩 Send Message</button>
+        <p style="font-size:0.72rem;color:var(--sun-muted);text-align:center;margin-top:12px">We respond within 24 hours. Or WhatsApp us for an instant reply! 💬</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="margin-bottom:14px">
+          <svg width="36" height="36" viewBox="0 0 42 42" fill="none"><circle cx="21" cy="21" r="10" fill="#F5A623"/><g stroke="#F5A623" stroke-width="2" stroke-linecap="round"><line x1="21" y1="4" x2="21" y2="8"/><line x1="21" y1="34" x2="21" y2="38"/><line x1="4" y1="21" x2="8" y2="21"/><line x1="34" y1="21" x2="38" y2="21"/><line x1="8.7" y1="8.7" x2="11.5" y2="11.5"/><line x1="30.5" y1="30.5" x2="33.3" y2="33.3"/><line x1="33.3" y1="8.7" x2="30.5" y2="11.5"/><line x1="11.5" y1="30.5" x2="8.7" y2="33.3"/></g></svg>
+          <div class="logo-text"><span class="en">Sunrise Education</span><span class="zh" style="color:#A08060">阳光学府</span></div>
+        </div>
+        <p>International School & Homeschooling Centre in Klang, Selangor. Cambridge IGCSE curriculum. Happy learning for ages 7–18.</p>
+        <p style="margin-top:10px;font-size:0.78rem;color:#6A5040">📞 +6 012-425 1556<br>📧 LOVE@sun.edu.my<br>🌐 www.sun.edu.my</p>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <a href="#" onclick="showSection('home')">Home</a>
+        <a href="#" onclick="showSection('primary')">Primary School</a>
+        <a href="#" onclick="showSection('secondary')">Secondary School</a>
+        <a href="#" onclick="showSection('academic')">Academic</a>
+        <a href="#" onclick="showSection('admissions')">Admissions</a>
+      </div>
+      <div class="footer-col">
+        <h5>About</h5>
+        <a href="#" onclick="showSection('vision')">Our Vision</a>
+        <a href="#" onclick="showSection('about')">About Us</a>
+        <a href="#" onclick="showSection('blog')">Blog</a>
+        <a href="#" onclick="showSection('contact')">Contact</a>
+        <a href="https://wa.me/60124251556" target="_blank" rel="noopener">WhatsApp Us</a>
+      </div>
+      <div class="footer-col">
+        <h5>Programmes</h5>
+        <a href="#" onclick="showSection('primary')">Primary (7–12)</a>
+        <a href="#" onclick="showSection('secondary')">Secondary (13–18)</a>
+        <a href="#" onclick="showSection('admissions')">Homeschooling</a>
+        <a href="#" onclick="showSection('academic')">Cambridge IGCSE</a>
+        <a href="#" onclick="showSection('admissions')">Book a Tour</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2025 Sunrise Education (阳光学府) · No. 25-2F, Jalan Mahogani 5/KS7, 41200 Klang, Selangor, Malaysia</p>
+      <div class="social-links">
+        <a class="social-link" href="https://www.facebook.com/SunriseResourceCentre" target="_blank" rel="noopener" title="Facebook" aria-label="Facebook">f</a>
+        <a class="social-link" href="https://www.instagram.com/sunrisecenters" target="_blank" rel="noopener" title="Instagram" aria-label="Instagram">ig</a>
+        <a class="social-link" href="https://wa.me/60124251556" target="_blank" rel="noopener" title="WhatsApp" aria-label="WhatsApp">wa</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- FLOATING WHATSAPP -->
+<div id="wa-float">
+  <div class="wa-tooltip">Chat with Sunrise Education!</div>
+  <a href="https://wa.me/60124251556?text=Hello%20Sunrise%20Education!%20I%27m%20interested%20in%20your%20programmes." target="_blank" rel="noopener" class="wa-bubble" aria-label="WhatsApp Sunrise Education">
+    <svg width="26" height="26" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+</div>
+
+<script>
+// ── STATE ──
+let currentSection = localStorage.getItem('sunrise_section') || 'home';
+let currentLang = localStorage.getItem('sunrise_lang') || 'en';
+let currentTheme = localStorage.getItem('sunrise_theme') || 'warm';
+
+// ── TRANSLATIONS ──
+const t = {
+  en: {
+    'h-badge': 'International School & Homeschooling · Klang',
+    'h-title': 'Inspiring Young Hearts, Empowering Bright Futures',
+    'h-tag': 'Happiness · Learning · Growth',
+    'h-cta1': 'Book a School Tour',
+    'h-cta2': 'WhatsApp Us',
+    's1-eye': 'Why Children Love Us',
+    's1-title': 'A Place Where Every Child Shines',
+    's1-desc': 'We believe every child has unique gifts. Our warm, nurturing environment helps them discover their potential while having fun every single day.',
+    'c1t': 'Happy Learning',
+    'c1d': 'Learning through play, creativity, and joy. Our students look forward to coming to school every day.',
+  },
+  zh: {
+    'h-badge': '国际学校与居家教育 · 巴生',
+    'h-title': '激励年轻心灵，赋能光明未来',
+    'h-tag': '快乐 · 学习 · 成长',
+    'h-cta1': '预约参观',
+    'h-cta2': '立即联系',
+    's1-eye': '孩子为什么喜欢阳光学府',
+    's1-title': '让每个孩子都闪耀的地方',
+    's1-desc': '我们相信每个孩子都有独特的天赋。我们温暖、关爱的环境帮助他们在快乐中发现潜能。',
+    'c1t': '快乐学习',
+    'c1d': '通过游戏、创意和快乐来学习。我们的学生每天都期待来学校。',
+  },
+  bm: {
+    'h-badge': 'Sekolah Antarabangsa & Homeschooling · Klang',
+    'h-title': 'Memberi Inspirasi Hati Muda, Memperkasa Masa Depan Cerah',
+    'h-tag': 'Kebahagiaan · Pembelajaran · Pertumbuhan',
+    'h-cta1': 'Tempah Lawatan Sekolah',
+    'h-cta2': 'WhatsApp Kami',
+    's1-eye': 'Mengapa Kanak-kanak Suka Sunrise',
+    's1-title': 'Tempat di Mana Setiap Kanak-kanak Bersinar',
+    's1-desc': 'Kami percaya setiap kanak-kanak mempunyai hadiah unik. Persekitaran kami yang mesra membantu mereka menemui potensi mereka sambil berseronok setiap hari.',
+    'c1t': 'Pembelajaran Gembira',
+    'c1d': 'Belajar melalui permainan, kreativiti, dan kegembiraan. Pelajar kami tidak sabar untuk ke sekolah setiap hari.',
+  }
+};
+
+// ── SECTION SWITCHING ──
+function showSection(name) {
+  document.querySelectorAll('.page-section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+  const sec = document.getElementById('sec-' + name);
+  if (sec) { sec.classList.add('active'); window.scrollTo({top:0,behavior:'smooth'}); }
+  const navEl = document.getElementById('nav-' + name);
+  if (navEl) navEl.classList.add('active');
+  currentSection = name;
+  localStorage.setItem('sunrise_section', name);
+  initReveal();
+  return false;
+}
+
+// ── LANGUAGE ──
+function setLang(lang) {
+  currentLang = lang;
+  localStorage.setItem('sunrise_lang', lang);
+  document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById('lang' + lang.toUpperCase()).classList.add('active');
+  const trans = t[lang] || t['en'];
+  Object.entries(trans).forEach(([id, val]) => {
+    const el = document.getElementById(id);
+    if (el) el.textContent = val;
+  });
+  document.documentElement.lang = lang === 'zh' ? 'zh-CN' : lang === 'bm' ? 'ms' : 'en';
+}
+
+// ── THEME ──
+function setTheme(theme) {
+  currentTheme = theme;
+  localStorage.setItem('sunrise_theme', theme);
+  document.body.setAttribute('data-theme', theme);
+  document.querySelectorAll('.ctrl-btn:not(.lang-btn)').forEach(b => b.classList.remove('active'));
+  const ids = {warm:'themeWarm', light:'themeLight', dark:'themeDark'};
+  if (ids[theme]) document.getElementById(ids[theme]).classList.add('active');
+}
+
+// ── MOBILE MENU ──
+function toggleMobile() {
+  document.getElementById('mobile-menu').classList.toggle('open');
+}
+
+// ── SCROLL PROGRESS ──
+window.addEventListener('scroll', () => {
+  const h = document.body.scrollHeight - window.innerHeight;
+  const w = h > 0 ? (window.scrollY / h * 100) : 0;
+  document.getElementById('scroll-bar').style.width = w + '%';
+});
+
+// ── REVEAL ON SCROLL ──
+function initReveal() {
+  setTimeout(() => {
+    const els = document.querySelectorAll('.reveal:not(.visible)');
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); } });
+    }, { threshold: 0.12 });
+    els.forEach(el => obs.observe(el));
+  }, 100);
+}
+
+// ── FORM SUBMIT ──
+function submitForm() {
+  alert('Thank you for your message! 🌟\nOur team will contact you within 24 hours.\nFor faster response, WhatsApp us at +6 012-425 1556 😊');
+}
+
+// ── BLOG TABS ──
+document.querySelectorAll('.ptab').forEach(tab => {
+  tab.addEventListener('click', function() {
+    document.querySelectorAll('.ptab').forEach(t => t.classList.remove('active'));
+    this.classList.add('active');
+  });
+});
+
+// ── INIT ──
+document.addEventListener('DOMContentLoaded', () => {
+  setTheme(currentTheme);
+  setLang(currentLang);
+  showSection(currentSection);
+});
+initReveal();
+</script>
+</body>
+</html>
